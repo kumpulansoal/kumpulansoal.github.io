@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Kita Belajar Bahasa C - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Kita Belajar Bahasa C, , , , , , , 0, , , , , , 0, fungsi-dari-kita-belajar-bahasa-c, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Kita Belajar Bahasa C - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Kita Belajar Bahasa C, , , , , , , 0, , , , , , 0, fungsi-dari-kita-belajar-bahasa-c, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Kita Belajar Bahasa C - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Kita Belajar Bahasa C, , , , , , , 0, , , , , , 0, fungsi-dari-kita-belajar-bahasa-c, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://kumpulansoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://kumpulansoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://kumpulansoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://kumpulansoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://kumpulansoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://kumpulansoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://kumpulansoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Kita Belajar Bahasa C</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Willytaw</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Kita+Belajar+Bahasa+C" alt="Fungsi Dari Kita Belajar Bahasa C">
+                    </div>
+                    <p></p>
+                    <p>Bahasa digunakan untuk mempelajari naskah-naskah kuno. Pernyataan tersebut merupakan salah satu fungsi bahasa, yaitu .... a. fungsi praktis b. fungsi artistik c. fungsi filosofis d. fungsi pendidikan e. fungsi politik a e​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bahasa-digunakan-untuk-mempelajari-naskah-naskah-kuno-pernyataan-tersebut-merupakan-salah-satu-fungsi-bahasa-yaitu-a-fungsi-praktis-b-fungsi-artistik-c-fungsi-filosofis-d-fungsi-pendidikan">1.
+                                            Bahasa digunakan untuk mempelajari naskah-naskah kuno. Pernyataan tersebut merupakan salah satu fungsi bahasa, yaitu .... a. fungsi praktis b. fungsi artistik c. fungsi filosofis d. fungsi pendidikan e. fungsi politik a e​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-perpustakaan-sudah-ada-di-istana-dan-difungsikan-sebagai-tempat-a-ruang-atau-gedung-yang-dipakai-untuk-penyimpanan-buku-dan-terbitan-lainnya-b-pusat-pertemuan-dan-penyampaian-pesan-dan-ajaran">2.
+                                            5. Perpustakaan sudah ada di istana dan difungsikan sebagai tempat.... a. ruang atau gedung yang dipakai untuk penyimpanan buku dan terbitan lainnya b. pusat pertemuan dan penyampaian pesan dan ajaran oleh para ulama ke- pada murid-muridnya c. tempat belajar mengajar d. tempat membaca dan menghafalkan berbagai kitab ajaran Islam e. pusat penyalinan kitab-kitab dan pe- nerjemahannya dari bahasa Arab ke bahasa Melayu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menurut-halliday-bahasa-mempunyai-beberapa-fungsi-salah-satunya-fungsi-sosial-jelaskan-yang-dimaksud-dengan-fungsi-sosial-dan-kaitkan-dengan-pembelajaran-di-sekolah-dasar2-ada-3-tipe-belajar-dal">3.
+                                            Menurut Halliday bahasa mempunyai beberapa fungsi, salah satunya fungsi sosial. Jelaskan yang 
+dimaksud dengan fungsi sosial dan kaitkan dengan pembelajaran di sekolah dasar!
+2. Ada 3 tipe belajar dalam mempelajari bahasa, salah satunya adalah belajar bahasa. Menurut saudara, 
+jelaskan apa saja yang dapat diperoleh dalam belajar bahasa?
+3. Ali dilahirkan dan dibesarkan di Ciamis (Jawa Barat). Ayah Ali merupakan keturunan Aceh dan Ibu Ali 
+merupakan keturunan Sunda. Mereka tinggal di Ciamis sudah 10 tahun pekerjaan mereka juga berada di 
+daerah Ciamis. Dalam berkomunikasi sehari-hari di rumah mereka menggunakan bahasa Indonesia dan 
+bahasa Sunda. Selain di rumah, di lingkungan sekitar dan sekolah juga menggunakan kedua bahasa 
+tersebut meskipun sesekali Ali juga dilatih bahasa Aceh sama ayahnya setelah Ali sekolah di SD. Dari 
+penggalan cerita tersebut, jelaskan bahasa pertama dan bahasa kedua yang dimiliki oleh Ali!
+4. Jelaskan teknik pembelajaran yang dapat digunakan guru dalam membelajarkan materi Magnet supaya 
+siswa terlibat dalam kegiatan pembelajaran di kelas!
+5. Standar Kompetensi Kelas 2
+Mendengarkan
+Kompetensi Dasar: 
+Mendengarkan pesan pendek
+Indikator:
+a. Mencatat isi pesan dan menuliskannya dalam beberapa kalimat.
+b. Menyampaikan pesan secara lisan kepada orang lain.
+c. Mendengarkan pesan yang disampaikan oleh orang lain.
+Berdasarkan KD dan indikator di atas, jelaskan keterampilan yang terdapat dalam KD dan indikator!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kata-penghubung-dalam-kalimat-berikut-yang-berfungsi-menggabungkan-menyatakan-waktu-lebih-dahulu-adalah-a-sesudah-membangun-jembatan-itu-kami-akan-mendirikan-sebuah-sekolah-dasarb-ayah-membaca">4.
+                                            kata penghubung dalam kalimat berikut yang berfungsi menggabungkan menyatakan "waktu lebih dahulu" adalah..
+a. sesudah membangun jembatan itu, kami akan mendirikan sebuah sekolah dasar
+b. ayah membaca koran pagi sebelum berangkat kerja
+c. sebelum ada KUD, banyak petani menjadi korban pengijon
+d. pertandingan itu dimulai sejak hari minggu yang lalu
+e. sejak kecil ereka sudah belajar bahasa inggris</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#usealakan-1-puisi-yang-berisi-luapan-batin-penyair-disebut-a-lirikd-dramatisb-elegie-epikc-ode2-puisi-yang-mengandung-sindiran-atau-kritik-disebut-a-oded-elegib-romancee-satirikc">5.
+                                            usealakan !!!1. Puisi yang berisi luapan batin penyair disebut ....a. lirikd. dramatisb. elegie. epikc. ode2. Puisi yang mengandung sindiran atau kritik disebut ....a, oded. elegib. romancee. satirikc. hymne3. Berikut merupakan forum resmi, kecuali ....a. musyawarah desab. seminarc. forum diskusid. rapat sidang DPRe. belajar kelompok4. Fungsi memperkenalkan diri dalam forum resmi adalah ....a. menyatukan pendapatd. memunculkan rasa sosialisme yang tinggib. mempererat interaksie. mempererat persahabatanc. membangun kerjasama5. Bahasa yang digunakan dalam forum resmi adalah ....a. bahasa tidak bakud. bahasa lisanb. bahasa bakue, nonformalc. bahasa gaul6. Cerpen merupakan karangan pendek berbentuk ....a. faktad. argumenb. deskrifsie. ceritac. eksposisi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#secara-khusus-bahasa-berfungsi-sebagai-berikut-kecuali%e2%80%a6-a-mengadakan-hubungan-dalam-pergaulan-sehari-hari-fungsi-praktis-b-mewujudkan-seni-fungsi-astistik-c-mempelajari-naskah-naskah-k">6.
+                                            Secara khusus bahasa berfungsi sebagai berikut, kecuali… a. Mengadakan hubungan dalam pergaulan sehari-hari (fungsi praktis) b. Mewujudkan seni (fungsi astistik) c. Mempelajari naskah-naskah kuno (fungsi filosofis) d. Usaha mengeksploitasi ilmu pengetahuan dan teknologi e. Menciptakan nama-nama baru yang menarik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#14-fungsi-bahasa-secara-umum-adalah-a-sebagai-kunci-mempelajari-ilmu-ilmu-lain-b-untuk-mempelajari-naskah-naskah-kuno-c-digunakan-sebagai-syair-lagu-yang-menyentuh-d-untuk-mengekspresikan">7.
+                                            14. Fungsi bahasa secara umum adalah (A) sebagai kunci mempelajari ilmu-ilmu lain. (B) untuk mempelajari naskah-naskah kuno. (C) digunakan sebagai syair lagu yang menyentuh. (D) untuk mengekspresikan aspek kejiwaan manusia. (E) untuk mengadakan hubungan dalam pergaulan sehari-hari.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#saudara-saudara-yang-saya-hormati-tema-bulan-bahasa-kali-ini-adalah-meningkatkan-mutu-dan-disiplin-penggunaan-bahasa-indonesia-dalam-mencerdaskan-bangsa-tanpa-peningkatan-mutu-dan-disiplin-penggu">8.
+                                             Saudara - saudara yang saya hormati, tema bulan bahasa kali ini adalah meningkatkan mutu dan disiplin penggunaan bahasa indonesia dalam mencerdaskan bangsa. Tanpa peningkatan mutu dan disiplin penggunaan bahasa, maka fungsi dan kedudukan bahasa indonesia sebagai bahasa negara dan bahasa persatuan akan menjadi pudar. Bahasa indonesia tidak akan mamancarkan kepribadian dan kebanggaan nasionalnya.Fakta yang dapat memperkuat argumen dalam cuplikan tersebut adalaha. Kepribadian generasi muda saat inib. Kebiasaan berbahasa indonesia para pelajarc. Perhatian para orang tua terhadap pendidikan anaknyad. Pengaruh bahasa indonesia terhadap kebiasaan para remaja​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0-bahasa-indonesia-dipakai-untuk-mengungkapkan-perasaan-melalui-media-seni-seperti-syair-puisi-prosa-cerpen-dll-terkadang-bahasa-indonesia-juga-memiliki-makna-konot">9.
+                                            1.      Bahasa indonesia dipakai untuk mengungkapkan perasaan melalui media seni, seperti syair, puisi, prosa, cerpen dll. Terkadang bahasa indonesia juga memiliki makna konotasi dan makna denotasi. Fungsi bahasa indonesia semacam ini termasuk dalam fungsi ?a.      Mewujudkan hubungan interaksi dalam kehidupan sehari-harib.      Mewujudkan seni (sastra)c.      Mempelajari bahasa-bahasa kunod.      Memahami IPTEK​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-yang-bukan-termasuk-cara-melestarikan-budaya-daerah-sekitar-adalah-a-mendokumentasikan-pagelaran-budaya-daerah-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerag-d-mengarang-lagu-bah">10.
+                                            8.yang bukan termasuk cara melestarikan budaya daerah sekitar adalah... a. mendokumentasikan pagelaran budaya daerah. b. mempelajari tarian adat daerah c. mempelajari lagu daerag d. mengarang lagu bahasa daerah 9.pluraritas budaya bangsa sebaiknya disikapi dengan... a. keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah. c. memplajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate 10.tari-tarian daerah pada saat ini beralih fungsi untuk acara... a. keagamaan b. sesaji c. penyambutan tamu d. syukuran e. perang tolong dibantu ya kak tugasnya dari no 8 sampai no 15 yang ada di gambar. mohon ya kak jawabannya, jangan ngasal. ini penting bgt. makasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-mengadakan-hubungan-dalam-pergaulan-sehari-harib-wujud-kebudayaan-sebagai-suatu-himpunan-rencananc-mewujudkan-senisastrad-mempelajari-naskah-kunoe-wujud-kebudayaan-sebagai-sekumpulan-warisanf">11.
+                                            A Mengadakan hubungan dalam pergaulan sehari hari,B Wujud kebudayaan sebagai suatu himpunan rencanan,C Mewujudkan seni(sastra),D Mempelajari naskah kuno,E Wujud kebudayaan sebagai sekumpulan warisan,F Mengekploitasi ilmu oengatahuan dan teknologi,. secara khusus fungsi bahasa di tunjukan oleh?bantu jawab​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#18-cermatilah-teks-berikutketika-aku-baru-mulai-masuk-bergabungdalam-pembelajaran-daring-tiba-tibalistrik-mati-otomatis-laptopku-ikut-matikarena-baterai-laptopku-sudah-tidakberfungsi-aku-berusaha">12.
+                                            18. Cermatilah teks berikut!Ketika aku baru mulai masuk bergabungdalam pembelajaran daring, tiba-tibalistrik mati. Otomatis laptopku ikut matikarena baterai laptopku sudah tidakberfungsi. Aku berusaha memutar otak.Timbullah ide untuk meminjam HPkakak. Tetapi kakakku juga sedangbelajar lewat daring. Mau pinjam laptopayah, ternyata dibawa ayah ke kantor.Mau pinjam HP ibu tapi HP ibu sedangdiservis.Hatiku menjerit minta tolong,entah kepada siapa.Gaya bahasa/ majas yang terdapat dalamteks tersebut adalah ....a. Hatiku menjerit minta tolong.b. baterai laptopku sudah tidak berfungsi.c. tiba-tiba listrik mati.d. Kakakku sedang belajar lewat daring.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-pada-masa-dinasti-abbasiyah-peradabanarab-islam-mencapai-kemajuan-yangsangat-gemilang-di-wilayah-timur-pusat-pusat-pengajaran-didirikan-di-antaranyabaitul-hikmah-gedung-ilmu-pengetahuansebuah">13.
+                                            1. Pada masa Dinasti Abbasiyah, peradabanArab-Islam mencapai kemajuan yangsangat gemilang di wilayah Timur. Pusat-pusat pengajaran didirikan, di antaranyaBaitul Hikmah (gedung ilmu pengetahuan)sebuah lembaga ilmu pengetahuan yangdi antaranya berfungsi untuk ....A. Menerjemahkan karya ilmupengetahuan Yunani ke dalam bahasaArabB. Menandingi kekayaan intelektualbangsa Bizantium, Persia, India danCina.C. Mengembangkan teknik pengajaranal-Qur'an bagi anak-anak.D. Tempat penyimpanan buku-bukupeninggalan para sahabat.jawab ya gaiss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-arti-hadis-menurut-bahasa-adalah-a-ucapanb-tabiatkebiasaanc-perbuatanberitakabar5-salah-satu-fungsi-alquran-adalah-sebagai-adz-dzikra-hal-tersebut-dapat-ditunjukkaseseorang-yang-a-menjad">14.
+                                            3.Arti Hadis menurut bahasa adalah....A ucapanB. tabiat/kebiasaanC. perbuatanberita/kabar5.Salah satu fungsi Alquran adalah sebagai adz-Dzikra, hal tersebut dapat ditunjukkaseseorang yang....A. menjadikannya hakim dalam setiap permasalahannyaB. mengingatkan dirinya dengan memahami isi AlquranC. menggunakannya sebagai pedoman dalam bermusyawarahD. membaca ayat-ayat rahmat untuk menentramkan hati yang gelisah6. Diantara fungsi Alquran adalah sebagai pendidikan moral, yang demikian itu bisa kitadengan cara....A. membawa Alquran ke lembaga pendidikanB. menyediakan Alquran pada setiap sekolahC. memberikan pendidikan sesuai dengan ajaran dalam AlquranD. memberikan Alquran bagi anak-anak nakal dan pelaku kriminal7. Salah satu fungsi hadis terhadap Alquran adalah....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-perhatikan-pertanyaan-berikut-1-dilakukan-diluar-sekolah-2-yang-mengajar-anggota-keluarga-3-peran-orang-tua-sangat-dominan-4-lembaga-bimbingan-belajar-dari-pernyataan-di-atas-yang-merupakan">15.
+                                            1. Perhatikan pertanyaan berikut: 1 ) Dilakukan diluar sekolah 2) Yang mengajar : anggota keluarga 3) Peran orang tua sangat dominan 4) Lembaga bimbingan belajar Dari pernyataan di atas yang merupakan ciri dari lembaga pendidikan informal adalah... A. 1 dan 3 B. 2 dan 3 C. 2 dan 4 D. 1 dan 43. Kursus Bahasa Inggris, memasak dan sejenisnya merupakan lembaga pendidikan non formal. Fungsi lembaga tersebut adalah memberikan... A. ilmu pengetahuan dan teknologi B. teori dan cara hidup dalam masyarakat C. modal keterampilan praktis untuk hidup D. keahlian yang diperlukan oleh pemerintah 5. Lembaga politik memiliki fungsi untuk merencanakan dan melaksanakan pelayanan pelayanan sosial serta mengusahakan pemenuhan kebutuhan pokok masyarakat. Hal tersebut termasuk fungsi.. A. mengusahakan kesejahteraan umum B. mengatur proses politik C. mengatur keamanan dalam negeri D. mengatur keamanan luar negeri​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-uraian-mengenai-jenis-dan-fungsi-tes-yang-dilakukan-oleh-sekolah-harum-pada-saat-ppdb-berlangsung-lengkapi-degan-contoh-b-jelaskan-jenis-dan-fungsi-evaluasi-yang-dilaksanakan-oleh-ibu-amira">16.
+                                            Berikan uraian mengenai jenis dan fungsi tes yang dilakukan oleh sekolah Harum pada saat PPDB berlangsung. Lengkapi degan contoh! b. Jelaskan jenis dan fungsi evaluasi yang dilaksanakan oleh ibu Amira pada awal dan akhir pembelajaran. Kapan waktu implementasi kedua evaluasi tersebut. Kemudian bagaimana menjadikan evaluasi tersebut bersifat pararel! c. Lakukanlah analisa terhadap hasil tes formatif mata pelajaran Bahasa Indonesia berikut:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ayo-lakukan-2-%eb%a8%bc-2-c-a-nama-organ-fungsi-b-nama-organ-fungsi-nama-organ-fungsi-d-nama-organ-fungsi-nama-organ-fungsi-f-nama-organ-fungsi-g-nama-organ-fungsi-e">17.
+                                            Ayo Lakukan 2 먼 2 C. a. Nama organ: Fungsi b. Nama organ Fungsi Nama organ Fungsi d. Nama organ : .... Fungsi ...... Nama organ Fungsi :.. f. Nama organ : Fungsi g. Nama organ ..... Fungsi e. ...... KD 3.2 dan 4.2 Bahasa Indonesia Materi Pembelajaran​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-yang-merupakan-kalimat-mengandung-makna-konotasi-adalah-a-novel-ini-menceritakan-tentang-kasih-sayang-dan-pengorbanan-kepada-orang-tuab-buku-ini-dapat-dijadikan-sebagai-literatur-da">18.
+                                            Berikut ini yang merupakan kalimat mengandung makna konotasi adalah....
+A. Novel ini menceritakan tentang kasih sayang dan pengorbanan kepada orang tua
+B. Buku ini dapat dijadikan sebagai literatur dalam pembuatan skripsi
+C. Penggunaan bahasa dalam novel ini sangat menghibur para pembacanya
+D. Novel ini termasuk novel serius yang berfungsi sebagai sarana pembelajaran
+E. Novel ini merupakan salah satu karya fiksi yang tercipta dari tangan dingin penulisnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-yang-bukan-termasuk-cara-melestarikan-budaya-daerah-sekitar-adalah-a-mendokumentasikan-pagelaran-budaya-daerah-b-mempelajari-tarian-adat-daerahc-mempelajari-lagu-daeragd-mengarang-lagu-bahas">19.
+                                            8.Yang bukan termasuk cara melestarikan budaya daerah sekitar adalah... a. Mendokumentasikan pagelaran budaya daerah. b. Mempelajari tarian adat daerahc. mempelajari lagu daeragd. mengarang lagu bahasa daerah9.Pluraritas budaya bangsa sebaiknya disikapi dengan... a. keseragaman agar tercapai kedamaianb. mempelajari tarian adat daerah. c. memplajari lagu daerahd. mengarang lagu bahasa daerahe. mempelajari seni bela diri karate10.Tari-tarian daerah pada saat ini beralih fungsi untuk acara...a. keagamaan b. sesajic. penyambutan tamud. Syukurane. perangTolong dibantu ya kak tugasnya dari No 8 sampai no 15 yang ada di gambar.  mohon ya kak jawabannya, jangan ngasal.  ini penting bgt.  makasih </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-di-jawab-ya-terima-kasihpelajaran-seni-musiksoal-1-tuliskan-istilah-berikut-dalam-bahasa-asing-a-rebab-kecilb-rebab-sedangc-rebab-besar2-mengapa-kita-perlu-mengetahui-dan-me">20.
+                                            Mohon Di Jawab Ya, Terima Kasih!
+(pelajaran : Seni Musik)
+Soal : 
+1. Tuliskan istilah berikut dalam bahasa asing :
+a. Rebab kecil
+b. Rebab sedang
+c. Rebab besar
+2. Mengapa kita perlu mengetahui dan mempelajari ragam musik daerah
+3. Tuliskan kapan Tanjidor ditampilkan dan apa fungsinya !
+4. Apa pentingnya mengapresiasi musik daerah, berikan alasanmu
+Mohon Di Jawab Dengan Benar Ya, Terima Kasih Atas Bantuannya .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisis-kalimat-berdasarkan-fungsi-spokpel-a-dia-tidur-di-kamar-depan-b-mereka-sedang-belajar-bahasa-indonesia-sekarang-c-ibu-memasak-nasi-di-dapur-d-ayah-makan-pisang-yang-manis-dengan">21.
+                                            Analisis kalimat berdasarkan fungsi ( S,P,O,K,Pel. )a. Dia tidur di kamar depan  b.Mereka sedang belajar bahasa Indonesia sekarang  c. Ibu memasak nasi di dapur  d. Ayah makan pisang yang manis dengan lahap e.Kakek membawakan hadiah yang bagus​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-merupakan-pernyataan-yang-benar-tentanghuruf-mad-dan-huruf-ilat-adalaha-hurufnya-sama-dan-fungsinya-juga-sama-yaitumemanjangkan-bunyi-bacaanb-hurufnya-berbeda-namun-fungsinya-samamemanjangk">22.
+                                            Berikut merupakan pernyataan yang benar tentanghuruf mad dan huruf 'ilat adalaha. hurufnya sama dan fungsinya juga sama yaitumemanjangkan bunyi bacaanb. hurufnya berbeda namun fungsinya samamemanjangkan bunyi bacaanc. huruf mad dipelajari dalam ilmu alat tata bahasaarab (nahwu dan sharaf) dan huruf 'ilat dipelajaridalam ilmu tajwidd. huruf mad dalam ilmu tajwid sama dengan huruf'ilat dalam ilmu alat tata bahasa arab (nahwu dansharaf) namun fungsinya berbeda​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bahasa-indonesia-berfungsi-sebagai-lambang-identitas-nasional-pernyataan-tersebut-berarti-a-menggunakan-bahasa-indonesia-menunjukkan-identitas-kewarganegaraan-yang-membedakan-dengan-warga-asing">23.
+                                            Bahasa Indonesia berfungsi sebagai lambang identitas nasional. Pernyataan tersebut berarti... 
+A. Menggunakan bahasa Indonesia menunjukkan identitas kewarganegaraan yang membedakan dengan warga asing.
+B. Menggunakan bahasa Indonesia memudahkan dalam interaksi antarsesama yang berasal dari daerah yang berbeda.
+C. Bahasa Indonesia wajib digunakan sebagai pengantar dalam dunia pendidikan agar memudahkan proses pembelajaran.
+D. Bahasa Indonesia mampu menyatukan beragam suku dan budaya yang ada Indonesia agar tidak terjadi perpecahan.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#etika-pergaulan-sangat-diperlukan-oleh-siapa-pun-etika-berfungsi-sebagai-rem-seseorang-dari-sifat-dan-sikap-yang-tidak-menyenangkan-dan-kurang-sopan-remaja-merupakan-sasaran-utama-pembelajaran-etika">24.
+                                            Etika pergaulan sangat diperlukan oleh siapa pun. Etika berfungsi sebagai rem seseorang dari sifat dan sikap yang tidak menyenangkan dan kurang sopan. Remaja merupakan sasaran utama pembelajaran etika. Dengan memiliki etika, mereka akan mempunyai budaya malu dan tahu bersikap terutama kepada orang yang lebih tua dan juga di dalam pergaulan. Alasan kutipan tersebut merupakan buku nonfiksi adalah… A. Bahasa yang digunakan banyak menggunakan bahasa kiasan B. Informasi nya dapat dipertanggung jawabkan secara ilmiah C. Disertai opini-opini dari penulis yang dapat dipercaya D. Tema yang dibahas berkaitan dengan remaja ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-pluralitas-budaya-bangsa-sebaiknyaa-keseragaman-agar-tercapai-kedamaian-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerah-d-mengarang-lagu-bahasa-daerah-e-mempelajari-seni-bela-diri-kar">25.
+                                            1.pluralitas budaya bangsa sebaiknyaa.keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah c. mempelajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate2. tari tarian daerah pada saat ini beralih fungsi untuk acara a.keagamaanb.sesajic.penyambutan tamud. syukurane. perang</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-jawablah-pertanyaan-pertanyaan-di-bawah-ini-dengan-benar-tepat-dan-jelasbahasa-indonesiaparagraf-berikut-untuk-menjawab-soal-nomor-1-sampai-3dina-memiliki-sebuah-lampu-belajar-lampu-belajar-itu-p">26.
+                                            A. Jawablah pertanyaan-pertanyaan di bawah ini dengan benar, tepat dan jelasBAHASA INDONESIAParagraf berikut untuk menjawab soal nomor 1 sampai 3Dina memiliki sebuah lampu belajar. Lampu belajar itu pemberian ayahnya dua tahum yang lalu.Lampu itu diletakkannya di meja belajar Lampu itu sangat membantunya dalam belajar. Setelah belajartidak lupa Dina memadamkan lampu belajarnya. Ia juga membersicama ja tampak ada debumenempel di lampu belajarnya. Sampai saat ini, lampu belajar Dina masih dapat digunakan dengan baikDina selalu menjaga lampu belajar miliknya1. Kalimat utama paragraf tersebut adalaha Dina memiliki sebuah lampu belajarb. Dina masih menggunakan lampu belajarnyac. Lampu itu sangat membantunya dalam belajard Dina selalu menjaga lampu belajar miliknya2. Topik masalah dalam paragraf membahasa. Hadiah dari ayahb. Merawat barang pemberianc. Rajin belajar di rumahd Fungsi lampu belajar di rumah3. Pesan yang sesuai dengan isi paragaraf adalah4. Berikut ini yang merupakan kelompok kata baku adalaha Ijasah izin karirc Izin karier, analisab. Ijazah, karier, sistemd. Aktif, izin apotek5. Teks eksplanasi adalah teks yang berfungsi menjelaskan peristiwa atam fenomena​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bacalah-teks-berikut-untuk-menjawab-soal-nomor-1-3-indonesia-mempunyai-bahasa-dan-budaya-yang-beragam-setiap-wilayah-memiliki-bahasa-yang-berbeda-misalnya-masyarakat-di-wilayah-jawa-mempunyai-bahas">27.
+                                            Bacalah teks berikut untuk menjawab soal nomor 1-3! Indonesia mempunyai bahasa dan budaya yang beragam. Setiap wilayah memiliki bahasa yang berbeda misalnya, masyarakat di wilayah Jawa mempunyai bahasa Jawa, Jawa Timur, dan Sunda. Bahasa daerah digunakan secara berdampingan dengan bahasa Indonesia. Oleh karena itu, bangsa Indonesia disebut sebagai bangsa yang kaya akan bahasa dan budaya.Kini, keberadaan bahasa daerah semakin terancam karena penggunaan bahasa asing, yaitu bahasa Inggris. Bahasa Inggris lebih sering dipelajari daripada bahasa daerah. Ada anggapan bahwa bahasa Inggris lebih keren daripada bahasa Indonesia. Dengan demikian, rasa cinta terhadap bahasa daerah perlu ditingkatkan. 1. Judul yang tepat untuk teks di atas adalah... . *10 poinA. Bahasa Daerah Kekayaan BangsaB. Bahasa Asing Kekayaan BangsaC. Bahasa Indonesia dan Bahasa AsingD. Bahasa Asing2. Teks nonfiksi adalah jenis karangan yang menyajikan informasi berdasarkan... . *10 poinA. OpiniB. FaktaC. ImajinasiD. Pendapat3. Informasi penting dalam teks dapat diketahui berdasarkan… . *10 poinA. Gagasan pendukungB. KesimpulanC. Ringkasan pokokD. Gagasan pokokBacalah teks berikut untuk menjawab soal nomor 4-6! Mesin Penghasil GaramAlat pembuat garam berhasil dibuat oleh Udin, Alat tersebut dapat digunakan meskipun cuaca mendung. Alat tersebut memiliki aki yang berfungsi untuk menyimpan energi matahari. Oleh karena itu, meskipun cuaca tidak mendukung, alat tersebut tetap mampu menghasilkan garam. 4. Kalimat utama pada paragraf pertama adalah... . *10 poinA. Setiap daerah punya bahasa yang berbedaB. Indonesia mempunyai bahasa dan budaya yang beragamC. Bahasa daerah berdampingan dengan bahasa indonesiaD. Bahasa asing lebih sering digunakan daripada bahasa Indonesia5. Pernyataan berikut yang kurang sesuai dengan teks adalah... . *10 poinA. Bahasa daerah di Indonesia sangat kaya dan beragamB. Bahasa asing dan bahasa Indonesia menjadi kekayaan bangsa IndonesiaC. Rasa cinta terhadap bahasa daerah belum terlalu tinggiD. Bahasa asing lebih sering digunakan oleh masyarakat6. Berdasarkan teks di atas, teks tersebut termasuk ke dalam teks… . *10 poinA. fiksi karena teks berisi khayalanB. fiksi karena teks hanya berupa opiniC. nonfiksi karena teks berisi kejadian faktualD. nonfiksi karena teks bersumber dari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-perhatikan-pernyataan-pernyataan-berikut2-mengadakan-lomba-menulis-cerita-berbahasa-daerah-3-membuat-program-televisi-berbahasa-daerah-4-mempelajari-bahasa-asing-pernyataan-yang-merupakan-ca">28.
+                                            5. Perhatikan pernyataan-pernyataan berikut!(2) Mengadakan lomba menulis cerita berbahasa daerah.(3) Membuat program televisi berbahasa daerah.(4) Mempelajari bahasa asing.Pernyataan yang merupakan cara untuk mencegah kepunahan bahasa daerah adalaha. (1) dan (4)c. (1), (2), dan (3)b. (2) dan (4)d. (1), (2), dan (4)ll. Ayo, mengerjakan soal-soal di bawah ini dengan jawaban yang tepat!1. Jelaskan hal yang kamu ketahui tentang keragaman!Jawab:2. Sebutkan faktor-faktor yang menyebabkan keragaman masyarakat Indonesia!Jawab:3. Tuliskan penyebab keragaman masyarakat Indonesia dilihat dari perbedaan kondisi alamJawab:4. Apa saja fungsi bahasa daerah dalam suatu masyarakat?Jawab:5. Apa saja hal yang dapat dilakukan agar bahasa daerah tidak punah?Jawab:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-berikut-digunakan-untuk-menjawab-soal-nomor-1-sd-3tema-bulan-bahasa-kali-ini-adalah-meningkatkan-mutu-dan-disiplin-pengguna-bahasa-indonesia-dalam-mencerdaskan-bangsa-tanpa-peningkatan-mutu-dan">29.
+                                            cara berikut digunakan untuk menjawab soal nomor 1 s/d 3TEMA BULAN BAHASA KALI INI ADALAH MENINGKATKAN MUTU DAN DISIPLIN PENGGUNA BAHASA INDONESIA DALAM MENCERDASKAN BANGSA. TANPA PENINGKATAN MUTU DAN DISIPLIN PENGGUNA BAHASA, FUNGSI DAN KEDUDUKAN BAHASA INDONESIA SEBAGAI BAHASA NEGARA DAN BAHASA PERSATUAN AKAN MENJADI PUDAR. BAHASA INDONESIA TIDAK AKAN MEMANCARKAN KEPRIBADIAN DAN KEBANGGAAN NASIONAL NYA.cuplikan teks tersebut berkenaan dengan isu...a. peningkatan mutu dan disiplin berbahasa Indonesia.b. peningkatan mutu dan disiplin berbahasa Indonesia yang tidak ada fungsinya.c. tanpa meningkatkan mutu berbahasa Indonesia, fungsi dan kedudukan nya tidak kuat.d. bahasa Indonesia yang tidak dapat memancarkan kepribadian dan kebangsaan nasional.2. fakta yang dapat memperkuat argumen dalam cuplikan tersebut adalah...a. kebiasaan berbahasa Indonesia para pelajar.b. perhatian para orang tua terhadap pendidikan anaknya.c. kepribadian generasi muda saat ini.d. pengaruh bahasa Indonesia terhadap kebiasaan para remaja3. dalam struktur pidato, cuplikan tersebut termasuk ke dalam...a. pembukab. pengenalan isuc. rangkaian argumend. pernyataan ajakan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-pluralitas-budaya-bangsa-sebaiknyaa-keseragaman-agar-tercapai-kedamaian-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerah-d-mengarang-lagu-bahasa-daerah-e-mempelajari-seni-bela-diri-kar">30.
+                                            1.pluralitas budaya bangsa sebaiknyaa.keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah c. mempelajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate2. tari tarian daerah pada saat ini beralih fungsi untuk acara a.keagamaanb.sesajic.penyambutan tamud. syukurane. perang</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-ahsan-menyadari-bahwa-mahasiswa-yang-menjadi-teman-sekelasnya-berasal-dari-berbagai-daerah-di-indonesia-selanjutnya-ahsan-memilih-menggunakan-bahasa-indonesia-dalam-berkomunikasi-dengan-mahasiswa">31.
+                                            1.	Ahsan menyadari bahwa mahasiswa yang menjadi teman sekelasnya berasal dari berbagai daerah di Indonesia. Selanjutnya Ahsan memilih menggunakan bahasa Indonesia dalam berkomunikasi dengan mahasiswa yang lain.Langkah yang dilakukan Ahsan termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perdamaian2.	Terdapat banyak tulisan yang mengajak masyarakat agar patuh terhadap peraturan lalulintas.Penggunaan tulisan tersebut merupakan fungsi bahasa sebagai ....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa peringatan3.	Linda dengan tegas mengatakan bahwa dia lebih memilih menjadi seorang bidan daripada menjadi seorang penyanyi.Langkah yang dilakukan Linda termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perumpamaan4.	Berikut ini yang merupakan fungsi bahasa Indonesia sebagai bahasa negara adalah ....A.	Fungsi lambang kebanggan dan kebangsaan IndonesiaB.	Fungsi Identitas nasional dimata internasionalC.	Fungsi sarana hubungan antarwarga, antardaerah, dan antar budayaD.	Fungsi bahasa sebagai administrasi kenegaraanE.	Fungsi pemersatu lapisan masyarakat: sosial, budaya, suku bangsa, dan bahasa.5.	Kesalahan penulisan abjad besar terdapat pada kalimat ....A. Dea mengajar di sekolah dua kali seminggu.B. Paman suka membaca surat kabar Analisa.C. Ayah membeli pisang Ambon untuk kakek.D. Siang ini Banu akan bertemu dengan Tika.E. Keluargaku gres datang di Jakarta sore ini.6.	Pemakaian tanda baca yang benar terdapat pada kalimat ....A. Karena sedih, adik menangis di kamarnya.B. Adik dan abang belum pulang, walaupun sudah malam.C. Ibu membeli nasi, jus, pisang dan jeruk.D. Murid, dan guru sedang mengikuti upacara bendera.E. Ban kendaraan beroda empat kami pecah, alasannya itu kami kami tidak sanggup hadir.7.	Kalimat di bawah ini yang penerapan tanda bacanya benar ialah ....A. David, membawakan majalah untuk Kartika.B. A. Nasution ialah anakdidik yang rajin.C. Dewi tidak hadir, alasannya berada di luar kota.D. Temanku Lina masuk rumah sakit candra.E. Murid itu dihukum, alasannya tidak menggunakan atribut lengkap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-perhatikan-penggalan-proposal-berikutoleh-karena-itu-peranan-pengajaran-bahasa-indonesia-harus-diupayakan-agarada-kesesuaian-dan-kesepadanan-dengan-bidang-lain-sehingga-dapat-menunjangtransinfor">32.
+                                            6. Perhatikan penggalan proposal berikut!Oleh karena itu, peranan pengajaran bahasa Indonesia harus diupayakan agarada kesesuaian dan kesepadanan dengan bidang lain, sehingga dapat menunjangtransinformasi ilmu pengetahuan dan teknologi. Selain itu, kita harus mengupayakansikap positif terhadap bahasa Indonesia, baik sebagai bahasa Indonesia maupunsebagai bahasa negara.....Isi penggalan proposal tersebut adalah ....A. Fungsi bahasa Indonesia dalam transinformasi pengetahuanB. Salah satu upaya penyesuaian bahasa Indonesia dengan bidang lainC. Menyepadankan pengajaran bahasa Indonesia dengan bidang lain danbersikap positif terhadap bahasa IndonesiaD. Peran bahasa Indonesia dan bahasa Indonesia sebagai bahasa nasional danbahasa negaraE. Kedudukan bahasa IndonesiaDacal talrebariloutuntur monimobolnomor dono​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-perhatikan-penggalan-proposal-berikutoleh-karena-itu-peranan-pengajaran-bahasa-indonesia-harus-diupayakan-agarada-kesesuaian-dan-kesepadanan-dengan-bidang-lain-sehingga-dapat-menunjangtransinfor">33.
+                                            6. Perhatikan penggalan proposal berikut!Oleh karena itu, peranan pengajaran bahasa Indonesia harus diupayakan agarada kesesuaian dan kesepadanan dengan bidang lain, sehingga dapat menunjangtransinformasi ilmu pengetahuan dan teknologi. Selain itu, kita harus mengupayakansikap positif terhadap bahasa Indonesia, baik sebagai bahasa Indonesia maupunsebagai bahasa negara. ....Isi penggalan proposal tersebut adalah ....A. Fungsi bahasa Indonesia dalam transinformasi pengetahuanB. Salah satu upaya penyesuaian bahasa Indonesia dengan bidang lainC. Menyepadankan pengajaran bahasa Indonesia dengan bidang lain danbersikap positif terhadap bahasa IndonesiaD. Peran bahasa Indonesia dan bahasa Indonesia sebagai bahasa nasional danbahasa negaraE. Kedudukan bahasa IndonesiaBacalah teks berikut untuk menjawab soal nomor 7 dan 8!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penulisan-laporan-penelitian-bagi-para-siswa-berfungsi-untuk-belajar-a-menyusun-hasi-laporanb-teori-penelitian-ilmiahc-menganalisis-data-secara-statistikd-mengumpulkan-data-primer-dan-sekundere">34.
+                                            penulisan laporan penelitian bagi para siswa berfungsi untuk belajar...A. menyusun hasi laporanB. teori penelitian ilmiahC. menganalisis data secara statistikD. mengumpulkan data primer dan sekunderE. bahasa indonesia yang baik dan benartolong bantu jawab yg bnr:'​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%c2%a0-%c2%a0berbicara-digunakan-sebagai-sarana-memperoleh-pengetahuan-mangadaptasi-mempelajari-lingkungannya-dan-mengontrol-lingkungannya-yaitu-berbicara-berfungsi-sebagai-pilih-salah-satu">35.
+                                               Berbicara digunakan sebagai sarana memperoleh pengetahuan mangadaptasi, mempelajari lingkungannya, dan mengontrol lingkungannya, yaitu berbicara berfungsi sebagai.........Pilih salah satu:a. menulisb. bahasac. menyimakd. berbicara​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-bacalah-teks-berikut-inir-globalisasi-berdampak-bagi-perkembangan-bahasa-indonesia-bahasa-indonesia-adalah-bahasa-resmi-dan-bahasa-persatuan-bangsa-indonesia-fungsi-utama-dari-bahasa-indonesia-a">36.
+                                            10. Bacalah teks berikut inir Globalisasi berdampak bagi perkembangan bahasa Indonesia. Bahasa Indonesia adalah bahasa resmi dan bahasa persatuan bangsa Indonesia. Fungsi utama dari bahasa Indonesia adalah untuk menyatukan bangsa Indonesia dalam hal berkomunikasi . Namun pada kenyataannya, penggunaan bahasa Indonesia yang baik dan benar belum digunakan secara menyeluruh, terutama dalam berkomunikasi sehari-hari . Masyarakat sudah terpengaruh oleh bahasa asing yang muncul karena adanya arus globalisasi dan tidak disaring terlebih dahulu. Akibatnya, fungsi bahasa Indonesia terabaikan. Tanggapan yang sesuai untuk paragraf di atas adalah .... A Membiarkan masyarakat berkomunikasi dengan bahasa asing B. Menerapkan bahasa Indonesia yang benar pada kegiatan resmi seperti pembelajaran atau di instansi pemerintah C. Meningkatkan kedatangan orang asing ke Indonesia D. Meningkatkan perkembangan budaya daerah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selamat-pagi-anak-anaksalam-sejahtera-pastikan-kalian-sudah-mandisarapan-dan-berdoa-untuk-mengawali-belajar-kegiatan-kalian-hari-ini-1-kalian-pelajari-bab-4-tentang-teks-tanggapan-baca-dibuk">37.
+                                            Selamat pagi anak- anak,salam sejahtera. Pastikan kalian sudah mandi,sarapan dan berdoa untuk mengawali belajar. Kegiatan kalian hari ini : 1. Kalian pelajari Bab.4 tentang Teks Tanggapan ( baca dibuku paket juga di LKS ). 2. Kalian membaca sambil merangkum materi yang penting tentang : a. Pengertian Teks Tanggapan. b. Ciri Teks Tanggapan c. Struktur dan Kebahasaan Teks Tanggapan. d. Tujuan Teks Tanggapan e. Fungsi Teks Tanggapan. Selamat belajar !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-ahsan-menyadari-bahwa-mahasiswa-yang-menjadi-teman-sekelasnya-berasal-dari-berbagai-daerah-di-indonesia-selanjutnya-ahsan-memilih-menggunakan-bahasa-indonesia-dalam-berkomunikasi-dengan-mahasiswa">38.
+                                            1.	Ahsan menyadari bahwa mahasiswa yang menjadi teman sekelasnya berasal dari berbagai daerah di Indonesia. Selanjutnya Ahsan memilih menggunakan bahasa Indonesia dalam berkomunikasi dengan mahasiswa yang lain.Langkah yang dilakukan Ahsan termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perdamaian2.	Terdapat banyak tulisan yang mengajak masyarakat agar patuh terhadap peraturan lalulintas.Penggunaan tulisan tersebut merupakan fungsi bahasa sebagai ....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa peringatan3.	Linda dengan tegas mengatakan bahwa dia lebih memilih menjadi seorang bidan daripada menjadi seorang penyanyi.Langkah yang dilakukan Linda termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perumpamaan4.	Berikut ini yang merupakan fungsi bahasa Indonesia sebagai bahasa negara adalah ....A.	Fungsi lambang kebanggan dan kebangsaan IndonesiaB.	Fungsi Identitas nasional dimata internasionalC.	Fungsi sarana hubungan antarwarga, antardaerah, dan antar budayaD.	Fungsi bahasa sebagai administrasi kenegaraanE.	Fungsi pemersatu lapisan masyarakat: sosial, budaya, suku bangsa, dan bahasa.5.	Kesalahan penulisan abjad besar terdapat pada kalimat ....A. Dea mengajar di sekolah dua kali seminggu.B. Paman suka membaca surat kabar Analisa.C. Ayah membeli pisang Ambon untuk kakek.D. Siang ini Banu akan bertemu dengan Tika.E. Keluargaku gres datang di Jakarta sore ini.6.	Pemakaian tanda baca yang benar terdapat pada kalimat ....A. Karena sedih, adik menangis di kamarnya.B. Adik dan abang belum pulang, walaupun sudah malam.C. Ibu membeli nasi, jus, pisang dan jeruk.D. Murid, dan guru sedang mengikuti upacara bendera.E. Ban kendaraan beroda empat kami pecah, alasannya itu kami kami tidak sanggup hadir.7.	Kalimat di bawah ini yang penerapan tanda bacanya benar ialah ....A. David, membawakan majalah untuk Kartika.B. A. Nasution ialah anakdidik yang rajin.C. Dewi tidak hadir, alasannya berada di luar kota.D. Temanku Lina masuk rumah sakit candra.E. Murid itu dihukum, alasannya tidak menggunakan atribut lengkap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kalimat-tanya-dalam-bahasa-indonesia-adalah-%c2%a0a-untuk-meminta-orang-lain-melakukan-kegiatan-sesuai-dengan-permintaanb-untuk-menanyakan-sesuatu-baik-berupa-benda-perbuatan-atau-situ">39.
+                                            Fungsi kalimat tanya dalam bahasa Indonesia adalah .... A. untuk meminta orang lain melakukan kegiatan sesuai dengan permintaanB. untuk menanyakan sesuatu, baik berupa benda, perbuatan, atau situasiC. sebagai penjelas dalam sebuah kalimatD. Memenuhi unsur dari sebuah kalimat sempurna11. Teks yag berisi informasi tentang suatu hal atau fenomena di masyarakat disebut... A. Teks eksplanasiB. Teks bacaanC. Teks laporanD. Teks Informasi12. Para siswa-siswa sedang belajar di kelas Kalimat tersebut adalah kalimat yang tidak efektif, agar menjadi kalimat yang efektif, perbaikan yang benar adalah …. A. Para-para siswa sedang belajar di kelasB. Siswa-siswa sedang belajar-belajar di kelasC. Para siswa sedang belajar di kelas-kelasD. Para siswa sedang belajar di kelas13. Simpulan dari teks atau dapat juga berisi pendapat penulis mengenai fenomena yang dijelaskan dalam teks adalah... A. pembukaan (pernyataan umum)B. deretan penjelas (isi)C. penutup (simpulan)D. pernyataan khusus14. Kata tanya yang kegunaannya untuk menanyakan keadaan atau kegiatan yang berkaitan dengan suatu peristiwa adalah A. siapaB. di manaC. apaD. kenapa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berikut-ini-termasuk-ke-dalam-fungsi-judulberita-di-koran-kecuali-a-untuk-memberi-kepadatan-isib-merangkum-isi-beritac-mempercantik-perwajahan-surat-kabard-melukiskan-suasana-berita2-baha">40.
+                                            1. Berikut ini termasuk ke dalam fungsi judulberita di koran, kecuali ....a. untuk memberi kepadatan isib. merangkum isi beritac. mempercantik perwajahan surat kabard. melukiskan suasana berita2. Bahasa teks iklan selalu mengajakpembacanya, jadi bahasa teks iklan bersifata. naratifb. ekspositorisc. persuasifd. deskriptif3. SATU POHONSEJUTA MANFAATSAVEOURTeks poster tersebut termasuk poster ....a. pendidikanb. niagac. penerangand. kegiatan4. Teks poster pada soal nomer 3 berisi ajakanuntuk melaksanakan ....a kerja baktib. kemahc. reboisasid. urbanisasi5. Slogan yang tepat adalah ....a. Kemarin belajar, hari ini belajar, besokbelajar, lusa belajarb. Belajar lebih giat adalah solusi tepat agarlulus ujian nasional.c. Dengan belajar, semua masalah teratasi.d. Ingat, Ujian Nasional sudah dekat!​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="bahasa-digunakan-untuk-mempelajari-naskah-naskah-kuno-pernyataan-tersebut-merupakan-salah-satu-fungsi-bahasa-yaitu-a-fungsi-praktis-b-fungsi-artistik-c-fungsi-filosofis-d-fungsi-pendidikan">
+                            1. Bahasa digunakan untuk mempelajari naskah-naskah kuno. Pernyataan tersebut merupakan salah satu fungsi bahasa, yaitu .... a. fungsi praktis b. fungsi artistik c. fungsi filosofis d. fungsi pendidikan e. fungsi politik a e​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>C Fungsi Filosofis..</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu;)</p><br />
+                                            <h2 class="ez-toc-section" id="5-perpustakaan-sudah-ada-di-istana-dan-difungsikan-sebagai-tempat-a-ruang-atau-gedung-yang-dipakai-untuk-penyimpanan-buku-dan-terbitan-lainnya-b-pusat-pertemuan-dan-penyampaian-pesan-dan-ajaran">
+                            2. 5. Perpustakaan sudah ada di istana dan difungsikan sebagai tempat.... a. ruang atau gedung yang dipakai untuk penyimpanan buku dan terbitan lainnya b. pusat pertemuan dan penyampaian pesan dan ajaran oleh para ulama ke- pada murid-muridnya c. tempat belajar mengajar d. tempat membaca dan menghafalkan berbagai kitab ajaran Islam e. pusat penyalinan kitab-kitab dan pe- nerjemahannya dari bahasa Arab ke bahasa Melayu​</h2><br />
+                        <p><strong>Jawaban:a. ruang atau gedung yang dipakai untuk penyimpanan buku dan terbitan lainnya.</strong></p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="menurut-halliday-bahasa-mempunyai-beberapa-fungsi-salah-satunya-fungsi-sosial-jelaskan-yang-dimaksud-dengan-fungsi-sosial-dan-kaitkan-dengan-pembelajaran-di-sekolah-dasar2-ada-3-tipe-belajar-dal">
+                            3. Menurut Halliday bahasa mempunyai beberapa fungsi, salah satunya fungsi sosial. Jelaskan yang 
+dimaksud dengan fungsi sosial dan kaitkan dengan pembelajaran di sekolah dasar!
+2. Ada 3 tipe belajar dalam mempelajari bahasa, salah satunya adalah belajar bahasa. Menurut saudara, 
+jelaskan apa saja yang dapat diperoleh dalam belajar bahasa?
+3. Ali dilahirkan dan dibesarkan di Ciamis (Jawa Barat). Ayah Ali merupakan keturunan Aceh dan Ibu Ali 
+merupakan keturunan Sunda. Mereka tinggal di Ciamis sudah 10 tahun pekerjaan mereka juga berada di 
+daerah Ciamis. Dalam berkomunikasi sehari-hari di rumah mereka menggunakan bahasa Indonesia dan 
+bahasa Sunda. Selain di rumah, di lingkungan sekitar dan sekolah juga menggunakan kedua bahasa 
+tersebut meskipun sesekali Ali juga dilatih bahasa Aceh sama ayahnya setelah Ali sekolah di SD. Dari 
+penggalan cerita tersebut, jelaskan bahasa pertama dan bahasa kedua yang dimiliki oleh Ali!
+4. Jelaskan teknik pembelajaran yang dapat digunakan guru dalam membelajarkan materi Magnet supaya 
+siswa terlibat dalam kegiatan pembelajaran di kelas!
+5. Standar Kompetensi Kelas 2
+Mendengarkan
+Kompetensi Dasar: 
+Mendengarkan pesan pendek
+Indikator:
+a. Mencatat isi pesan dan menuliskannya dalam beberapa kalimat.
+b. Menyampaikan pesan secara lisan kepada orang lain.
+c. Mendengarkan pesan yang disampaikan oleh orang lain.
+Berdasarkan KD dan indikator di atas, jelaskan keterampilan yang terdapat dalam KD dan indikator!</h2><br />
+                        <p><strong>J</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>:</strong></p><p></p><strong>Fungsi Sosial dalam Bahasa.   </strong>              Fungsi sosial dalam bahasa merujuk pada cara bahasa digunakan untuk berinteraksi dengan orang lain dalam konteks sosial. Ini mencakup berbagai peran bahasa dalam berkomunikasi, seperti membangun hubungan, menyampaikan pesan, memberikan informasi, dan mengekspresikan identitas sosial. Di sekolah dasar, fungsi sosial bahasa penting karena membantu siswa berinteraksi dengan guru dan teman-teman sekelas, memahami aturan dan norma sosial, serta membangun kemampuan berkomunikasi yang efektif.<strong>Belajar Bahasa.     </strong>                                  Dalam belajar bahasa, seseorang dapat memperoleh banyak hal, termasuk pengetahuan vokabulari, tata bahasa, kemampuan berbicara dan menulis, serta pemahaman tentang budaya dan konteks sosial di mana bahasa itu digunakan. Belajar bahasa juga dapat meningkatkan kemampuan berpikir, berkomunikasi, dan memecahkan masalah, serta membuka pintu bagi eksplorasi ilmu pengetahuan dan budaya yang lebih luas.<strong>Bahasa Pertama dan Bahasa Kedua Al</strong><strong>i</strong><strong>.</strong>                                                               Dari cerita tersebut, bahasa pertama Ali adalah bahasa Indonesia, karena itulah bahasa yang digunakan di rumah sehari-hari dan di lingkungannya. Bahasa kedua Ali adalah bahasa Sunda, karena meskipun bukan bahasa utama yang digunakan di rumah, ia juga sering berinteraksi dengan bahasa Sunda di lingkungannya. Bahasa Aceh yang dipelajari Ali sesekali dari ayahnya dapat disebut sebagai bahasa ketiga.<strong>Teknik Pembelajaran Magnet.   </strong>               Guru dapat menggunakan berbagai teknik dalam pembelajaran materi Magnet agar siswa terlibat aktif. Contohnya, guru dapat menggunakan eksperimen dengan magnet untuk memperlihatkan prinsip-prinsip fisika yang terlibat. Selain itu, guru dapat memanfaatkan peralatan audiovisual, seperti gambar atau video, untuk mengilustrasikan konsep-konsep terkait magnetisme. Diskusi kelompok, percobaan kecil, atau proyek sederhana dengan magnet juga dapat membuat pembelajaran lebih interaktif.<strong>Keterampilan dalam Standar Kompetensi Mendengarkan</strong>Keterampilan mencatat isi pesan dan menuliskannya dalam beberapa kalimat berkaitan dengan kemampuan mendengarkan dan merangkum informasi.Keterampilan menyampaikan pesan secara lisan kepada orang lain menunjukkan kemampuan komunikasi lisan.Keterampilan mendengarkan pesan yang disampaikan oleh orang lain adalah kemampuan aktif mendengarkan dan memahami informasi yang disampaikan oleh orang lain. <p></p><p>Standar kompetensi ini bertujuan untuk mengembangkan keterampilan mendengarkan, berbicara, dan menulis dalam proses komunikasi siswa.</p><p></p><p>-- FDGQWE --</p><br />
+                                            <h2 class="ez-toc-section" id="kata-penghubung-dalam-kalimat-berikut-yang-berfungsi-menggabungkan-menyatakan-waktu-lebih-dahulu-adalah-a-sesudah-membangun-jembatan-itu-kami-akan-mendirikan-sebuah-sekolah-dasarb-ayah-membaca">
+                            4. kata penghubung dalam kalimat berikut yang berfungsi menggabungkan menyatakan "waktu lebih dahulu" adalah..
+a. sesudah membangun jembatan itu, kami akan mendirikan sebuah sekolah dasar
+b. ayah membaca koran pagi sebelum berangkat kerja
+c. sebelum ada KUD, banyak petani menjadi korban pengijon
+d. pertandingan itu dimulai sejak hari minggu yang lalu
+e. sejak kecil ereka sudah belajar bahasa inggris</h2><br />
+                        a.mendirikan<br />b.sebelum berangkat barangkat karja<br />c.banyak petani<br />d.hari minggu yg lalu<br />e.ereka sudah belajar bahasa ingris<br />sorry kalau salah<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="usealakan-1-puisi-yang-berisi-luapan-batin-penyair-disebut-a-lirikd-dramatisb-elegie-epikc-ode2-puisi-yang-mengandung-sindiran-atau-kritik-disebut-a-oded-elegib-romancee-satirikc">
+                            5. usealakan !!!1. Puisi yang berisi luapan batin penyair disebut ....a. lirikd. dramatisb. elegie. epikc. ode2. Puisi yang mengandung sindiran atau kritik disebut ....a, oded. elegib. romancee. satirikc. hymne3. Berikut merupakan forum resmi, kecuali ....a. musyawarah desab. seminarc. forum diskusid. rapat sidang DPRe. belajar kelompok4. Fungsi memperkenalkan diri dalam forum resmi adalah ....a. menyatukan pendapatd. memunculkan rasa sosialisme yang tinggib. mempererat interaksie. mempererat persahabatanc. membangun kerjasama5. Bahasa yang digunakan dalam forum resmi adalah ....a. bahasa tidak bakud. bahasa lisanb. bahasa bakue, nonformalc. bahasa gaul6. Cerpen merupakan karangan pendek berbentuk ....a. faktad. argumenb. deskrifsie. ceritac. eksposisi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. a. lirik</p><p>2. e. satirik</p><p>3. e. belajar kelompok</p><p>4. b. mempererat interaksi</p><p>5. b. bahasa baku</p><p>6. e. cerita</p><br />
+                                            <h2 class="ez-toc-section" id="secara-khusus-bahasa-berfungsi-sebagai-berikut-kecuali%e2%80%a6-a-mengadakan-hubungan-dalam-pergaulan-sehari-hari-fungsi-praktis-b-mewujudkan-seni-fungsi-astistik-c-mempelajari-naskah-naskah-k">
+                            6. Secara khusus bahasa berfungsi sebagai berikut, kecuali… a. Mengadakan hubungan dalam pergaulan sehari-hari (fungsi praktis) b. Mewujudkan seni (fungsi astistik) c. Mempelajari naskah-naskah kuno (fungsi filosofis) d. Usaha mengeksploitasi ilmu pengetahuan dan teknologi e. Menciptakan nama-nama baru yang menarik</h2><br />
+                        <p>Jawaban: B. Mewujudkan seni</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="14-fungsi-bahasa-secara-umum-adalah-a-sebagai-kunci-mempelajari-ilmu-ilmu-lain-b-untuk-mempelajari-naskah-naskah-kuno-c-digunakan-sebagai-syair-lagu-yang-menyentuh-d-untuk-mengekspresikan">
+                            7. 14. Fungsi bahasa secara umum adalah (A) sebagai kunci mempelajari ilmu-ilmu lain. (B) untuk mempelajari naskah-naskah kuno. (C) digunakan sebagai syair lagu yang menyentuh. (D) untuk mengekspresikan aspek kejiwaan manusia. (E) untuk mengadakan hubungan dalam pergaulan sehari-hari.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban yang benar adalah (E) untuk mengadakan hubungan dalam pergaulan sehari-hari.</p><p></p><p>Fungsi bahasa secara umum adalah untuk memfasilitasi komunikasi dan interaksi antara individu atau kelompok dalam kehidupan sehari-hari. Bahasa digunakan sebagai alat untuk menyampaikan pesan, berbagi informasi, mengungkapkan pemikiran, perasaan, dan ide-ide, serta membangun hubungan sosial antara manusia. Melalui bahasa, manusia dapat berkomunikasi, berinteraksi, dan memahami satu sama lain.</p><p><strong>Penjelasan:</strong></p><p>Semoga bermanfaat dan membantu</p><br />
+                                            <h2 class="ez-toc-section" id="saudara-saudara-yang-saya-hormati-tema-bulan-bahasa-kali-ini-adalah-meningkatkan-mutu-dan-disiplin-penggunaan-bahasa-indonesia-dalam-mencerdaskan-bangsa-tanpa-peningkatan-mutu-dan-disiplin-penggu">
+                            8.  Saudara - saudara yang saya hormati, tema bulan bahasa kali ini adalah meningkatkan mutu dan disiplin penggunaan bahasa indonesia dalam mencerdaskan bangsa. Tanpa peningkatan mutu dan disiplin penggunaan bahasa, maka fungsi dan kedudukan bahasa indonesia sebagai bahasa negara dan bahasa persatuan akan menjadi pudar. Bahasa indonesia tidak akan mamancarkan kepribadian dan kebanggaan nasionalnya.Fakta yang dapat memperkuat argumen dalam cuplikan tersebut adalaha. Kepribadian generasi muda saat inib. Kebiasaan berbahasa indonesia para pelajarc. Perhatian para orang tua terhadap pendidikan anaknyad. Pengaruh bahasa indonesia terhadap kebiasaan para remaja​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B</p><p><strong>Penjelasan:</strong></p><p>kebiasaan pelajar saat ini adalah menggunakan bahasa gaul bukan bahasa Indonesia yg baik dan benar</p><br />
+                                            <h2 class="ez-toc-section" id="1-%c2%a0%c2%a0%c2%a0%c2%a0%c2%a0-bahasa-indonesia-dipakai-untuk-mengungkapkan-perasaan-melalui-media-seni-seperti-syair-puisi-prosa-cerpen-dll-terkadang-bahasa-indonesia-juga-memiliki-makna-konot">
+                            9. 1.      Bahasa indonesia dipakai untuk mengungkapkan perasaan melalui media seni, seperti syair, puisi, prosa, cerpen dll. Terkadang bahasa indonesia juga memiliki makna konotasi dan makna denotasi. Fungsi bahasa indonesia semacam ini termasuk dalam fungsi ?a.      Mewujudkan hubungan interaksi dalam kehidupan sehari-harib.      Mewujudkan seni (sastra)c.      Mempelajari bahasa-bahasa kunod.      Memahami IPTEK​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. mewujudkan seni (sastra)</p><p>bahasa indonesia  dipakai</p><br />
+                                            <h2 class="ez-toc-section" id="8-yang-bukan-termasuk-cara-melestarikan-budaya-daerah-sekitar-adalah-a-mendokumentasikan-pagelaran-budaya-daerah-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerag-d-mengarang-lagu-bah">
+                            10. 8.yang bukan termasuk cara melestarikan budaya daerah sekitar adalah... a. mendokumentasikan pagelaran budaya daerah. b. mempelajari tarian adat daerah c. mempelajari lagu daerag d. mengarang lagu bahasa daerah 9.pluraritas budaya bangsa sebaiknya disikapi dengan... a. keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah. c. memplajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate 10.tari-tarian daerah pada saat ini beralih fungsi untuk acara... a. keagamaan b. sesaji c. penyambutan tamu d. syukuran e. perang tolong dibantu ya kak tugasnya dari no 8 sampai no 15 yang ada di gambar. mohon ya kak jawabannya, jangan ngasal. ini penting bgt. makasih</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>8. D [ Mengarang lagu bahsa daerah ]</strong></p><p><strong>9. A [ keseragaman agar tercapai kedamaian ]</strong></p><p><strong>10. C [ Penyambutan tamu ]</strong></p><p><strong>=============================</strong></p><p><strong>SEMOGA MEMBANTU:)</strong></p><p><strong>#JadikanJawabanTercerdas</strong></p><p><strong>#FollowMe</strong></p><p><strong>#BelajarBersemaBrainly [BBB]</strong></p><strong></strong><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-mengadakan-hubungan-dalam-pergaulan-sehari-harib-wujud-kebudayaan-sebagai-suatu-himpunan-rencananc-mewujudkan-senisastrad-mempelajari-naskah-kunoe-wujud-kebudayaan-sebagai-sekumpulan-warisanf">
+                            11. A Mengadakan hubungan dalam pergaulan sehari hari,B Wujud kebudayaan sebagai suatu himpunan rencanan,C Mewujudkan seni(sastra),D Mempelajari naskah kuno,E Wujud kebudayaan sebagai sekumpulan warisan,F Mengekploitasi ilmu oengatahuan dan teknologi,. secara khusus fungsi bahasa di tunjukan oleh?bantu jawab​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. Mewujudkan seni (Sastra)</p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah ya..</p><br />
+                                            <h2 class="ez-toc-section" id="18-cermatilah-teks-berikutketika-aku-baru-mulai-masuk-bergabungdalam-pembelajaran-daring-tiba-tibalistrik-mati-otomatis-laptopku-ikut-matikarena-baterai-laptopku-sudah-tidakberfungsi-aku-berusaha">
+                            12. 18. Cermatilah teks berikut!Ketika aku baru mulai masuk bergabungdalam pembelajaran daring, tiba-tibalistrik mati. Otomatis laptopku ikut matikarena baterai laptopku sudah tidakberfungsi. Aku berusaha memutar otak.Timbullah ide untuk meminjam HPkakak. Tetapi kakakku juga sedangbelajar lewat daring. Mau pinjam laptopayah, ternyata dibawa ayah ke kantor.Mau pinjam HP ibu tapi HP ibu sedangdiservis.Hatiku menjerit minta tolong,entah kepada siapa.Gaya bahasa/ majas yang terdapat dalamteks tersebut adalah ....a. Hatiku menjerit minta tolong.b. baterai laptopku sudah tidak berfungsi.c. tiba-tiba listrik mati.d. Kakakku sedang belajar lewat daring.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.hatiku menjerit minta tolong</p><p><strong>Jawaban:</strong></p><p>A</p><p><strong>Penjelasan:</strong></p><p></p><p><strong>Majas</strong><strong> </strong>digunakan untuk membuat kalimat semakin hidup.</p><p></p><p>Note :</p><p>Maaf Kalo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-pada-masa-dinasti-abbasiyah-peradabanarab-islam-mencapai-kemajuan-yangsangat-gemilang-di-wilayah-timur-pusat-pusat-pengajaran-didirikan-di-antaranyabaitul-hikmah-gedung-ilmu-pengetahuansebuah">
+                            13. 1. Pada masa Dinasti Abbasiyah, peradabanArab-Islam mencapai kemajuan yangsangat gemilang di wilayah Timur. Pusat-pusat pengajaran didirikan, di antaranyaBaitul Hikmah (gedung ilmu pengetahuan)sebuah lembaga ilmu pengetahuan yangdi antaranya berfungsi untuk ....A. Menerjemahkan karya ilmupengetahuan Yunani ke dalam bahasaArabB. Menandingi kekayaan intelektualbangsa Bizantium, Persia, India danCina.C. Mengembangkan teknik pengajaranal-Qur'an bagi anak-anak.D. Tempat penyimpanan buku-bukupeninggalan para sahabat.jawab ya gaiss​</h2><br />
+                        <p>Jawaban:c. Mengembangkan teknik pengajaran al qur an bagi anak anak</p><p></p><p>Penjelasan:jadikan jawaban yg terbaik</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="3-arti-hadis-menurut-bahasa-adalah-a-ucapanb-tabiatkebiasaanc-perbuatanberitakabar5-salah-satu-fungsi-alquran-adalah-sebagai-adz-dzikra-hal-tersebut-dapat-ditunjukkaseseorang-yang-a-menjad">
+                            14. 3.Arti Hadis menurut bahasa adalah....A ucapanB. tabiat/kebiasaanC. perbuatanberita/kabar5.Salah satu fungsi Alquran adalah sebagai adz-Dzikra, hal tersebut dapat ditunjukkaseseorang yang....A. menjadikannya hakim dalam setiap permasalahannyaB. mengingatkan dirinya dengan memahami isi AlquranC. menggunakannya sebagai pedoman dalam bermusyawarahD. membaca ayat-ayat rahmat untuk menentramkan hati yang gelisah6. Diantara fungsi Alquran adalah sebagai pendidikan moral, yang demikian itu bisa kitadengan cara....A. membawa Alquran ke lembaga pendidikanB. menyediakan Alquran pada setiap sekolahC. memberikan pendidikan sesuai dengan ajaran dalam AlquranD. memberikan Alquran bagi anak-anak nakal dan pelaku kriminal7. Salah satu fungsi hadis terhadap Alquran adalah....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>no.3 c</p><p>no.7 membatasi keumuman al quran</p><br />
+                                            <h2 class="ez-toc-section" id="1-perhatikan-pertanyaan-berikut-1-dilakukan-diluar-sekolah-2-yang-mengajar-anggota-keluarga-3-peran-orang-tua-sangat-dominan-4-lembaga-bimbingan-belajar-dari-pernyataan-di-atas-yang-merupakan">
+                            15. 1. Perhatikan pertanyaan berikut: 1 ) Dilakukan diluar sekolah 2) Yang mengajar : anggota keluarga 3) Peran orang tua sangat dominan 4) Lembaga bimbingan belajar Dari pernyataan di atas yang merupakan ciri dari lembaga pendidikan informal adalah... A. 1 dan 3 B. 2 dan 3 C. 2 dan 4 D. 1 dan 43. Kursus Bahasa Inggris, memasak dan sejenisnya merupakan lembaga pendidikan non formal. Fungsi lembaga tersebut adalah memberikan... A. ilmu pengetahuan dan teknologi B. teori dan cara hidup dalam masyarakat C. modal keterampilan praktis untuk hidup D. keahlian yang diperlukan oleh pemerintah 5. Lembaga politik memiliki fungsi untuk merencanakan dan melaksanakan pelayanan pelayanan sosial serta mengusahakan pemenuhan kebutuhan pokok masyarakat. Hal tersebut termasuk fungsi.. A. mengusahakan kesejahteraan umum B. mengatur proses politik C. mengatur keamanan dalam negeri D. mengatur keamanan luar negeri​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>1. B. 2 dan 3</p><p></p><p>3. C. modal keterampilan praktis untuk hidup</p><p></p><p>5. A. mengusahakan kesejahteraan umum</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p></p><p><strong>Semoga</strong><strong> membantu</strong><strong> dan</strong><strong> bermanfaat</strong></p><br />
+                                            <h2 class="ez-toc-section" id="berikan-uraian-mengenai-jenis-dan-fungsi-tes-yang-dilakukan-oleh-sekolah-harum-pada-saat-ppdb-berlangsung-lengkapi-degan-contoh-b-jelaskan-jenis-dan-fungsi-evaluasi-yang-dilaksanakan-oleh-ibu-amira">
+                            16. Berikan uraian mengenai jenis dan fungsi tes yang dilakukan oleh sekolah Harum pada saat PPDB berlangsung. Lengkapi degan contoh! b. Jelaskan jenis dan fungsi evaluasi yang dilaksanakan oleh ibu Amira pada awal dan akhir pembelajaran. Kapan waktu implementasi kedua evaluasi tersebut. Kemudian bagaimana menjadikan evaluasi tersebut bersifat pararel! c. Lakukanlah analisa terhadap hasil tes formatif mata pelajaran Bahasa Indonesia berikut:</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ppppppppppppppppppppppppppp</p><br />
+                                            <h2 class="ez-toc-section" id="ayo-lakukan-2-%eb%a8%bc-2-c-a-nama-organ-fungsi-b-nama-organ-fungsi-nama-organ-fungsi-d-nama-organ-fungsi-nama-organ-fungsi-f-nama-organ-fungsi-g-nama-organ-fungsi-e">
+                            17. Ayo Lakukan 2 먼 2 C. a. Nama organ: Fungsi b. Nama organ Fungsi Nama organ Fungsi d. Nama organ : .... Fungsi ...... Nama organ Fungsi :.. f. Nama organ : Fungsi g. Nama organ ..... Fungsi e. ...... KD 3.2 dan 4.2 Bahasa Indonesia Materi Pembelajaran​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. </p><p>-nama organ : hidung </p><p>- fungsi : tempat udara masuk</p><p></p><p>b. </p><p>- nama organ : Faring </p><p>- fungsi : menyalurkan aliran udara dari hidung dan mulut ke trakea</p><p></p><p>c. </p><p>- nama organ : Laring </p><p>- fungsi : melindungi saluran pernafasan dari benda asing</p><p></p><p>d. </p><p>- nama organ : trakea</p><p>- fungsi : mendorong keluar debu debu dan bakteri yg masuk</p><p></p><p>e. </p><p>- nama organ : bronkus</p><p>- fungsi :  bronkus berfungsi mengantarkan udara dari saluran napas atas ke dalam paru-paru sekaligus mengeluarkannya dari paru-paru. Bronkiolus akan membawa udara yang kaya oksigen ke kantung udara alveolus.</p><p></p><p>f. </p><p>- nama organ : paru paru</p><p>- fungsi : adalah menukar oksigen dari udara dengan karbon dioksida dari darah</p><p></p><p>g. </p><p>- nama organ : diafgrama</p><p>fungsi : Ketika menarik napas, otot-otot pernapasan di rongga dada mengembang dan diafragma akan berkontraksi menjadi lebih datar. Ini memudahkan udara atau oksigen bergerak masuk menuju paru-paru, karena tekanan pada rongga dada akan turun secara mendadak</p><p></p><p>maaf kalo salah</p><p>btw ini aku ada yg ambil dari google :) </p><p>semoga membantu ^^</p><p>dan maaf juga kalo telat :(</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-yang-merupakan-kalimat-mengandung-makna-konotasi-adalah-a-novel-ini-menceritakan-tentang-kasih-sayang-dan-pengorbanan-kepada-orang-tuab-buku-ini-dapat-dijadikan-sebagai-literatur-da">
+                            18. Berikut ini yang merupakan kalimat mengandung makna konotasi adalah....
+A. Novel ini menceritakan tentang kasih sayang dan pengorbanan kepada orang tua
+B. Buku ini dapat dijadikan sebagai literatur dalam pembuatan skripsi
+C. Penggunaan bahasa dalam novel ini sangat menghibur para pembacanya
+D. Novel ini termasuk novel serius yang berfungsi sebagai sarana pembelajaran
+E. Novel ini merupakan salah satu karya fiksi yang tercipta dari tangan dingin penulisnya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>E. Novel ini merupakan salah satu karya fiksi yang tercipta dari tangan dingin penulisnya</p><p><strong>Penjelasan:</strong></p><p>Makna konotasi adalah makna tambahan yang bersifat konsesus dan berkaitan dengan nilai rasa. </p><p></p><p>➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖</p><p>Adapun ciri-ciri makna konotasi adalah:</p><p></p><p>1.Makna konotasi terjadi apabila kata itu mempunyai nilai rasa, baik positif atau negatif. Jika tidak bernilai rasa dapat juga disebut berkonotasi netral.</p><p></p><p>2.Makna konotasi sebuah kata dapat berbeda dari satu kelompok masyarakat yang satu dengan kelompok masyarakat lain, sesuai dengan pandangan hidup dan norma yang ada pada masyarakat tersebut.</p><p></p><p>3.Makna konotasi juga dapat berubah dari waktu ke waktu.</p><p></p><p></p><p>~semoga membantu~</p><br />
+                                            <h2 class="ez-toc-section" id="8-yang-bukan-termasuk-cara-melestarikan-budaya-daerah-sekitar-adalah-a-mendokumentasikan-pagelaran-budaya-daerah-b-mempelajari-tarian-adat-daerahc-mempelajari-lagu-daeragd-mengarang-lagu-bahas">
+                            19. 8.Yang bukan termasuk cara melestarikan budaya daerah sekitar adalah... a. Mendokumentasikan pagelaran budaya daerah. b. Mempelajari tarian adat daerahc. mempelajari lagu daeragd. mengarang lagu bahasa daerah9.Pluraritas budaya bangsa sebaiknya disikapi dengan... a. keseragaman agar tercapai kedamaianb. mempelajari tarian adat daerah. c. memplajari lagu daerahd. mengarang lagu bahasa daerahe. mempelajari seni bela diri karate10.Tari-tarian daerah pada saat ini beralih fungsi untuk acara...a. keagamaan b. sesajic. penyambutan tamud. Syukurane. perangTolong dibantu ya kak tugasnya dari No 8 sampai no 15 yang ada di gambar.  mohon ya kak jawabannya, jangan ngasal.  ini penting bgt.  makasih </h2><br />
+                        <p>a. Mendokumentasikan pagelaran budaya daerah.
+</p><p>a. keseragaman agar tercapai kedamaian
+</p><p>c. penyambutan tamu
+</p><p>b. memaksakan kehendak
+</p><p>a. homogenitas kelompok
+</p><p>a. adanya sikap intolerasn terhadap suatu kebudayaan yang berbeda
+</p><p>e. kebutuhan masyarakat yang sulit tercukupi
+</p><p>
+</p>Pembahasan
+<p>Integrasi sosial yakni penggabungan atau penyatuan dari elemen-elemen sosial masyarakat, baik masyarakat secara individu ataupun secara kelompok dalam satu kesatuan.
+</p><p>Faktor yang menjadi pengaruh dalam integrasi sosial, yaitu:
+</p>Homogenitas suatu kolompok
+Besar kecilnya suatu kelompok
+Mobilitas geografis
+Efektivitas komunikasi
+<p>
+</p><p>Bentuk-bentuk integrasi sosial, antara lain:
+</p>Integrasi normatif
+Integrasi fungsional
+Integrasi koersif
+<p>
+</p><p>Faktor pendorong integrasi sosial, yaitu:
+</p>Adanya hubungan saling menghormati antar kebudyaaan masyarakat.
+Adanya kesamaan dari unsur-unsur budaya.
+Adanya sikap dan perilaku terbuka.
+Adanya keseimbangan kesempatan dalam  bidang ekonomi.
+Adanya percampuran perkawinan.
+Adanya toleransi kelompok masyarakat.
+<p>
+</p>Pelajari lebih lanjut
+<p>materi tentang faktor integrasi sosial brainly.co.id/tugas/12808151
+</p><p>materi tentang tujuan reintegrasi sosial brainly.co.id/tugas/15499237
+</p><p>materi tentang persatuan dan kesatuan brainly.co.id/tugas/17154317
+</p><p>materi tentang ilmu sosiologi brainly.co.id/tugas/17330336  
+</p><p>materi tentang interaksi sosial brainly.co.id/tugas/3539730
+</p>------------------------------------------------------
+
+Detail jawaban
+<p><strong>Kelas: </strong>10 - SMA
+</p><p><strong>Mapel: </strong>Sosiologi
+</p><p><strong>Bab:</strong> Integrasi Sosial
+</p><p><strong>Kode: </strong>-
+</p><p>
+</p><p><strong>Kata kunci: </strong>faktor pendorong suatu integrasi sosial, bentuk dari integrasi sosial, definisi integrasi sosial, faktor cepat lambatnya integrasi sosial.
+</p><p>AJ.</p><br />
+                                            <h2 class="ez-toc-section" id="mohon-di-jawab-ya-terima-kasihpelajaran-seni-musiksoal-1-tuliskan-istilah-berikut-dalam-bahasa-asing-a-rebab-kecilb-rebab-sedangc-rebab-besar2-mengapa-kita-perlu-mengetahui-dan-me">
+                            20. Mohon Di Jawab Ya, Terima Kasih!
+(pelajaran : Seni Musik)
+Soal : 
+1. Tuliskan istilah berikut dalam bahasa asing :
+a. Rebab kecil
+b. Rebab sedang
+c. Rebab besar
+2. Mengapa kita perlu mengetahui dan mempelajari ragam musik daerah
+3. Tuliskan kapan Tanjidor ditampilkan dan apa fungsinya !
+4. Apa pentingnya mengapresiasi musik daerah, berikan alasanmu
+Mohon Di Jawab Dengan Benar Ya, Terima Kasih Atas Bantuannya .</h2><br />
+                        bahasa asing = bahasa inggris?<br /><br />1. a. small fiddle<br />b. medium fiddle<br />c. big fiddle<br /><br />2. agar kita lebih mengetahui kebudayaan daerah dan untuk menjaga kelestarian budaya musik daerah.<br /><br />3. • alat musik tanjidor ditampilkan ketika  perayaan besar adat, seperti pernikahan atau sunatan warga betawi, mengiringi kesenian betawi lain, seperti ondel-ondel. <br />• fungsi musik tanjidor yaitu untuk dipergunakan sebagai hiburan pada acara-acara / hajatan di Kecamatan Pemangkat. <br /><br />4. (maaf bingung yang ini) <br />
+                                            <h2 class="ez-toc-section" id="analisis-kalimat-berdasarkan-fungsi-spokpel-a-dia-tidur-di-kamar-depan-b-mereka-sedang-belajar-bahasa-indonesia-sekarang-c-ibu-memasak-nasi-di-dapur-d-ayah-makan-pisang-yang-manis-dengan">
+                            21. Analisis kalimat berdasarkan fungsi ( S,P,O,K,Pel. )a. Dia tidur di kamar depan  b.Mereka sedang belajar bahasa Indonesia sekarang  c. Ibu memasak nasi di dapur  d. Ayah makan pisang yang manis dengan lahap e.Kakek membawakan hadiah yang bagus​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. S P K.tempat</p><p>B. S P O K.waktu</p><p>c. S P O K.tempat</p><p>d. S P O K.cara</p><p>e. S P O K.sifat</p><p><strong>Penjelasan:</strong></p><p>Maaf kalau salah..</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-merupakan-pernyataan-yang-benar-tentanghuruf-mad-dan-huruf-ilat-adalaha-hurufnya-sama-dan-fungsinya-juga-sama-yaitumemanjangkan-bunyi-bacaanb-hurufnya-berbeda-namun-fungsinya-samamemanjangk">
+                            22. Berikut merupakan pernyataan yang benar tentanghuruf mad dan huruf 'ilat adalaha. hurufnya sama dan fungsinya juga sama yaitumemanjangkan bunyi bacaanb. hurufnya berbeda namun fungsinya samamemanjangkan bunyi bacaanc. huruf mad dipelajari dalam ilmu alat tata bahasaarab (nahwu dan sharaf) dan huruf 'ilat dipelajaridalam ilmu tajwidd. huruf mad dalam ilmu tajwid sama dengan huruf'ilat dalam ilmu alat tata bahasa arab (nahwu dansharaf) namun fungsinya berbeda​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D</p><p><strong>Penjelasan:</strong></p><p>huruf mad Alif ya wawu</p><p>fungsinya buat manjangin bunyi bacaan</p><p></p><p>huruf ilat Alif ya wawu</p><p>fungsinya buat tanda i'rab</p><p>kayak Alif itu alamatnya nasob</p><p>           wawu alamatnya rafak</p><p>          ya' alamtnya jeer</p><p></p><p>kayaknya sih gitu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bahasa-indonesia-berfungsi-sebagai-lambang-identitas-nasional-pernyataan-tersebut-berarti-a-menggunakan-bahasa-indonesia-menunjukkan-identitas-kewarganegaraan-yang-membedakan-dengan-warga-asing">
+                            23. Bahasa Indonesia berfungsi sebagai lambang identitas nasional. Pernyataan tersebut berarti... 
+A. Menggunakan bahasa Indonesia menunjukkan identitas kewarganegaraan yang membedakan dengan warga asing.
+B. Menggunakan bahasa Indonesia memudahkan dalam interaksi antarsesama yang berasal dari daerah yang berbeda.
+C. Bahasa Indonesia wajib digunakan sebagai pengantar dalam dunia pendidikan agar memudahkan proses pembelajaran.
+D. Bahasa Indonesia mampu menyatukan beragam suku dan budaya yang ada Indonesia agar tidak terjadi perpecahan.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. </p><p><strong>Penjelasan:</strong></p><p>Mohon maaf kalau salah ya</p><p><strong>Jawaban:</strong></p><p>A.menggunakan bahasa indonesia menunjukkan identitas kewarnegaraan yang membedakan dengan warga asing</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="etika-pergaulan-sangat-diperlukan-oleh-siapa-pun-etika-berfungsi-sebagai-rem-seseorang-dari-sifat-dan-sikap-yang-tidak-menyenangkan-dan-kurang-sopan-remaja-merupakan-sasaran-utama-pembelajaran-etika">
+                            24. Etika pergaulan sangat diperlukan oleh siapa pun. Etika berfungsi sebagai rem seseorang dari sifat dan sikap yang tidak menyenangkan dan kurang sopan. Remaja merupakan sasaran utama pembelajaran etika. Dengan memiliki etika, mereka akan mempunyai budaya malu dan tahu bersikap terutama kepada orang yang lebih tua dan juga di dalam pergaulan. Alasan kutipan tersebut merupakan buku nonfiksi adalah… A. Bahasa yang digunakan banyak menggunakan bahasa kiasan B. Informasi nya dapat dipertanggung jawabkan secara ilmiah C. Disertai opini-opini dari penulis yang dapat dipercaya D. Tema yang dibahas berkaitan dengan remaja ​</h2><br />
+                        <p>Jawaban: C. Disertai opini opini dari penulis yang dapat dipercaya.</p><p></p><p>Penjelasan:</p><p>Buku nonfiksi ini menjelaskan tentang pentingnya pemahaman tentang etika pergaulan pada remaja zaman sekrarang. Dan jika dibahas satu per satu</p><p>A. Dibilang berbahasa kias, tidak ada yang menggunakan bahasa kias disana. (Bahasa kias itu bahasa utk memperindah makna sbnrny ya)</p><p>B. Mungkin bisa dipertanggungjawabkan, tapi blm tentu bisa secara ilmuah atau dgn penelitian</p><p>D. Memang temanya membahas tentang remaja, namun lebih condong kepada etika pergaulan karena itulah tema utamanya</p><p>Sekian dan trims</p><p>Maaf klo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-pluralitas-budaya-bangsa-sebaiknyaa-keseragaman-agar-tercapai-kedamaian-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerah-d-mengarang-lagu-bahasa-daerah-e-mempelajari-seni-bela-diri-kar">
+                            25. 1.pluralitas budaya bangsa sebaiknyaa.keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah c. mempelajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate2. tari tarian daerah pada saat ini beralih fungsi untuk acara a.keagamaanb.sesajic.penyambutan tamud. syukurane. perang</h2><br />
+                        <p><strong>1. Pluralitas budaya bangsa sebaiknya disikapi dengan keseragaman agar tercapai kedamaian (A)
+</strong></p><p><strong>2. Tari-tarian daerah pada saat ini beralih fungsi untuk acara penyambutan tamu (C)
+</strong></p>Pembahasan
+<p>Hai generasi milenial yang makin kece karena makin melek literasi! Kali ini kita akan membahas tentang pluralitas. Check this out, gaes!
+</p><p>Pluralitas adalah kemajemukan, keberagaman, dan juga perbedaan. Pluralitas masyarakat Indonesia dapat diartikan sebagai kemajemukan atau keberagaman yang dimiliki masyarakat Indonesia. Keragaman yang dimiliki Indonesia antara lain keragaman agama, keragaman suku bangsa, keragaman budaya, dan keragaman pekerjaan.  </p><p>1. Pluralitas budaya sebaikanya disikapi dengan keseragaman agar tercapai kedamaian (A).
+</p><p>Menurut E.B.Taylor, budaya adalah satu kesatuan yang kompleks yang mencakup kepercayaan, kesusilaan, kesenian, hukum, adat dan kebiasaan yang dipelajari oleh manusia sebagai unsur masyarakat. Mari kita lihat pilihan jawaban B sampai E merupakan kebudayan, yakni tarian adat daerah, lagu daerah, lagu bahasa daerah, dan juga seni beladiri. Sehingga pilihan yang tepat adalah (A) yakni keseragaman agar tercipta kedamaian. Pluralitas budaya bangsa yang ada sebaikanya disikapi dengan keseragaman artinya kita harus memandang pluralitas sebagai satu kesatuan, keseragaman, kesamaan, sehingga dapat tercipta kedamaian bersama. Apabila pluralitas disikapi dengan menonjolkan budaya masing-masing maka tidak akan dapat tercipta persatuan dan perdamaian.
+</p><p>2. Tari-tarian daerah pada saat ini beralih fungsi untuk acara penyambutan tamu (C).
+</p><p>Pada zaman tari-tarian daerah berfungsi hampir di setiap aspek kehidupan, meliputi acara keagamaan, pelarungan sesaji, syukuran, bahkan yang melambangkan perang. Namun seiring dengan perkembangan zaman, terjadi perubahan sosial dan budaya, salah satunya perubahan fungsi tarian daerah. Pada saat ini salah satu fungsi tari-tarian daerah adalah untuk acara penyambutan tamu.  </p>Pelajari Lebih Lanjut  <p>Apabila ingin mengetahui lebih lanjut tentang disarankan untuk mempelajari juga materi berikut ini:
+</p><p>1.	Materi tentang faktor pendorong dan penghambat mobilitas sosial di https://brainly.co.id/tugas/9641069
+</p><p>2.	Materi tentang fungsi tarian tradisional di https://brainly.co.id/tugas/56535
+</p><p>3.	Materi tentang jenis tarian daerah dan asal daerahnya di https://brainly.co.id/tugas/1623621
+</p>Detil Jawaban
+<p><strong>Kelas</strong>  : VIII
+</p><p><strong>Mapel</strong>	: IPS Geografi
+</p><p><strong>Bab</strong>      : Mobilitas Sosial
+</p><p><strong>Kode</strong>  : 8.8.2004
+</p><p><strong>Kata Kunci</strong>	:	Pluralitas, budaya, tarian daerah.
+</p><p>
+</p><br /><br />
+                                            <h2 class="ez-toc-section" id="a-jawablah-pertanyaan-pertanyaan-di-bawah-ini-dengan-benar-tepat-dan-jelasbahasa-indonesiaparagraf-berikut-untuk-menjawab-soal-nomor-1-sampai-3dina-memiliki-sebuah-lampu-belajar-lampu-belajar-itu-p">
+                            26. A. Jawablah pertanyaan-pertanyaan di bawah ini dengan benar, tepat dan jelasBAHASA INDONESIAParagraf berikut untuk menjawab soal nomor 1 sampai 3Dina memiliki sebuah lampu belajar. Lampu belajar itu pemberian ayahnya dua tahum yang lalu.Lampu itu diletakkannya di meja belajar Lampu itu sangat membantunya dalam belajar. Setelah belajartidak lupa Dina memadamkan lampu belajarnya. Ia juga membersicama ja tampak ada debumenempel di lampu belajarnya. Sampai saat ini, lampu belajar Dina masih dapat digunakan dengan baikDina selalu menjaga lampu belajar miliknya1. Kalimat utama paragraf tersebut adalaha Dina memiliki sebuah lampu belajarb. Dina masih menggunakan lampu belajarnyac. Lampu itu sangat membantunya dalam belajard Dina selalu menjaga lampu belajar miliknya2. Topik masalah dalam paragraf membahasa. Hadiah dari ayahb. Merawat barang pemberianc. Rajin belajar di rumahd Fungsi lampu belajar di rumah3. Pesan yang sesuai dengan isi paragaraf adalah4. Berikut ini yang merupakan kelompok kata baku adalaha Ijasah izin karirc Izin karier, analisab. Ijazah, karier, sistemd. Aktif, izin apotek5. Teks eksplanasi adalah teks yang berfungsi menjelaskan peristiwa atam fenomena​</h2><br />
+                        <p>1. a</p><p>2.b</p><p>3. jagalah dan rawatlah pemberian dari orang lain, dengan kita merawatnya maka kita sudah menghargai pemberian dari orang lain</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bacalah-teks-berikut-untuk-menjawab-soal-nomor-1-3-indonesia-mempunyai-bahasa-dan-budaya-yang-beragam-setiap-wilayah-memiliki-bahasa-yang-berbeda-misalnya-masyarakat-di-wilayah-jawa-mempunyai-bahas">
+                            27. Bacalah teks berikut untuk menjawab soal nomor 1-3! Indonesia mempunyai bahasa dan budaya yang beragam. Setiap wilayah memiliki bahasa yang berbeda misalnya, masyarakat di wilayah Jawa mempunyai bahasa Jawa, Jawa Timur, dan Sunda. Bahasa daerah digunakan secara berdampingan dengan bahasa Indonesia. Oleh karena itu, bangsa Indonesia disebut sebagai bangsa yang kaya akan bahasa dan budaya.Kini, keberadaan bahasa daerah semakin terancam karena penggunaan bahasa asing, yaitu bahasa Inggris. Bahasa Inggris lebih sering dipelajari daripada bahasa daerah. Ada anggapan bahwa bahasa Inggris lebih keren daripada bahasa Indonesia. Dengan demikian, rasa cinta terhadap bahasa daerah perlu ditingkatkan. 1. Judul yang tepat untuk teks di atas adalah... . *10 poinA. Bahasa Daerah Kekayaan BangsaB. Bahasa Asing Kekayaan BangsaC. Bahasa Indonesia dan Bahasa AsingD. Bahasa Asing2. Teks nonfiksi adalah jenis karangan yang menyajikan informasi berdasarkan... . *10 poinA. OpiniB. FaktaC. ImajinasiD. Pendapat3. Informasi penting dalam teks dapat diketahui berdasarkan… . *10 poinA. Gagasan pendukungB. KesimpulanC. Ringkasan pokokD. Gagasan pokokBacalah teks berikut untuk menjawab soal nomor 4-6! Mesin Penghasil GaramAlat pembuat garam berhasil dibuat oleh Udin, Alat tersebut dapat digunakan meskipun cuaca mendung. Alat tersebut memiliki aki yang berfungsi untuk menyimpan energi matahari. Oleh karena itu, meskipun cuaca tidak mendukung, alat tersebut tetap mampu menghasilkan garam. 4. Kalimat utama pada paragraf pertama adalah... . *10 poinA. Setiap daerah punya bahasa yang berbedaB. Indonesia mempunyai bahasa dan budaya yang beragamC. Bahasa daerah berdampingan dengan bahasa indonesiaD. Bahasa asing lebih sering digunakan daripada bahasa Indonesia5. Pernyataan berikut yang kurang sesuai dengan teks adalah... . *10 poinA. Bahasa daerah di Indonesia sangat kaya dan beragamB. Bahasa asing dan bahasa Indonesia menjadi kekayaan bangsa IndonesiaC. Rasa cinta terhadap bahasa daerah belum terlalu tinggiD. Bahasa asing lebih sering digunakan oleh masyarakat6. Berdasarkan teks di atas, teks tersebut termasuk ke dalam teks… . *10 poinA. fiksi karena teks berisi khayalanB. fiksi karena teks hanya berupa opiniC. nonfiksi karena teks berisi kejadian faktualD. nonfiksi karena teks bersumber dari​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. A</p><p>2. C</p><p>3. A</p><p><strong>Penjelasan:</strong></p><p></p><p><strong>Jawaban:</strong></p><p>A,</p><p>C,</p><p>D,</p><p>B,</p><p>D,</p><p>D,</p><p><strong>Penjelasan:</strong></p><p>Mff Klo Salah^^</p><br />
+                                            <h2 class="ez-toc-section" id="5-perhatikan-pernyataan-pernyataan-berikut2-mengadakan-lomba-menulis-cerita-berbahasa-daerah-3-membuat-program-televisi-berbahasa-daerah-4-mempelajari-bahasa-asing-pernyataan-yang-merupakan-ca">
+                            28. 5. Perhatikan pernyataan-pernyataan berikut!(2) Mengadakan lomba menulis cerita berbahasa daerah.(3) Membuat program televisi berbahasa daerah.(4) Mempelajari bahasa asing.Pernyataan yang merupakan cara untuk mencegah kepunahan bahasa daerah adalaha. (1) dan (4)c. (1), (2), dan (3)b. (2) dan (4)d. (1), (2), dan (4)ll. Ayo, mengerjakan soal-soal di bawah ini dengan jawaban yang tepat!1. Jelaskan hal yang kamu ketahui tentang keragaman!Jawab:2. Sebutkan faktor-faktor yang menyebabkan keragaman masyarakat Indonesia!Jawab:3. Tuliskan penyebab keragaman masyarakat Indonesia dilihat dari perbedaan kondisi alamJawab:4. Apa saja fungsi bahasa daerah dalam suatu masyarakat?Jawab:5. Apa saja hal yang dapat dilakukan agar bahasa daerah tidak punah?Jawab:​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Nomor 5, Jawabannya 2 dan 3. mungkin pilihannya C, karena nomor satunya gak ada.</p><p></p><p>Keragaman adalah suatu kondisi dalam masyarakat dimana adanya perbedaan agama, suku, budaya dan sebagainya.</p><p>Faktor-faktor yang menyebabkan keragaman Masyarakat di Indonesia adalah Perbedaan letak geografis, kebudayaan atau kebiasaan setiap masyarakat dan pengaruh dari luar.</p><p>Penyebab keragaman masyarakat Indonesia dilihat dari perbedaan kondisi alam contohnya : Orang pantai di  Indonesia tentu lebih lihai berenang dari orang-orang yang tinggal didaerah dataran tinggi yang pandai berkebun.  </p><p><strong>Penjelasan:</strong></p><p>Semoga bermanfaat :)</p><br />
+                                            <h2 class="ez-toc-section" id="cara-berikut-digunakan-untuk-menjawab-soal-nomor-1-sd-3tema-bulan-bahasa-kali-ini-adalah-meningkatkan-mutu-dan-disiplin-pengguna-bahasa-indonesia-dalam-mencerdaskan-bangsa-tanpa-peningkatan-mutu-dan">
+                            29. cara berikut digunakan untuk menjawab soal nomor 1 s/d 3TEMA BULAN BAHASA KALI INI ADALAH MENINGKATKAN MUTU DAN DISIPLIN PENGGUNA BAHASA INDONESIA DALAM MENCERDASKAN BANGSA. TANPA PENINGKATAN MUTU DAN DISIPLIN PENGGUNA BAHASA, FUNGSI DAN KEDUDUKAN BAHASA INDONESIA SEBAGAI BAHASA NEGARA DAN BAHASA PERSATUAN AKAN MENJADI PUDAR. BAHASA INDONESIA TIDAK AKAN MEMANCARKAN KEPRIBADIAN DAN KEBANGGAAN NASIONAL NYA.cuplikan teks tersebut berkenaan dengan isu...a. peningkatan mutu dan disiplin berbahasa Indonesia.b. peningkatan mutu dan disiplin berbahasa Indonesia yang tidak ada fungsinya.c. tanpa meningkatkan mutu berbahasa Indonesia, fungsi dan kedudukan nya tidak kuat.d. bahasa Indonesia yang tidak dapat memancarkan kepribadian dan kebangsaan nasional.2. fakta yang dapat memperkuat argumen dalam cuplikan tersebut adalah...a. kebiasaan berbahasa Indonesia para pelajar.b. perhatian para orang tua terhadap pendidikan anaknya.c. kepribadian generasi muda saat ini.d. pengaruh bahasa Indonesia terhadap kebiasaan para remaja3. dalam struktur pidato, cuplikan tersebut termasuk ke dalam...a. pembukab. pengenalan isuc. rangkaian argumend. pernyataan ajakan​</h2><br />
+                        <p>1.A Peningkatan mutu dan disiplin berbahasa Indonesia</p><p>2.D pengaruh Bahasa Indonesia terhadap kebiasaan para remaja</p><p>3.C Rangkaian Argumen</p><p>    </p><p>   MAAF KALO AD YG SALAH <p>1. A</p><p>2. C</p><p>3. C</p><p></p><p>maaf klo salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-pluralitas-budaya-bangsa-sebaiknyaa-keseragaman-agar-tercapai-kedamaian-b-mempelajari-tarian-adat-daerah-c-mempelajari-lagu-daerah-d-mengarang-lagu-bahasa-daerah-e-mempelajari-seni-bela-diri-kar">
+                            30. 1.pluralitas budaya bangsa sebaiknyaa.keseragaman agar tercapai kedamaian b. mempelajari tarian adat daerah c. mempelajari lagu daerah d. mengarang lagu bahasa daerah e. mempelajari seni bela diri karate2. tari tarian daerah pada saat ini beralih fungsi untuk acara a.keagamaanb.sesajic.penyambutan tamud. syukurane. perang</h2><br />
+                        <p>Pluralitas budaya bangsa sebaiknya adalah a.keseragaman agar tercapai kedamaian  </p><p>Fungsi tari tarian daerah pada saat ini adalah untuk acara c.penyambutan tamu
+</p><p>
+</p><p>Pengertian plurarisme dari beberapa ahli :
+</p><p>Menurut Anton M. Moeliono (1990), pluralisme adalah suatu hal yang memberikan makna jamak (tidak satu), misalnya segi kebudayaan yang berbeda-beda di suatu masyarakat.
+</p><p>Gerald O‟ Collins dan Edward G. Farrugia (1996) berpendapat bahwa pluralisme adalah pandangan filosofis  yang  tidak mediskrisikan segalanya pada prinsip, melainkan   adanya penerimaan terhadap keragaman. Pluralisme ini menyangkut berbagai bidang, misalnya segi kultural, religious (agama), dan politik.
+</p><p>Webster mengartikan jika pluralisme adalah suatu keadaan sosial  dari beranekargam etnis,  agama, ras atau lainnya, yang  rela  mempertahankan  tradisi  dan tetap berpartisipasi kepada sesame masyarakat.
+</p><p>Pengertian tari tradisional menurut beberapa ahli :
+</p><p>Menurut Soedarsono, tari adalah ekspresi jiwa manusia dalsm gerak-gerak yang indah dan ritmis.
+</p><p>Suadarsa Pringgo Broto mengatakan tari adalah ketentuan bentuk-bentuk gerakan tubuh dan ruang.
+</p><p>Menurut M. Jazuli, tari adalah gerak-gerak tubuh yang selaras dan seirama dengan bunyi musik yang dapat digunakan untuk mengungkapkan maksud dan tujuan tertentu.
+</p><p>Bagong Suditoberpendapat, tari adalah suatu seni yang berupa gerak ritmis yang menjadi alat ekspresi manusia.
+</p><p>S. Humardani mengatakan bahwa tari adalah ungkapan ekspresif dalam bentuk gerak yang ritmis dan indah.
+</p><p>Menurut Soeryodiningrat, tari adalah gerak anggota tubuh yang selaras dengan bunyi musik atau gamelan diatur oleh irama sesuai dengan maksud tujuan tari.
+</p><p>Ciri-ciri tari tradisional:
+</p>Diwariskan secara turun menurun dari nenek moyang
+Diiringi dengan menggunakan musik musik tradisional.
+Berkembang dikalangan masyarakat biasa.
+<p>Contoh tari tradisional:</p>Tari Saman dari Aceh
+Tari Baluse dari Sumatera Utara
+T
+ari Makan Sirih dari Riau
+Tari Jaipong dari Jawa Barat
+Tari Piring dari Sumatera Barat<br /><p>Pelajari lebih lanjut  </p><p>
+1. Materi tentang tari tradisional dan asalnya https://brainly.co.id/tugas/949661
+</p><p>2. Materi tentang pluralism di Indonesia https://brainly.co.id/tugas/13398734
+</p><p>-----------------------------
+</p><p>
+</p><p><strong>Detil Jawaban  </strong></p><p><strong>Kelas : 2 SMA
+</strong></p><p><strong>Mata Pelajaran : PPkn
+</strong></p><p><strong>Kategori : Bab 3 - Menelusuri Dinamika Demokrasi dalam Kehidupan Bermasyarakat, Berbangsa dan Beragama
+</strong></p><p><strong>Kode : 11.9.3
+</strong></p><p><strong>Kata Kunci : Pluralisme, Seni Tari
+</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-ahsan-menyadari-bahwa-mahasiswa-yang-menjadi-teman-sekelasnya-berasal-dari-berbagai-daerah-di-indonesia-selanjutnya-ahsan-memilih-menggunakan-bahasa-indonesia-dalam-berkomunikasi-dengan-mahasiswa">
+                            31. 1.	Ahsan menyadari bahwa mahasiswa yang menjadi teman sekelasnya berasal dari berbagai daerah di Indonesia. Selanjutnya Ahsan memilih menggunakan bahasa Indonesia dalam berkomunikasi dengan mahasiswa yang lain.Langkah yang dilakukan Ahsan termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perdamaian2.	Terdapat banyak tulisan yang mengajak masyarakat agar patuh terhadap peraturan lalulintas.Penggunaan tulisan tersebut merupakan fungsi bahasa sebagai ....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa peringatan3.	Linda dengan tegas mengatakan bahwa dia lebih memilih menjadi seorang bidan daripada menjadi seorang penyanyi.Langkah yang dilakukan Linda termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perumpamaan4.	Berikut ini yang merupakan fungsi bahasa Indonesia sebagai bahasa negara adalah ....A.	Fungsi lambang kebanggan dan kebangsaan IndonesiaB.	Fungsi Identitas nasional dimata internasionalC.	Fungsi sarana hubungan antarwarga, antardaerah, dan antar budayaD.	Fungsi bahasa sebagai administrasi kenegaraanE.	Fungsi pemersatu lapisan masyarakat: sosial, budaya, suku bangsa, dan bahasa.5.	Kesalahan penulisan abjad besar terdapat pada kalimat ....A. Dea mengajar di sekolah dua kali seminggu.B. Paman suka membaca surat kabar Analisa.C. Ayah membeli pisang Ambon untuk kakek.D. Siang ini Banu akan bertemu dengan Tika.E. Keluargaku gres datang di Jakarta sore ini.6.	Pemakaian tanda baca yang benar terdapat pada kalimat ....A. Karena sedih, adik menangis di kamarnya.B. Adik dan abang belum pulang, walaupun sudah malam.C. Ibu membeli nasi, jus, pisang dan jeruk.D. Murid, dan guru sedang mengikuti upacara bendera.E. Ban kendaraan beroda empat kami pecah, alasannya itu kami kami tidak sanggup hadir.7.	Kalimat di bawah ini yang penerapan tanda bacanya benar ialah ....A. David, membawakan majalah untuk Kartika.B. A. Nasution ialah anakdidik yang rajin.C. Dewi tidak hadir, alasannya berada di luar kota.D. Temanku Lina masuk rumah sakit candra.E. Murid itu dihukum, alasannya tidak menggunakan atribut lengkap​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. C (Komunikasi)</p><p>2. E (Bahasa Peringatan)</p><p>3. A (Pernyataan Ekspresif Diri)</p><p>4. E (Fungsi pemersatu lapisan masyarakat: sosial, budaya, suku bangsa, dan bahasa)</p><p>5. E (Keluargaku gres datang di Jakarta sore ini)</p><p>6. A (Karena sedih, adik menangis di kamarnya)</p><p>7. B (A. Nasution ialah anakdidik yang rajin)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="6-perhatikan-penggalan-proposal-berikutoleh-karena-itu-peranan-pengajaran-bahasa-indonesia-harus-diupayakan-agarada-kesesuaian-dan-kesepadanan-dengan-bidang-lain-sehingga-dapat-menunjangtransinfor">
+                            32. 6. Perhatikan penggalan proposal berikut!Oleh karena itu, peranan pengajaran bahasa Indonesia harus diupayakan agarada kesesuaian dan kesepadanan dengan bidang lain, sehingga dapat menunjangtransinformasi ilmu pengetahuan dan teknologi. Selain itu, kita harus mengupayakansikap positif terhadap bahasa Indonesia, baik sebagai bahasa Indonesia maupunsebagai bahasa negara.....Isi penggalan proposal tersebut adalah ....A. Fungsi bahasa Indonesia dalam transinformasi pengetahuanB. Salah satu upaya penyesuaian bahasa Indonesia dengan bidang lainC. Menyepadankan pengajaran bahasa Indonesia dengan bidang lain danbersikap positif terhadap bahasa IndonesiaD. Peran bahasa Indonesia dan bahasa Indonesia sebagai bahasa nasional danbahasa negaraE. Kedudukan bahasa IndonesiaDacal talrebariloutuntur monimobolnomor dono​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>hasilnya adalah yang b</p><br />
+                                            <h2 class="ez-toc-section" id="6-perhatikan-penggalan-proposal-berikutoleh-karena-itu-peranan-pengajaran-bahasa-indonesia-harus-diupayakan-agarada-kesesuaian-dan-kesepadanan-dengan-bidang-lain-sehingga-dapat-menunjangtransinfor">
+                            33. 6. Perhatikan penggalan proposal berikut!Oleh karena itu, peranan pengajaran bahasa Indonesia harus diupayakan agarada kesesuaian dan kesepadanan dengan bidang lain, sehingga dapat menunjangtransinformasi ilmu pengetahuan dan teknologi. Selain itu, kita harus mengupayakansikap positif terhadap bahasa Indonesia, baik sebagai bahasa Indonesia maupunsebagai bahasa negara. ....Isi penggalan proposal tersebut adalah ....A. Fungsi bahasa Indonesia dalam transinformasi pengetahuanB. Salah satu upaya penyesuaian bahasa Indonesia dengan bidang lainC. Menyepadankan pengajaran bahasa Indonesia dengan bidang lain danbersikap positif terhadap bahasa IndonesiaD. Peran bahasa Indonesia dan bahasa Indonesia sebagai bahasa nasional danbahasa negaraE. Kedudukan bahasa IndonesiaBacalah teks berikut untuk menjawab soal nomor 7 dan 8!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawaban nya yaitu:</p><p>C </p><p><strong>Penjelasan:</strong></p><p>krena bahasa indonesia yang kita pelajari ialah untuk memudahkan kita dalam berinteraksi dan berkomunikasi di kalangan daerah kita yaitu indonesia,olh karena itu kita mesti memahami dan menyepadan kan bhs indonesia dengan bidang lain dan selalu bersikap positif terhadap bhs indonesia....</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="penulisan-laporan-penelitian-bagi-para-siswa-berfungsi-untuk-belajar-a-menyusun-hasi-laporanb-teori-penelitian-ilmiahc-menganalisis-data-secara-statistikd-mengumpulkan-data-primer-dan-sekundere">
+                            34. penulisan laporan penelitian bagi para siswa berfungsi untuk belajar...A. menyusun hasi laporanB. teori penelitian ilmiahC. menganalisis data secara statistikD. mengumpulkan data primer dan sekunderE. bahasa indonesia yang baik dan benartolong bantu jawab yg bnr:'​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A sorry klo salah heheheh</p><br />
+                                            <h2 class="ez-toc-section" id="%c2%a0-%c2%a0berbicara-digunakan-sebagai-sarana-memperoleh-pengetahuan-mangadaptasi-mempelajari-lingkungannya-dan-mengontrol-lingkungannya-yaitu-berbicara-berfungsi-sebagai-pilih-salah-satu">
+                            35.    Berbicara digunakan sebagai sarana memperoleh pengetahuan mangadaptasi, mempelajari lingkungannya, dan mengontrol lingkungannya, yaitu berbicara berfungsi sebagai.........Pilih salah satu:a. menulisb. bahasac. menyimakd. berbicara​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b.menyimak</p><p></p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><p><strong>Penjelasan:</strong></p><p>berbicara digunakan sebagai sarana memperoleh pengetahuan mengadaptasi mempelajari lingkungannya dan mengontrol lingkungannya yaitu berbicara berfungsi sebagai <strong>M</strong><strong>e</strong><strong>n</strong><strong>y</strong><strong>i</strong><strong>m</strong><strong>a</strong><strong>k</strong></p><p></p><p></p>S<strong>E</strong><strong>M</strong><strong>O</strong><strong>G</strong><strong>A</strong><strong> </strong><strong>M</strong><strong>E</strong><strong>M</strong><strong>B</strong><strong>A</strong><strong>N</strong><strong>T</strong><strong>U</strong><br />
+                                            <h2 class="ez-toc-section" id="10-bacalah-teks-berikut-inir-globalisasi-berdampak-bagi-perkembangan-bahasa-indonesia-bahasa-indonesia-adalah-bahasa-resmi-dan-bahasa-persatuan-bangsa-indonesia-fungsi-utama-dari-bahasa-indonesia-a">
+                            36. 10. Bacalah teks berikut inir Globalisasi berdampak bagi perkembangan bahasa Indonesia. Bahasa Indonesia adalah bahasa resmi dan bahasa persatuan bangsa Indonesia. Fungsi utama dari bahasa Indonesia adalah untuk menyatukan bangsa Indonesia dalam hal berkomunikasi . Namun pada kenyataannya, penggunaan bahasa Indonesia yang baik dan benar belum digunakan secara menyeluruh, terutama dalam berkomunikasi sehari-hari . Masyarakat sudah terpengaruh oleh bahasa asing yang muncul karena adanya arus globalisasi dan tidak disaring terlebih dahulu. Akibatnya, fungsi bahasa Indonesia terabaikan. Tanggapan yang sesuai untuk paragraf di atas adalah .... A Membiarkan masyarakat berkomunikasi dengan bahasa asing B. Menerapkan bahasa Indonesia yang benar pada kegiatan resmi seperti pembelajaran atau di instansi pemerintah C. Meningkatkan kedatangan orang asing ke Indonesia D. Meningkatkan perkembangan budaya daerah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. menerapkan bahasa Indonesia yang benar pada kegiatan resmi seperti pembelajaran atau di instansi pemerintah.</p><p> <strong>s</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>m</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>u</strong><strong>,</strong><strong> </strong><strong>s</strong><strong>e</strong><strong>m</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>b</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>j</strong><strong>a</strong><strong>r</strong><strong> </strong><strong>n</strong><strong>y</strong><strong>a</strong><strong> </strong><strong>!</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="selamat-pagi-anak-anaksalam-sejahtera-pastikan-kalian-sudah-mandisarapan-dan-berdoa-untuk-mengawali-belajar-kegiatan-kalian-hari-ini-1-kalian-pelajari-bab-4-tentang-teks-tanggapan-baca-dibuk">
+                            37. Selamat pagi anak- anak,salam sejahtera. Pastikan kalian sudah mandi,sarapan dan berdoa untuk mengawali belajar. Kegiatan kalian hari ini : 1. Kalian pelajari Bab.4 tentang Teks Tanggapan ( baca dibuku paket juga di LKS ). 2. Kalian membaca sambil merangkum materi yang penting tentang : a. Pengertian Teks Tanggapan. b. Ciri Teks Tanggapan c. Struktur dan Kebahasaan Teks Tanggapan. d. Tujuan Teks Tanggapan e. Fungsi Teks Tanggapan. Selamat belajar !​</h2><br />
+                        <p><strong>1. Pengertian Teks Tanggapan</strong></p><p><strong></strong></p><p><strong>Teks tanggapan adalah teks yang dibuat untuk menanggapi suatu permasalahan, biasanya berisi kritikan pedas terhadap hal yang berkaitan dengan kesalahan atau isu sosial.</strong></p><p><strong></strong></p><p><strong>2. Ciri-ciri Teks Tanggapan :</strong></p><p><strong></strong></p><p><strong>- Teks ini memuat tanggapan terhadap fenomena yang terjadi di sekitar dengan disertai fakta dan alasan.
+</strong></p><p><strong>- Mempunyai tiga struktur teks, yaitu evaluasi, ddeskripsi teks, dan penegasan ulang.
+</strong></p><p><strong>-. Mengandung kaidah kebahasaan atau ciri kebahasaan yang dimiliki teks tanggapan kritis.</strong></p><p><strong></strong></p><p><strong>3. Struktur dan Kaidah Kebahasaan Teks Tanggapan :</strong></p><p><strong></strong></p><p><strong>Struktur :</strong></p><p><strong></strong></p><p><strong>Evaluasi
+</strong></p><p><strong>
+</strong></p><p><strong>Pada bagian evaluasi berisi pernyataan umum mengenai apa yang akan disampaikan oleh penulis dalam teks.
+</strong></p><p><strong>
+</strong></p><p><strong>Deskripsi Teks
+</strong></p><p><strong>
+</strong></p><p><strong>Bagian deskripsi teks ini berisikan informasi mengenai data dan pendapat yang mendukung pernyataan atau melemahkan pernyataan.
+</strong></p><p><strong>
+</strong></p><p><strong>Penegasan Ulang
+</strong></p><p><strong>
+</strong></p><p><strong>Bagian terakhir teks yang memuat penegasan ulang terhadap apa yang telah dilakukan atau yang telah diputuskan.</strong></p><p><strong></strong></p><p><strong>Kaidah Kebahasaan Teks Tanggapan :</strong></p><p><strong></strong></p><p><strong>- Kalimat kompleks, yakni kalimat yang memiliki lebih dari dua struktur dan dua verba.</strong></p><p><strong>
+</strong></p><p><strong>- Konjungsi, yakni kata penghubung yang menghubungkan setiap kata dan menghubungkan setiap struktur</strong></p><p><strong>
+</strong></p><p><strong>- Kata rujukan, yakni sesuatu yang digunakan pemberi informasi (pembicara) untuk mendukung atau memperkuat pernyataan dengan tegas. Dikenal dengan sebutan referensi</strong></p><p><strong>
+</strong></p><p><strong>- Pilihan kata, pemilihan kata yang pas dalam penggunaan dan pembuatan teks tanggapan kritis.</strong></p><p><strong></strong></p><p><strong>4. Tujuan Teks Tanggapan :</strong></p><p><strong></strong></p><p><strong>Tujuan teks tanggapan kritis, yakni untuk memilih satu di antara pernyataan karena pada teks tanggapan kritis berisi alasan yang mendukung dan yang menolak.</strong></p><p><strong></strong></p><p><strong>5. Fungsi Teks Tanggapan :</strong></p><p><strong></strong></p><p><strong>- Memberikan kritik membangun yang bisa digunakan untuk membantu suatu hal agar dapat diselesaikan atau menjadi lebih baik</strong></p><p><strong>
+</strong></p><p><strong>- Mengapresiasi sebuah karya maupun hal yang dikerjakan oleh seseorang secara detail dan sejelas mungkin</strong></p><p><strong>
+</strong></p><p><strong>- Memberikan saran kepada sebuah hal atau persoalan lewat cara yang terarah, sistematis, dan terbaik sehingga pujian atau kritikan tidak terasa semu serta bisa dipertanggungjawabkan (objektif)</strong></p><p><strong>
+</strong></p><p><strong>- Sarana atau wahana dari hal yang ditanggapi supaya sesama pemuji atau pengkritik bisa berdialog dengan lebih baik lewat konteks, deskripsi serta penilaian yang diberikan oleh teks tanggapan.</strong></p><p><strong></strong></p><p><strong>Maaf kalau salah ya!</strong></p><p><strong>Jadikan jawaban tercerdas!</strong></p><p><strong>Terima kasih!</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-ahsan-menyadari-bahwa-mahasiswa-yang-menjadi-teman-sekelasnya-berasal-dari-berbagai-daerah-di-indonesia-selanjutnya-ahsan-memilih-menggunakan-bahasa-indonesia-dalam-berkomunikasi-dengan-mahasiswa">
+                            38. 1.	Ahsan menyadari bahwa mahasiswa yang menjadi teman sekelasnya berasal dari berbagai daerah di Indonesia. Selanjutnya Ahsan memilih menggunakan bahasa Indonesia dalam berkomunikasi dengan mahasiswa yang lain.Langkah yang dilakukan Ahsan termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perdamaian2.	Terdapat banyak tulisan yang mengajak masyarakat agar patuh terhadap peraturan lalulintas.Penggunaan tulisan tersebut merupakan fungsi bahasa sebagai ....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa peringatan3.	Linda dengan tegas mengatakan bahwa dia lebih memilih menjadi seorang bidan daripada menjadi seorang penyanyi.Langkah yang dilakukan Linda termasuk pada memfungsikan bahasa sebagai....A.	Pernyataan Ekspresi diriB.	Adaptasi dan integrasi C.	KomunikasiD.	Kontrol SosialE.	Bahasa perumpamaan4.	Berikut ini yang merupakan fungsi bahasa Indonesia sebagai bahasa negara adalah ....A.	Fungsi lambang kebanggan dan kebangsaan IndonesiaB.	Fungsi Identitas nasional dimata internasionalC.	Fungsi sarana hubungan antarwarga, antardaerah, dan antar budayaD.	Fungsi bahasa sebagai administrasi kenegaraanE.	Fungsi pemersatu lapisan masyarakat: sosial, budaya, suku bangsa, dan bahasa.5.	Kesalahan penulisan abjad besar terdapat pada kalimat ....A. Dea mengajar di sekolah dua kali seminggu.B. Paman suka membaca surat kabar Analisa.C. Ayah membeli pisang Ambon untuk kakek.D. Siang ini Banu akan bertemu dengan Tika.E. Keluargaku gres datang di Jakarta sore ini.6.	Pemakaian tanda baca yang benar terdapat pada kalimat ....A. Karena sedih, adik menangis di kamarnya.B. Adik dan abang belum pulang, walaupun sudah malam.C. Ibu membeli nasi, jus, pisang dan jeruk.D. Murid, dan guru sedang mengikuti upacara bendera.E. Ban kendaraan beroda empat kami pecah, alasannya itu kami kami tidak sanggup hadir.7.	Kalimat di bawah ini yang penerapan tanda bacanya benar ialah ....A. David, membawakan majalah untuk Kartika.B. A. Nasution ialah anakdidik yang rajin.C. Dewi tidak hadir, alasannya berada di luar kota.D. Temanku Lina masuk rumah sakit candra.E. Murid itu dihukum, alasannya tidak menggunakan atribut lengkap​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>3.a pernyataan ekspresi diri</p><p>2.c komunikasi</p><p>1.e bhs perampamaan</p><p>4.b</p><p>5.b.</p><p>6.e</p><p>7.e</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kalimat-tanya-dalam-bahasa-indonesia-adalah-%c2%a0a-untuk-meminta-orang-lain-melakukan-kegiatan-sesuai-dengan-permintaanb-untuk-menanyakan-sesuatu-baik-berupa-benda-perbuatan-atau-situ">
+                            39. Fungsi kalimat tanya dalam bahasa Indonesia adalah .... A. untuk meminta orang lain melakukan kegiatan sesuai dengan permintaanB. untuk menanyakan sesuatu, baik berupa benda, perbuatan, atau situasiC. sebagai penjelas dalam sebuah kalimatD. Memenuhi unsur dari sebuah kalimat sempurna11. Teks yag berisi informasi tentang suatu hal atau fenomena di masyarakat disebut... A. Teks eksplanasiB. Teks bacaanC. Teks laporanD. Teks Informasi12. Para siswa-siswa sedang belajar di kelas Kalimat tersebut adalah kalimat yang tidak efektif, agar menjadi kalimat yang efektif, perbaikan yang benar adalah …. A. Para-para siswa sedang belajar di kelasB. Siswa-siswa sedang belajar-belajar di kelasC. Para siswa sedang belajar di kelas-kelasD. Para siswa sedang belajar di kelas13. Simpulan dari teks atau dapat juga berisi pendapat penulis mengenai fenomena yang dijelaskan dalam teks adalah... A. pembukaan (pernyataan umum)B. deretan penjelas (isi)C. penutup (simpulan)D. pernyataan khusus14. Kata tanya yang kegunaannya untuk menanyakan keadaan atau kegiatan yang berkaitan dengan suatu peristiwa adalah A. siapaB. di manaC. apaD. kenapa​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>10.fungsi kalimat tanya .... </p><p>B. untuk menanyakan sesuatu, baik berupa benda, perbuatan, atau situasi</p><p></p><p>11.Teks yang berisi informasi tentang suatu hal atau fenomena di masyarakat disebut...</p><p>A.teks eksplanasi</p><p></p><p>12.Para siswa-siswa sedang belajar di kelas Kalimat tersebut adalah kalimat yang tidak efektif, agar menjadi kalimat yang efektif, perbaikan yang benar adalah …. </p><p>D.para siswa sedang belajar di kelas </p><p></p><p>13.Simpulan dari teks atau dapat juga berisi pendapat penulis mengenai fenomena yang dijelaskan dalam teks adalah... </p><p>C.penutup (simpulan) </p><p></p><p>14.Kata tanya yang kegunaannya untuk menanyakan keadaan atau kegiatan yang berkaitan dengan suatu peristiwa adalah</p><p>C.apa</p><p></p><p></p><p>[tex]  &gt; . &lt; [/tex]</p><p></p>semoga membantu:)<p></p><br />
+                                            <h2 class="ez-toc-section" id="1-berikut-ini-termasuk-ke-dalam-fungsi-judulberita-di-koran-kecuali-a-untuk-memberi-kepadatan-isib-merangkum-isi-beritac-mempercantik-perwajahan-surat-kabard-melukiskan-suasana-berita2-baha">
+                            40. 1. Berikut ini termasuk ke dalam fungsi judulberita di koran, kecuali ....a. untuk memberi kepadatan isib. merangkum isi beritac. mempercantik perwajahan surat kabard. melukiskan suasana berita2. Bahasa teks iklan selalu mengajakpembacanya, jadi bahasa teks iklan bersifata. naratifb. ekspositorisc. persuasifd. deskriptif3. SATU POHONSEJUTA MANFAATSAVEOURTeks poster tersebut termasuk poster ....a. pendidikanb. niagac. penerangand. kegiatan4. Teks poster pada soal nomer 3 berisi ajakanuntuk melaksanakan ....a kerja baktib. kemahc. reboisasid. urbanisasi5. Slogan yang tepat adalah ....a. Kemarin belajar, hari ini belajar, besokbelajar, lusa belajarb. Belajar lebih giat adalah solusi tepat agarlulus ujian nasional.c. Dengan belajar, semua masalah teratasi.d. Ingat, Ujian Nasional sudah dekat!​</h2><br />
+                        <p><strong>Jawaban:</strong></p>CCDCB<p><strong>Penjelasan:</strong></p><p>SEMOGA TERBANTU,JAWABAN ORI,GK NGAWURRR</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/NGQoKF2Ggt8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>seni</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/cari-pengertian-dari-fungsi-seni-dalam-religi-dan-contohnya.html">Cari Pengertian Dari Fungsi Seni Dalam Religi Dan Contohnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-ikatan-kovalen-rangkap-2.html">Contoh Soal Ikatan Kovalen Rangkap 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-standar-penilaian.html">Fungsi Dari Standar Penilaian</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-tugas-akhir-harga-pokok-proses.html">Contoh Tugas Akhir Harga Pokok Proses</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-cerebrum-dan-cerebellum-adalah.html">Fungsi Dari Cerebrum Dan Cerebellum Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-appositive.html">Contoh Soal Appositive</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-routing-protocol.html">Fungsi Dari Routing Protocol</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-kesimpulan-laporan-tugas-akhir.html">Contoh Kesimpulan Laporan Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-cerita-model-matematika-beserta-jawabannya.html">Contoh Soal Cerita Model Matematika Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-msdtc.html">Fungsi Dari Msdtc</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-dan-pembahasan-arus-bolak-balik.html">Contoh Soal Dan Pembahasan Arus Bolak Balik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-pedagogical-content-knowledge.html">Contoh Soal Pedagogical Content Knowledge</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-sakarin-dalam-pasta-gigi.html">Fungsi Dari Sakarin Dalam Pasta Gigi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-dan-jawaban-analisis-common-size.html">Contoh Soal Dan Jawaban Analisis Common Size</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-histogram.html">Contoh Soal Histogram</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-ikon-recommended-pivot-tables.html">Fungsi Dari Ikon Recommended Pivot Tables</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-congratulation-pilihan-ganda-beserta-jawabannya.html">Contoh Soal Congratulation Pilihan Ganda Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-hukum-kekekalan-energi-mekanik-pada-gerak-parabola.html">Contoh Soal Hukum Kekekalan Energi Mekanik Pada Gerak Parabola</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-laporan-tugas-akhir-mengenai-hipertesi-kronik-dalam-kehamilan.html">Contoh Laporan Tugas Akhir Mengenai Hipertesi Kronik Dalam Kehamilan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/apa-fungsi-dari-nukleolus.html">Apa Fungsi Dari Nukleolus</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://kumpulansoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://kumpulansoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

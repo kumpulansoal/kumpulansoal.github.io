@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Logika If - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Logika If, , , , , , , 0, , , , , , 0, fungsi-dari-logika-if, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Logika If - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Logika If, , , , , , , 0, , , , , , 0, fungsi-dari-logika-if, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Logika If - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Logika If, , , , , , , 0, , , , , , 0, fungsi-dari-logika-if, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://kumpulansoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://kumpulansoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://kumpulansoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://kumpulansoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://kumpulansoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://kumpulansoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://kumpulansoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Logika If</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">suryanikadek123</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Logika+If" alt="Fungsi Dari Logika If">
+                    </div>
+                    <p></p>
+                    <p>Buat tabel sederhana yang berisi fungsi logika IF Dan tuliskan pula rumus fungsi logika IF nya.​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-tabel-sederhana-yang-berisi-fungsi-logika-if-dan-tuliskan-pula-rumus-fungsi-logika-if-nya-%e2%80%8b">1.
+                                            Buat tabel sederhana yang berisi fungsi logika IF Dan tuliskan pula rumus fungsi logika IF nya.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-logika-if">2.
+                                            apakah fungsi logika IF</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-tabel-sederhana-yang-berisi-fungsi-logika-if-dan-tuliskan-pula-rumus-fungsi-logika-if-nya-%e2%80%8b">3.
+                                            Buat tabel sederhana yang berisi fungsi logika IF Dan tuliskan pula rumus fungsi logika IF nya.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terangkan-maksud-dan-fungsi-logika-dalam-excel-if">4.
+                                            Terangkan maksud dan fungsi logika dalam excel If</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-manfaat-penggunaan-fungsi-iflogika">5.
+                                            tuliskan beberapa manfaat penggunaan fungsi if(logika)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penulisan-pada-fungsi-logika-if-tunggal-adalah-%e2%80%8b">6.
+                                            penulisan pada fungsi logika IF tunggal adalah.... ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-rumus-logika-if-dan-tuliskan-cara-menggunakannya%e2%80%8b">7.
+                                            Apa fungsi dari rumus LOGIKA IF dan tuliskan cara menggunakannya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tulislah-bentuk-penulisan-fungsi-logika-if">8.
+                                            tulislah bentuk penulisan fungsi logika if</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menggunakan-fungsi-if-logika-dalam-microsoft-excel">9.
+                                            cara menggunakan fungsi IF ( logika) dalam microsoft excel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-3-jenis-fungsi-logika-selain-fungsi-if-berikan-penjelasannya%e2%80%8b">10.
+                                            Carilah 3 jenis fungsi logika selain fungsi IF . Berikan penjelasannya!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-macam-macam-fungsi-logika-if-tunggal%e2%80%8b">11.
+                                            jelaskan macam macam fungsi logika if tunggal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-if-dengan-satu-test-logika-dinamakan-sebagai">12.
+                                            fungsi IF Dengan satu test logika dinamakan sebagai</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bentuk-umum-fungsi-logika-tidak-bertingkat-adalaha-ifstringb-ifcellc-ifranged-iflogika%e2%80%8b">13.
+                                            Bentuk umum fungsi logika tidak bertingkat adalaha.=if(string)b.=if(cell)c.=if(range)d.=if(logika)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-fungsi-border2-fungsi-logika-if-syarat-statement3-fungsi-logika-if-padaa-and-b-or4-fungsi-countif">14.
+                                            1.fungsi border
+2. fungsi logika if 
+- syarat 
+- statement
+3. fungsi logika if pada
+a. and 
+b. or
+4. fungsi countif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-bentuk-rumus-fungsi-logika-if-tunggal-dan-logika-if-majemuk%e2%80%8b">15.
+                                            Tuliskan bentuk rumus fungsi logika if tunggal dan logika if majemuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-manfaat-penggunan-fungsi-iflogika%e2%80%8b">16.
+                                            tuliskan beberapa manfaat penggunan fungsi IF(logika)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-simbol-logika-yang-di-gunakan-di-ms-exel-fungsi-if%e2%80%8b">17.
+                                            Macam-macam simbol logika yang di gunakan di Ms. Exel (fungsi If)?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-guna-fungsi-logika-if-dalampengelolahan-angka">18.
+                                            Apa guna fungsi logika if dalampengelolahan angka</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-logika-if-dapat-kita-gunakan-melalui-menu">19.
+                                            fungsi logika IF dapat kita gunakan melalui menu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-kerjakan-dengan-betul-ya1-logika-selalu-identik-dengan-2-suatu-pernyataan-atau-kejadian-yang-dapat-diterima-oleh-nalar-atau-pikiran-disebut-dengan-3-fungsi-logika-if-adalah-fun">20.
+                                            Tolong Kerjakan dengan betul ya!
+1. Logika selalu identik dengan ... 
+2. Suatu pernyataan atau kejadian yang dapat diterima oleh Nalar atau Pikiran, disebut dengan ... *
+3. Fungsi Logika IF adalah fungsi Ms. Excel yang berkaitan dengan permasalahan ... *
+4. 2 kemungkinan jawaban pada fungsi logika IF adalah ... *
+5. Dalam menggunakan fungsi logika IF kita memerluhkan bantuan operator ... *
+6. Dibawah ini yang bukan merupakan operator perbandingan adalah *
+7. Penulisan fungsi logika IF yang benar adalah ... *
+8. Berapa banyak tingkat fungsi IF yang dapat kita terapkan dalam suatu fungsi IF ? *
+9. Apa yang terjadi apabila kita menggunakan fungsi IF dengan banyak tingkat dalam suatu fungsi ? *
+10. Apabila dalam suatu fungsi IF, suatu sel berisi data ABJAD atau KARAKTER WAJIB diberikan tanda ... *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-logika-if-dapat-juga-kita-gunakan-melalui-menu">21.
+                                            fungsi logika if dapat juga kita gunakan melalui menu ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-manfaat-penggunaan-fungsi-if-logika%e2%80%8b">22.
+                                            tuliskan beberapa manfaat penggunaan fungsi If (logika)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penulisan-pada-fungsi-logika-if-tunggal-adalah-%e2%80%8b">23.
+                                            penulisan pada fungsi logika if tunggal adalah....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#logika-pada-fungsi-if-memiliki-2-pilihan-%e2%80%8b">24.
+                                            logika pada fungsi IF memiliki 2 pilihan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-maksud-dari-fungsi-logika-if">25.
+                                            Jelaskan maksud dari fungsi logika IF</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penggunaan-operator-logika-dalam-fungsi-if">26.
+                                            Penggunaan operator logika dalam fungsi if</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-logika-if-jika-ditulis">27.
+                                            fungsi logika if jika ditulis</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-rumus-yang-benar-menggunakan-fungsi-logika-if">28.
+                                            Berikut rumus yang benar menggunakan fungsi logika if </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#logika-pada-fungsi-if-memiliki-2-pilihan-yaitu">29.
+                                            logika pada fungsi IF memiliki 2 pilihan yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penulisan-pada-fungsi-logika-if-tunggal-adalah">30.
+                                            Penulisan pada fungsi logika if tunggal adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsii-logika-if-and-dan-or">31.
+                                            fungsii logika if ,and, dan or</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-fungsi-logika-if-pada-microsft-excel">32.
+                                            apa itu fungsi logika 'IF' pada microsft excel</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-macam-macammacam-macam-fungsi-logikaif-tunggalif-majemurif-dengan-dua-test-logikatolong-dijawab-kakbesok-mau-dikumpul-nih%e2%80%8b">33.
+                                            Jelaskan macam macammacam -macam fungsi logikaIf tunggalIf majemurif dengan dua test logika?tolong dijawab kak,besok mau dikumpul nih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-2-macam-fungsi-dari-logika-if-pls-jawab%e2%80%8b">34.
+                                            jelaskan 2 macam fungsi dari logika if? pls jawab​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-yang-kamu-ketahui-tentang-fungsi-if-2-sebutkan-apa-saja-kegunaan-fungsi-logika-if-3-apa-yang-dimaksud-dengan-fungsi-if-tunggal-4-apa-yang-dimaksud-dengan-fungsi-if-majemuk-5-apa-yang-di">35.
+                                            1.	Apa yang kamu ketahui tentang fungsi If? 2.	Sebutkan apa saja kegunaan fungsi logika IF? 3.	Apa yang dimaksud dengan fungsi IF tunggal? 4.	Apa yang dimaksud dengan fungsi IF majemuk? 5.	Apa yang dimaksud dengan fungsi IF bertingkat? 6.	Sebutkan lambang-lambang logika pada Ms. Excel! 7.	Apa saja operator logika yang pernah kamu pelajari? 8.	Jelaskan apa yang dimaksud dengan fungsi logika? 9.	Jelaskan apa perbedaan operator logika dan lambing logika? 10.	Tuliskan salah satu contoh fungsi If yang sudah pernah kamu lakukan dalam praktikum.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-arti-dari-rumus-fungsi-if-ganda-berikut-iflogika-testi-perintah-benar-if-logika-test-2perintah-salah">36.
+                                            Jelaskan arti dari rumus fungsi IF ganda berikut. =IF(logika testi; perintah benar, IF logika test 2;perintah salah))</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-syntax-fungsi-logika-if">37.
+                                            tuliskan syntax fungsi logika IF</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kapan-fungsi-logika-if-digunakan%e2%80%8b">38.
+                                            Kapan fungsi logika IF digunakan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-rumus-umum-dari-fungsi-logika-if">39.
+                                            Tuliskan rumus umum dari fungsi logika IF</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penulisan-pada-fungsi-logika-if-tunggal-adalah%e2%80%a6">40.
+                                            Penulisan pada fungsi logika if tunggal adalah…</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="buat-tabel-sederhana-yang-berisi-fungsi-logika-if-dan-tuliskan-pula-rumus-fungsi-logika-if-nya-%e2%80%8b">
+                            1. Buat tabel sederhana yang berisi fungsi logika IF Dan tuliskan pula rumus fungsi logika IF nya.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Misalkan tabel pada Ms. Excel 2007, perhatikan tabel pada gambar lampiran.</p><p>Rumus fungsi logika IF dituliskan dalam sel D2, yaitu:</p><p>=IF(C2&gt;65;"LULUS";"GAGAL")</p><p><strong>Penjelasan:</strong></p><p>Selanjutnya, rumus fungsi di sel D2 dicopy dan dipaste ke dalam sel D3 sampai sel D11.</p><p>Untuk lebih jelasnya, perhatikan gambar berikut ini (ditunjukkan tanda panah merah).</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-logika-if">
+                            2. apakah fungsi logika IF</h2><br />
+                        Untuk memberi pilahan beberapa kondisi atau dalam flowchart lebih di kenal dengan decision, misalnya kamu membuat program yang dimana program tersebut jika kamu memasukkan nama kamu maka program tersebut akan membalasnya, dan jika kamu memasukkan nama selain nama kamu maka akan otomatis keluar. Itulah fungsi logika if..<br />
+                                            <h2 class="ez-toc-section" id="buat-tabel-sederhana-yang-berisi-fungsi-logika-if-dan-tuliskan-pula-rumus-fungsi-logika-if-nya-%e2%80%8b">
+                            3. Buat tabel sederhana yang berisi fungsi logika IF Dan tuliskan pula rumus fungsi logika IF nya.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Misalkan tabel pada Ms. Excel 2007. Penulisan rumus fungsi logika IF diisi dalam sel D4, yaitu =IF(C4&gt;65;"BERAT";"RINGAN")</p><p><strong>Penjelasan:</strong></p><p>Rumus fungsi IF dalam sel D4 selanjutnya dicopy dan dipaste ke dalam sel D5 sampai D13.</p><p>Untuk lebih jelasnya, perhatikan gambar berikut ini (ditunjukkan tanda panah merah).</p><br />
+                                            <h2 class="ez-toc-section" id="terangkan-maksud-dan-fungsi-logika-dalam-excel-if">
+                            4. Terangkan maksud dan fungsi logika dalam excel If</h2><br />
+                        fungsi logika atau bersyarat memungkinkan kita menguji persyaratan dalan sel. fungsi bersyarat ini adalah suatu kondisi atau =IF yabg hasilnya bergantung pada benar atau salahnya pengujian.<br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-manfaat-penggunaan-fungsi-iflogika">
+                            5. tuliskan beberapa manfaat penggunaan fungsi if(logika)</h2><br />
+                        <p>#1 Untuk membuat perbandingan logis antara nilai dan apa yang diharapkan dengan menguji kondisi dan mengembalikan hasil jika True atau False. Oleh karena itu IF mempunyai dua hasil, hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><p></p><p>#2 Untuk rumus bertumpuk "penumpukan" dan menghundari kesalahan.</p><br />
+                                            <h2 class="ez-toc-section" id="penulisan-pada-fungsi-logika-if-tunggal-adalah-%e2%80%8b">
+                            6. penulisan pada fungsi logika IF tunggal adalah.... ​</h2><br />
+                        <p>Rumus Excel IF merupakan rumus logika yang dipakai untuk mengecek suatu kondisi data. Jika kondisi terpenuhi maka akan menghasilkan nilai TRUE, jika tidak terpenuhi maka akan menghasilan nilai FALSE.
+</p><p>Rumus IF dibagi menjadi dua :
+</p>Rumus IF Tunggal
+Rumus IF MajemukPembahasan  <p>
+Berikut penjelasannya :
+</p>Rumus IF Tunggal
+<p>Rumus Excel IF Tunggal hanya terdapat satu IF dengan satu logical_test, rumus if tunggal mempunyai dua kondisi yaitu Kondisi1 (value if TRUE) dan Kondisi2 (value if FALSE).
+</p><p>Syntax enulisan Rumus Exce IF Tunggal :
+</p><p>=IF(logical_test;value_if_true;value_if_false)
+</p>Rumus IF Majemuk
+<p>Rumus Excel IF Majemuk terdiri dari lebih satu atau banyak IF yang bisa disesuaikan dengan kebutuhan, tergantung dari berapa jumlah kondisi yang akan ditetapkan.
+</p><p>Syntax enulisan Rumus Exce IF Majemuk :
+</p><p>=IF(logical_test;value_if_true;IF(logical_test;value_if_true;IF(... "value_if_false dst))
+</p>Pelajari lebih lanjut
+<p>1. Materi tentang  Apa rumus excel rata"? https://brainly.co.id/tugas/14155902</p><p>2. Materi tentang  Rumus rumus microsoft excel? https://brainly.co.id/tugas/6300338</p><p>3. Materi tentang  Tuliskan rumus rumus excel sebanyak 25 https://brainly.co.id/tugas/590372</p><p>-----------------------------
+</p>Detil jawaban
+<p>Kelas:  8</p><p>Mapel:  TIK</p><p>Bab:  Bab 4 - Mengenal Fungsi Menu dan Ikon pada Pengolah Angka</p><p>Kode:  8.11.4</p><p>#AyoBelajar</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-rumus-logika-if-dan-tuliskan-cara-menggunakannya%e2%80%8b">
+                            7. Apa fungsi dari rumus LOGIKA IF dan tuliskan cara menggunakannya​</h2><br />
+                        <p>Bagi Anda yang berstatus sebagai seorang pekerja kantoran tentu sudah tidak asing lagi bukan dengan istilah Microsoft Excel? Ya, sebagian besar para pekerja kantoran memang menggunakan program Microsoft Excel sebagai untuk mengolah berbagai macam data yang berbentuk angka. Program aplikasi ini pada dasarnya merupakan salah satu bagian dari program aplikasi Microsoft Office buatan Microsoft yang memang diperuntukkan sebagai program pengolah dokumen – dokumen kantor. Dalam bundel program aplikasi Microsoft Office, Microsoft Excel termasuk ke dalam salah satu program Microsoft Excel yang paling banyak digunakan selain Microsoft Word, dan Microsoft PowerPoint.</p><br />
+                                            <h2 class="ez-toc-section" id="tulislah-bentuk-penulisan-fungsi-logika-if">
+                            8. tulislah bentuk penulisan fungsi logika if</h2><br />
+                        Bentuk <br />If(... ) { <br />...<br />}<br />Contoh<br />If (x = mobil){<br />X.Berjalan ;<br />}<br />
+                                            <h2 class="ez-toc-section" id="cara-menggunakan-fungsi-if-logika-dalam-microsoft-excel">
+                            9. cara menggunakan fungsi IF ( logika) dalam microsoft excel</h2><br />
+                        Isi di formula bar seperti ini:<br />=IF(nama sel,jika benar,jika salah)<br />Maksudnya:<br />- nama sel: nama sel yang menjadi acuannya (bisa diisi nama sel seperti A1, atau nama sel dengan tanda operator logika seperti A1&gt;=75)<br />- jika benar: string (data/angka/tulisan)atau hasilnya jika sel yang kita jadikan acuan benar<br />- jika salah: string/hasilnya jika sel yang kita jadikan acuan salah<br />Pada jika benar dan jika salah bisa diisi dengan angka (50%,30%) atau tulisan (tapi kalau tulisan harus diawali dan diakhiri dengan tanda petik ("..."), misal "Lulus","Tidak Lulus")<br />- tanda , adalah tanda pemisah, bisa diganti dengan ; (tergantung versi excel yang dipakai dan settingan regional di komputermu)<br /><br />Contoh:<br />di sel A5 ada nilai 70, sedangkan kkmnya adalah 75, jadi rumusnya memakai:<br />=IF(A5&gt;=75,"Lulus","Tidak Lulus") maka hasilnya adalah Tidak Lulus<br />Semoga membantu... (maaf kalau bahasanya susah dimengerti)<br />
+                                            <h2 class="ez-toc-section" id="carilah-3-jenis-fungsi-logika-selain-fungsi-if-berikan-penjelasannya%e2%80%8b">
+                            10. Carilah 3 jenis fungsi logika selain fungsi IF . Berikan penjelasannya!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Fungsi OR ✔</strong>  </p><p>Fungsi OR adalah fungsi bawaan di Excel yang dikategorikan sebagai Fungsi Logika. Fungsi OR adalah fungsi logis untuk menguji beberapa kondisi pada saat bersamaan. Rumus OR akan menghasilkan TRUE jika beberapa argument bernilai benar dan FALSE jika semua argument salah.  </p><p>Rumus fungsi OR:  </p><p>=OR(logical1; logical2; ...)
+</p><p>
+</p><p><strong>Fungsi AND ✔</strong>  </p><p>AND merupakan rumus fungsi logika pada Excel yang berguna untuk menghasilkan nilai TRUE, jika semua argument yang diuji bernilai benar. Jika FALSE, maka semua atau salah satu argument bernilai salah.  </p><p>Rumus fungsi AND:  </p><p>=AND (logical1; logical2; ...)</p><p></p><p><strong>Fungsi NOT ✔</strong>  </p><p>Kebalikan dari rumus logika pada Excel AND, rumus NOT berguna untuk menghasilkan TRUE jika kondisi yang diuji salah dan FALSE jika yang diuji benar.  </p><p>Rumus fungsi NOT:  </p><p>=NOT(logical)
+</p><p>
+</p><p><strong>➖➖➖➖➖➖➖➖➖➖➖➖➖➖</strong></p><p><strong>#AyoGiatBelajar</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-macam-macam-fungsi-logika-if-tunggal%e2%80%8b">
+                            11. jelaskan macam macam fungsi logika if tunggal​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> yaitu fungsi logika tunggal hanya terdapat satu IF/satu syarat dengan 2 kemungkinan jawaban (kondisi) yakni value data TRUE dan value data FALSE. </p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-if-dengan-satu-test-logika-dinamakan-sebagai">
+                            12. fungsi IF Dengan satu test logika dinamakan sebagai</h2><br />
+                        <p>operasi logika (pengkondisian)</p><br />
+                                            <h2 class="ez-toc-section" id="bentuk-umum-fungsi-logika-tidak-bertingkat-adalaha-ifstringb-ifcellc-ifranged-iflogika%e2%80%8b">
+                            13. Bentuk umum fungsi logika tidak bertingkat adalaha.=if(string)b.=if(cell)c.=if(range)d.=if(logika)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d. =if(logika)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-fungsi-border2-fungsi-logika-if-syarat-statement3-fungsi-logika-if-padaa-and-b-or4-fungsi-countif">
+                            14. 1.fungsi border
+2. fungsi logika if 
+- syarat 
+- statement
+3. fungsi logika if pada
+a. and 
+b. or
+4. fungsi countif</h2><br />
+                        1. Untuk membuat garis pada tabel<br />2. ?<br />3. a. AND berfungsi untuk menentukan jika semua kondisi di uji adalah TRUE<br />    b. OR berfungsi untuk membandingkan 2 atau lebih kondisi dan menghasilkan nilai TRUE atau FALSE<br />4. COUNTIF berfungsi  untuk menghitung jumlah sel yang memenuhi kriteria<br /><br />Semoga Membantu!<br />#MaafKaloSalah!<br /><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-bentuk-rumus-fungsi-logika-if-tunggal-dan-logika-if-majemuk%e2%80%8b">
+                            15. Tuliskan bentuk rumus fungsi logika if tunggal dan logika if majemuk​</h2><br />
+                        <p>P<strong>ercabangan Tunggal</strong></p><p>if(kondisi):</p><p>     perintah jika kondisi terpenuhi;</p><p>else if(kondisi):</p><p>     perintah jika kondisi pertama tidak terpenuhi;</p><p>else:</p><p>     perintah jika semua kondisi tidak terpenuhi;</p><p></p><p><strong>Percabangan Majemuk</strong></p><p>if(kondisi):</p><p>     if(kondisi):</p><p>          perintah jika kondisi terpenuhi;</p><p>     else if(kondisi):</p><p>          perintah jika kondisi pertama tidak terpenuhi;</p><p>else:</p><p>     perintah jika kondisi tidak terpenuhi;</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-manfaat-penggunan-fungsi-iflogika%e2%80%8b">
+                            16. tuliskan beberapa manfaat penggunan fungsi IF(logika)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi IF memungkinkan Anda untuk membuat perbandingan logis antara nilai dan apa yang diharapkan dengan menguji kondisi dan mengembalikan hasil jika True atau False. Oleh karena itu, pernyataan IF dapat memiliki dua hasil. Hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><p></p><p><strong>Jawaban:</strong></p><p>Fungsi IF memungkinkan Anda untuk membuat perbandingan logis antara nilai dan apa yang diharapkan dengan menguji kondisi dan mengembalikan hasil jika True atau False. Oleh karena itu, pernyataan IF dapat memiliki dua hasil. Hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><p><strong>Penjelasan:</strong></p><p>Maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-simbol-logika-yang-di-gunakan-di-ms-exel-fungsi-if%e2%80%8b">
+                            17. Macam-macam simbol logika yang di gunakan di Ms. Exel (fungsi If)?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi IF merupakan salah satu fungsi paling populer di Excel, yang memungkinkan Anda membuat perbandingan logis antara nilai dan perkiraan.</p><p></p><p>Oleh karena itu, pernyataan IF dapat memiliki dua hasil. Hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><p></p><p>Sebagai contoh, =IF(C2=”Ya”,1,2) artinya JIKA(C2 = Ya, maka berikan 1, jika tidak berikan 2).</p><br />
+                                            <h2 class="ez-toc-section" id="apa-guna-fungsi-logika-if-dalampengelolahan-angka">
+                            18. Apa guna fungsi logika if dalampengelolahan angka</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Rumus IF berguna untuk mengembalikan sebuah nilai jika kondisi yang dicek BENAR/SALAH dan mengembalikan sebuah nilai lainnya jika kondisi yang dicek SALAH/FALSE.</p><p><strong>Penjelasan:</strong></p><p> moga membantu, maaf kalo salah :)) </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-logika-if-dapat-kita-gunakan-melalui-menu">
+                            19. fungsi logika IF dapat kita gunakan melalui menu</h2><br />
+                        Misalkan memakai MS. Excel 2007:<br />- menu ribbon Formulas - klik Logical - klik IF<br /><br /># semoga bermanfaat<br /><br />
+                                            <h2 class="ez-toc-section" id="tolong-kerjakan-dengan-betul-ya1-logika-selalu-identik-dengan-2-suatu-pernyataan-atau-kejadian-yang-dapat-diterima-oleh-nalar-atau-pikiran-disebut-dengan-3-fungsi-logika-if-adalah-fun">
+                            20. Tolong Kerjakan dengan betul ya!
+1. Logika selalu identik dengan ... 
+2. Suatu pernyataan atau kejadian yang dapat diterima oleh Nalar atau Pikiran, disebut dengan ... *
+3. Fungsi Logika IF adalah fungsi Ms. Excel yang berkaitan dengan permasalahan ... *
+4. 2 kemungkinan jawaban pada fungsi logika IF adalah ... *
+5. Dalam menggunakan fungsi logika IF kita memerluhkan bantuan operator ... *
+6. Dibawah ini yang bukan merupakan operator perbandingan adalah *
+7. Penulisan fungsi logika IF yang benar adalah ... *
+8. Berapa banyak tingkat fungsi IF yang dapat kita terapkan dalam suatu fungsi IF ? *
+9. Apa yang terjadi apabila kita menggunakan fungsi IF dengan banyak tingkat dalam suatu fungsi ? *
+10. Apabila dalam suatu fungsi IF, suatu sel berisi data ABJAD atau KARAKTER WAJIB diberikan tanda ... *</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Filsafat ilmu identik dengan logika yaitu ilmu tentang pikiran, adalah karena logika adalah suatu cabang filsafat yang membahas tentang aturan-aturan, asas-asas, hukum-hukum dan metode atau prosedur dalam mencapai pengetahuan secara rasional dan benar, juga merupakan suatu cara untuk mendapatkan suatu pengetahuan dengan menggunakan akal pikiran, kata dan bahasa yang dilakukan secara sistematis.</p><p>2. Logika</p><p></p><p><strong>Jawaban:</strong></p><p>1. Sesuatu yang dapat di jelaskan dan dapat di buktikan secara ilmiah. Logika biasanya identik dengan jalan pikiran atau perumusan suatu masalah</p><p></p><p>2. Rasional</p><p></p><p>3. Kondisi</p><p></p><p>4. Benar ( true ), Salah ( else )</p><p></p><p>5.</p>== | sama=== | identik!= | tidak sama&lt;&gt; | berbeda&gt; | lebih dari&lt; | kurang dari<p>6. == , ===, !=</p><p></p><p>7. if(value == value)</p><p>      true</p><p>else</p><p>   false</p><p></p><p>8. tidak terhingga</p><p>9. Akan terjadi looping</p><p>10. x</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-logika-if-dapat-juga-kita-gunakan-melalui-menu">
+                            21. fungsi logika if dapat juga kita gunakan melalui menu ? </h2><br />
+                        Fungsi logika if dapat juga kita gunakan melalui menu Ribbon.<br /><br />-Umaku ikeba benridesumenu ribbon formulas<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-manfaat-penggunaan-fungsi-if-logika%e2%80%8b">
+                            22. tuliskan beberapa manfaat penggunaan fungsi If (logika)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi IF memungkinkan untuk membuat perbandingan logis antara nilai dan apa yang diharapkan dengan menguji kondisi dan mengembalikan hasil jika True atau False. Oleh karena itu, pernyataan IF dapat memiliki dua hasil. Hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><br />
+                                            <h2 class="ez-toc-section" id="penulisan-pada-fungsi-logika-if-tunggal-adalah-%e2%80%8b">
+                            23. penulisan pada fungsi logika if tunggal adalah....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D</p><p></p><p><strong>Penjelasan:</strong></p><p>karena D sudah sesuai dengan rumusnya sedangkan yang B salah.</p><br />
+                                            <h2 class="ez-toc-section" id="logika-pada-fungsi-if-memiliki-2-pilihan-%e2%80%8b">
+                            24. logika pada fungsi IF memiliki 2 pilihan ​</h2><br />
+                        <p>logika pada fungsi IF memiliki 2 pilihan yaitu:</p><p>ya dan tidak. </p><p><strong>Penjelasan:</strong></p><p>semoga membantu:)</p><p>Maaf kalo salah:)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-maksud-dari-fungsi-logika-if">
+                            25. Jelaskan maksud dari fungsi logika IF</h2><br />
+                        Fungsi Logika terkenal sebagai fungsi IF, yang kegunaannya untuk mendefinisikan / mengisi suatu Cell berdasarkan Cell yang lain  atau kriteria tertentuDigunakan karena kemudahan penggunaannya untuk menyelesaikan pertanyaan yg berhubungan dengan logika.<br />
+                                            <h2 class="ez-toc-section" id="penggunaan-operator-logika-dalam-fungsi-if">
+                            26. Penggunaan operator logika dalam fungsi if</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk meneliti perintah kata yang dimasukkan , dan untuk program <strong>i</strong><strong>f </strong><strong>else </strong><strong>dan </strong><strong>if </strong><strong>true</strong></p><p>#NoCopyPaste</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu dan jadikan jawaban tercerdas</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-logika-if-jika-ditulis">
+                            27. fungsi logika if jika ditulis</h2><br />
+                        Rumus<br /><strong>=IF(logical_test_value,value_if_true,value_if_false)</strong><br />artinya:<br />=IF(syarat,"nilai jika benar","nilai jika salah")<br />misal, nilai sel A1=70, KKM:75<br />maka<br />=IF(A1&gt;=75,"Lulus","Tidak Lulus) maka hasilnya: "Tidak Lulus"<br />Semoga membantu...simpelnya if itu sebagai pengganti pengetikan secara otomatis bedasarkan data<br />
+                                            <h2 class="ez-toc-section" id="berikut-rumus-yang-benar-menggunakan-fungsi-logika-if">
+                            28. Berikut rumus yang benar menggunakan fungsi logika if </h2><br />
+                        <p>Jawaban:</p><p>Di python :</p><p>If statement :</p><p>   Do something</p><p></p><p>Contoh :</p><p>angka = 0</p><p>If angka &lt; 5:</p><p>   Angka = angka + 1</p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="logika-pada-fungsi-if-memiliki-2-pilihan-yaitu">
+                            29. logika pada fungsi IF memiliki 2 pilihan yaitu</h2><br />
+                        ya dan tidak. <br />jika ya maka akan mengeksekusi statemen (keadaan yg sudah disiapkan)<br />jika tidak maka akan "else" atau memberikan statement / hasil jika keadaan yang dihasilkan if berupa pernyataan salah.<br />
+                                            <h2 class="ez-toc-section" id="penulisan-pada-fungsi-logika-if-tunggal-adalah">
+                            30. Penulisan pada fungsi logika if tunggal adalah</h2><br />
+                        <p>semoga membantu Maaf kalau salah tapi kalau benar jadikan jawaban tercerdas ya Maaf ya soalnya enggak saya tulis cuman nanya digambar aja</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsii-logika-if-and-dan-or">
+                            31. fungsii logika if ,and, dan or</h2><br />
+                        fungsi logika <br />if : untuk melakukan pengolahan data<br />and : kedua pernyataan harus benar<br />or : salah satu pernyataan benarFungsi IF memungkinkan Anda untuk membuat logika perbandingan nilai dan apa yang Anda harapkan dengan menguji kondisi dan mengembalikan hasil jika kondisi itu adalah True atau False.<br /><br />=IF(Sesuatu adalah Benar, lakukanlah sesuatu, jika tidak lakukanlah hal lain)<br /><br />Katakanlah apa jika Anda perlu menguji beberapa kondisi, di mana semua kondisi perlu True atau False (dan), atau hanya satu kondisi harus berupa True atau False (atau), atau jika Anda ingin memeriksa jika kondisi tidak tidak memenuhi kriteria Anda? Semua fungsi 3 bisa digunakan pada mereka sendiri, namun sangat jauh lebih umum melihatnya dipasangkan dengan fungsi IF.<br /><br />Detail Teknis<br />Berikut ini gambaran umum cara membuat struktur dan, atau dan bukan fungsi secara individual. Saat Anda menggabungkan mereka dengan pernyataan IF, mereka membaca seperti ini:<br /><br />Dan – = IF (dan (sesuatu adalah True, sesuatu True), nilai jika True, nilai jika salah)<br /><br />Atau – = IF (atau (sesuatu adalah True, sesuatu True), nilai jika True, nilai jika salah)<br /><br />Tidak -= IF (NOT(Something is True), nilai jika True, nilai jika salah)<br />
+                                            <h2 class="ez-toc-section" id="apa-itu-fungsi-logika-if-pada-microsft-excel">
+                            32. apa itu fungsi logika 'IF' pada microsft excel</h2><br />
+                        klo buat para guru guru itu fungsi 'if' untuk membagi beberapa orang dalam kelompok tertentu. misalnya jika nilainya &gt;7 maka dia lulus tetapi &lt;7 maka tidak lulus. fungsi ini jika digunakan akan berubah sesuai keinginan secara otomatis.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-macam-macammacam-macam-fungsi-logikaif-tunggalif-majemurif-dengan-dua-test-logikatolong-dijawab-kakbesok-mau-dikumpul-nih%e2%80%8b">
+                            33. Jelaskan macam macammacam -macam fungsi logikaIf tunggalIf majemurif dengan dua test logika?tolong dijawab kak,besok mau dikumpul nih​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> inii yaa jawaban nyaa</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu jgn lupa di ksh bintang yaa</p><p><strong>Jawaban:</strong></p><p>Fungsi logika pada Microsoft Excel adalah fungsi yang digunakan untuk menjawab pertanyaan dimana dalam pertanyaan itu terdapat syarat untuk menjawabnya.</p><p></p><p>Format fungsi logika pada Microsoft Excel adalah :</p><p></p><p>1. AND :=AND(logical1; logical 2; ...)</p><p></p><p>2. FALSE:=FALSE()</p><p></p><p>3. IF: =IF(logical_test, value_if_true,</p><p></p><p>value_if_false)</p><p></p><p>4. IFERROR: =IFERROR(value,</p><p></p><p>value_if_error)</p><p></p><p>5. IFNA: =IFNA(value, value_if_na)</p><p></p><p>6. IFS :=IFS(logical_test, value_if_true, ...) 7. NOT:NOT(logical)</p><p></p><p>8. OR : OR(logical1; logical2; ...)</p><p></p><p>9. SWITCH :</p><p></p><p>=SWITCH(expression;value1;result1;</p><p></p><p>[default_or_value2];[result2]; ...)</p><p></p><p>10. TRUE: TRUE()</p><p></p><p>11. XOR: XOR(logical1; logical2; ...)</p><p><strong>Penjelasan:</strong></p><p></p><p><strong>SEMOGA</strong><strong> </strong><strong>MEMBANTU</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-2-macam-fungsi-dari-logika-if-pls-jawab%e2%80%8b">
+                            34. jelaskan 2 macam fungsi dari logika if? pls jawab​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi Logika (IF) tunggal untuk melakukan penyelesaian terhadap sebuah masalah yang dimana terdapat dua macam kemungkinan jawab.
+</p><p>if (kondisi){</p><p> jawaban 1</p><p>}else{</p><p> jawaban 2</p><p>}</p><p></p><p>Fungsi Logika (IF) majemuk untuk melakukan penyelesaian terhadap sebuah masalah yang dimana terdapat lebih dari satu syarat untuk dapat dipenuhi dengan 3 macam maupun lebih dari kemungkinan yang ada.</p><p>if (kondisi){</p><p> jawaban 1</p><p>}else if(kondisi 2){</p><p> jawaban 2</p><p>}else if(kondisi 3){</p><p> jawaban 3</p><p>}else dst..</p><p><strong>Penjelasan:</strong></p><p></p><p><strong>Jawaban:</strong></p><p>1. Fungsi logıka ıf tunggal, bertujuan untuk menguji data-data yang diajukan dengan memenuhi syarat-syarat tertentu. </p><p></p><p>2. fungsi logika if majemuk/ganda, terdapat lebih dari 1 kondisi yang harus dipenuhi sehingga akan memiliki lebih dari 2 hasil, yaitu hasil jika kondisi pertama, kedua dan seterusnya terpenuhi dan hasil jika semua kondisi tidak terpenuhi.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-yang-kamu-ketahui-tentang-fungsi-if-2-sebutkan-apa-saja-kegunaan-fungsi-logika-if-3-apa-yang-dimaksud-dengan-fungsi-if-tunggal-4-apa-yang-dimaksud-dengan-fungsi-if-majemuk-5-apa-yang-di">
+                            35. 1.	Apa yang kamu ketahui tentang fungsi If? 2.	Sebutkan apa saja kegunaan fungsi logika IF? 3.	Apa yang dimaksud dengan fungsi IF tunggal? 4.	Apa yang dimaksud dengan fungsi IF majemuk? 5.	Apa yang dimaksud dengan fungsi IF bertingkat? 6.	Sebutkan lambang-lambang logika pada Ms. Excel! 7.	Apa saja operator logika yang pernah kamu pelajari? 8.	Jelaskan apa yang dimaksud dengan fungsi logika? 9.	Jelaskan apa perbedaan operator logika dan lambing logika? 10.	Tuliskan salah satu contoh fungsi If yang sudah pernah kamu lakukan dalam praktikum.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Fungsi IF adalah fungsi logika dalam berbagai bahasa pemrograman dan perangkat lunak seperti Excel yang digunakan untuk melakukan pengujian kondisi. Fungsi ini memungkinkan program atau spreadsheet untuk menjalankan tindakan tertentu berdasarkan apakah suatu kondisi atau ekspresi bernilai benar (true) atau salah (false).</p><p></p><p>2. Kegunaan fungsi logika IF antara lain:</p><p>   - Menggunakan kondisi untuk mengambil keputusan dalam program atau spreadsheet.</p><p>   - Menampilkan hasil yang berbeda berdasarkan kondisi yang diberikan.</p><p>   - Menghitung nilai berdasarkan kondisi tertentu.</p><p></p><p>3. Fungsi IF tunggal adalah penggunaan fungsi IF dengan satu kondisi atau ekspresi saja, seperti IF(kondisi, nilai_jika_benar, nilai_jika_salah).</p><p></p><p>4. Fungsi IF majemuk adalah penggunaan beberapa fungsi IF dalam satu rumus untuk mengatasi beberapa kondisi yang berbeda. Contohnya, IF(kondisi1, nilai1, IF(kondisi2, nilai2, nilai_default)).</p><p></p><p>5. Fungsi IF bertingkat adalah penggunaan beberapa pernyataan IF yang bersarang (nested) dalam satu rumus. Misalnya, IF(kondisi1, IF(kondisi2, nilai1, nilai2), nilai_default).</p><p></p><p>6. Lambang-lambang logika pada Microsoft Excel:</p><p>   - "=" digunakan untuk perbandingan kesetaraan (equal).</p><p>   - "&lt;" digunakan untuk perbandingan kurang dari (less than).</p><p>   - "&gt;" digunakan untuk perbandingan lebih dari (greater than).</p><p>   - "&lt;=" digunakan untuk perbandingan kurang dari atau sama dengan (less than or equal to).</p><p>   - "&gt;=" digunakan untuk perbandingan lebih dari atau sama dengan (greater than or equal to).</p><p>   - "&lt;&gt;" digunakan untuk perbandingan tidak sama dengan (not equal to).</p><p></p><p>7. Beberapa operator logika yang pernah dipelajari adalah "AND" (dan), "OR" (atau), "NOT" (bukan), "IF" (jika).</p><p></p><p>8. Fungsi logika adalah perangkat matematika atau perangkat lunak yang digunakan untuk mengambil keputusan berdasarkan kondisi atau perbandingan tertentu.</p><p></p><p>9. Operator logika adalah simbol atau kata kunci yang digunakan untuk menggabungkan kondisi atau ekspresi dalam suatu pernyataan logika. Lambang logika adalah karakter yang digunakan untuk menggambarkan operasi perbandingan seperti kesetaraan, lebih besar, atau kurang dari.</p><p></p><p>10. Contoh fungsi IF dalam Excel:</p><p>   Dalam sebuah spreadsheet Excel, Anda dapat menggunakan fungsi IF untuk menentukan apakah suatu siswa lulus ujian dengan rumus seperti IF(nilai &gt;= 60, "Lulus", "Tidak Lulus"). Rumus ini akan menghasilkan "Lulus" jika nilai siswa sama dengan atau lebih besar dari 60, dan "Tidak Lulus" jika nilai di bawah 60.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-arti-dari-rumus-fungsi-if-ganda-berikut-iflogika-testi-perintah-benar-if-logika-test-2perintah-salah">
+                            36. Jelaskan arti dari rumus fungsi IF ganda berikut. =IF(logika testi; perintah benar, IF logika test 2;perintah salah))</h2><br />
+                        <p>Fungsi IF dalam excel menerima 3 parameter yaitu logika yang ingin ditest, perintah yang dilakukan jika logika yang ditest tersebut bernilai benar, dan perintah yang dilakukan jika logika yang ditest tersebut bernilai salah. Contoh penggunaanya adalah sebagai berikut:</p><br /><p>Cell B2 berisi 2</p><p>Cell B3 berisi 4</p><p>kita melakukan operasi IF pada Cell B5</p><p>=IF(B2&gt;B3,"B2 lebih besar daripada B3", "B2 lebih kecil daripada B3")</p><br /><p>hasil di B5 adalah "B2 lebih kecil daripada B3" karena 2 &lt; 4.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-syntax-fungsi-logika-if">
+                            37. tuliskan syntax fungsi logika IF</h2><br />
+                        IF Tunggal  <br /> Fungsi logika IF yang hanya memiliki satu kondisi / syarat, sehingga dipastikan memiliki dua hasil yang akan ditampilkan yaitu hasil yang sesuai syarat (kondisi) atau hasil yang tidak sesuai syarat (kondisi) akibat dari satu kondisi / syarat tersebut, sehingga hanya membutuhkan satu IF (Tunggal) <br /><br />Rumus seperti di atas ....<br />Contoh :<br />Dalam pelajaran TIK, Jika Nilai TIK kalian kurang dari 75 maka harus remidi dan jika mendapatkan nilai 75, 76 ke atas berarti kalian lulus.<br />
+                                            <h2 class="ez-toc-section" id="kapan-fungsi-logika-if-digunakan%e2%80%8b">
+                            38. Kapan fungsi logika IF digunakan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>membuat perbandingan logis antara nilai dan apa yang diharapkan dengan menguji kondisi dan mengembalikan hasil jika True atau False. Oleh karena itu, pernyataan IF dapat memiliki dua hasil. Hasil pertama jika perbandingan Anda Benar dan hasil kedua jika perbandingan Salah.</p><p><strong>Penjelasan:</strong></p><p><strong>untuk </strong><strong>membuat </strong><strong>perbandingan </strong><strong>antara </strong><strong>nilai </strong><strong>dan </strong><strong>apa </strong><strong>yang </strong><strong>diharapkan </strong></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-rumus-umum-dari-fungsi-logika-if">
+                            39. Tuliskan rumus umum dari fungsi logika IF</h2><br />
+                        <p>IF(logical_test, value_if_true, [value_if_false])</p><p></p><p>Misalnya:</p><p></p><p>=IF(A2&gt;B2,"Melebihi Budget","OK")</p><p></p><p>=IF(A2=B2,B4-A4,"")</p><p></p><p></p><p>Deskripsi</p><p></p><p>logical_test    (diperlukan)</p><p></p><p>Kondisi yang ingin Anda uji.</p><p></p><p>value_if_true    (diperlukan)</p><p></p><p>Nilai yang ingin Anda kembalikan jika hasillogical_test adalah TRUE.</p><p></p><p>value_if_false    (opsional)</p><p></p><p>Nilai yang ingin Anda kembalikan jika hasillogical_test adalah False.</p><p></p><p>Contoh IF sederhana</p><p></p><p>=IF(C2=”Ya”,1,2)</p><p></p><p>Dalam contoh di atas, sel D2 mengatakan:IF(C2 = Ya, jadi kembalikan 1, jika tidak kembalikan 2)</p><p></p><p></p><p>=IF(C2=1,”Ya”,”Tidak”)</p><br />
+                                            <h2 class="ez-toc-section" id="penulisan-pada-fungsi-logika-if-tunggal-adalah%e2%80%a6">
+                            40. Penulisan pada fungsi logika if tunggal adalah…</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawaban nya ada di 2 foto ya </p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah :) </p><p>semoga membantu :) </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/8EOhg6yyHxQ?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-entalpi.html">Contoh Soal Entalpi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-teorema-pythagoras.html">Contoh Soal Teorema Pythagoras</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-access-point.html">Fungsi Dari Access Point</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-report-text-singkat-beserta-soal-dan-jawaban.html">Contoh Report Text Singkat Beserta Soal Dan Jawaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-morse.html">Contoh Soal Morse</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-kurikulum-bagi-sekolah.html">Fungsi Kurikulum Bagi Sekolah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-tas-ransel.html">Fungsi Dari Tas Ransel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-tugas-akhir-sistem-informasi-akuntansi-penjualan.html">Contoh Tugas Akhir Sistem Informasi Akuntansi Penjualan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/jelaskan-fungsi-dari-display.html">Jelaskan Fungsi Dari Display</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-supporting-cusp.html">Fungsi Dari Supporting Cusp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-proposal-tugas-akhir-sistem-cbt-toeic.html">Contoh Proposal Tugas Akhir Sistem Cbt Toeic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-mean-median-modus-data-kelompok.html">Contoh Soal Mean Median Modus Data Kelompok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-double-bottom.html">Fungsi Dari Double Bottom</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-mencari-luas-gabungan-bangun-datar.html">Contoh Soal Mencari Luas Gabungan Bangun Datar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-corong-buchner.html">Fungsi Dari Corong Buchner</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/arti-dari-menhembanhkan-fungsi-fungsi-organik-seseorang.html">Arti Dari Menhembanhkan Fungsi Fungsi Organik Seseorang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-kliring-beserta-jawabannya.html">Contoh Soal Kliring Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-rangka-tubuh.html">Fungsi Rangka Tubuh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/bagian-dari-cpu-yang-berfungsi-mengontrol-dan-mengkodinasi.html">Bagian Dari Cpu Yang Berfungsi Mengontrol Dan Mengkodinasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-ppn-dan-penyelesaiannya.html">Contoh Soal Ppn Dan Penyelesaiannya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://kumpulansoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://kumpulansoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

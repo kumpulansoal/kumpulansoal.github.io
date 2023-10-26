@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cara Memanggil Fungsi Dari Kelas Di Main Class Java - BELAJAR</title>
+    <meta name="description" content="Cara Memanggil Fungsi Dari Kelas Di Main Class Java, , , , , , , 0, , , , , , 0, cara-memanggil-fungsi-dari-kelas-di-main-class-java, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cara Memanggil Fungsi Dari Kelas Di Main Class Java - BELAJAR" />
+    <meta property="og:description" content="Cara Memanggil Fungsi Dari Kelas Di Main Class Java, , , , , , , 0, , , , , , 0, cara-memanggil-fungsi-dari-kelas-di-main-class-java, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cara Memanggil Fungsi Dari Kelas Di Main Class Java - BELAJAR" />
+    <meta name="twitter:description" content="Cara Memanggil Fungsi Dari Kelas Di Main Class Java, , , , , , , 0, , , , , , 0, cara-memanggil-fungsi-dari-kelas-di-main-class-java, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://kumpulansoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://kumpulansoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://kumpulansoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://kumpulansoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://kumpulansoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://kumpulansoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://kumpulansoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://kumpulansoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cara Memanggil Fungsi Dari Kelas Di Main Class Java</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">alya6569</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cara+Memanggil+Fungsi+Dari+Kelas+Di+Main+Class+Java" alt="Cara Memanggil Fungsi Dari Kelas Di Main Class Java">
+                    </div>
+                    <p></p>
+                    <p>jelaskan perbedaan fungsi void main dengan class dalam java</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-fungsi-void-main-dengan-class-dalam-java">1.
+                                            jelaskan perbedaan fungsi void main dengan class dalam java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-public-class-pada-java">2.
+                                            apa fungsi public class pada java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-apa-yang-dimaksud-dengan-pemongramanjava2-apa-fungsi-class-pada-java%e2%80%8b">3.
+                                            1. Jelaskan apa yang dimaksud dengan PemongramanJava2. Apa Fungsi class pada Java​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#python-memiliki-mekanisme-penciptaan-class-yang-mirip-dengan-java-ataupun-c-yang-bukan-merupakan-perbedaan-yang-signifikan-antara-class-pada-python-dengan-c-atau-java-adalah-a-semua-anggota-ke">4.
+                                            Python memiliki mekanisme penciptaan class yang mirip dengan java ataupun C++. yang bukan merupakan perbedaan yang signifikan antara class pada python dengan C++ atau java adalah : a. Semua anggota kelas bersifat publik b. Atribut instance tidak perlu dideklarasikan C. Anggota kelas dapat dijadikan sebagai private d. Semua metode adalah metode instansi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-alasan-utama-kita-menambahkan-getter-setter-dan-functional-method-pada-sebuah-class-java">5.
+                                            Apa alasan utama kita menambahkan getter, setter dan functional method pada sebuah class java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penamaan-class-pada-java-yang-diperbolehkan">6.
+                                            Penamaan class pada java yang diperbolehkan .....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#else-without-if-netbean-java-class-error-kira%c2%b2-apa-yang-salah">7.
+                                            "else" without "if" netbean java class, error kira² apa yang salah? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-penggunaan-sleep-perlu-sebuah-pemanggilan-file-header-yaitu-a-include-b-using-namespace-std-c-prototipe-fungsi-d-deklarasi-kelas-e-int-main-void-%e2%80%8b">8.
+                                            Pada penggunaan sleep perlu sebuah pemanggilan file header yaitu .... a. #include b. using namespace std; c. // prototipe fungsi d. // deklarasi kelas () e. int main (void) {​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-aturan-penting-dalam-penulisan-class-pada-java%e2%80%8b">9.
+                                            Tuliskan aturan penting dalam penulisan class pada Java​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dapatkan-sebuah-class-dalam-java-membungkus-class-yang-lain">10.
+                                            dapatkan sebuah class dalam java membungkus class yang lain?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengimplementasikan-class-diagram-ke-dalam-java">11.
+                                            mengimplementasikan class diagram ke dalam java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#syarat-untuk-membuat-class-pada-java">12.
+                                            syarat untuk membuat class pada java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-java-dikenal-sebagai-bahasa-pemrograman-dengan-semboyan-%e2%80%9cbuild-oncedeploy-everywhere%e2%80%9d-jelaskan-apa-arti-semboyan-tersebut-jelaskan-pula-kenapa-java-bisa-menerapkan-semboyan-ters">13.
+                                            1. Java dikenal sebagai bahasa pemrograman dengan semboyan “build once,
+deploy everywhere”. Jelaskan apa arti semboyan tersebut? Jelaskan pula kenapa Java bisa menerapkan semboyan tersebut?
+2. Java mengenal konsep yang disebut Wrapper Class. Mengapa konsep
+ini diperlukan di Java? Berikan contoh mengenai penggunaan konsep Wrapper Class ini di dalam Java.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-class-dan-obyek-handphone-dalam-java">14.
+                                            Buatlah Class dan obyek handphone dalam java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-sebuah-class-dengan-nama-class-mobil-yang-memiliki-method-constructor-dalam-syntax-java%e2%80%8bpliss-bantu-kak">15.
+                                            buatlah sebuah class dengan nama class mobil yang memiliki method constructor dalam syntax java!​pliss bantu kak</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-sebenarnya-penjelasan-mengenai-class-pada-java">16.
+                                            Bagaimana sebenarnya penjelasan mengenai Class pada Java?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-package-dengan-class-dalam-bahasa-pemrograman-java%e2%80%8b">17.
+                                            Apa perbedaan antara package dengan class dalam bahasa pemrograman Java​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kami-memanggil-mereka-ke-kelas">18.
+                                            kami memanggil mereka ke kelas</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#java-buatlah-program-java-untuk-mensimulasikan-penggunaan-semua-constructor-method-yang-ada-di-class-java-util-linkedlist-%e2%80%8b">19.
+                                            (Java) Buatlah program java untuk mensimulasikan penggunaan semua constructor method yang ada di class java.util.LinkedList.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-5-cara-memanggil-teman-untuk-bermain-bersama">20.
+                                            sebutkan 5 cara memanggil teman untuk bermain bersama</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-class-java-dan-class-karangan">21.
+                                            Apa yang dimaksud dengan class java dan class karangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-berorientasi-objek-java-soal-dapatkah-kita-membuat-class-di-dalam-sebuah-class-jelaskan-cara-membuatnya-jika-hal-tersebut-dapat-dilakukan%e2%80%8b">22.
+                                            pemrograman berorientasi objek Java soal: dapatkah kita membuat class di dalam sebuah class? jelaskan cara membuatnya jika hal tersebut dapat dilakukan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-membuat-sebuah-class-dalam-java">23.
+                                            Bagaimana membuat sebuah class dalam java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#beberapa-class-buitin-di-dalam-pemrograman-java-sebut-dan-jelaskan">24.
+                                            Beberapa class buit'in di dalam pemrograman java sebut dan jelaskan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#konsep-pre-defined-class-dengan-pemograman-java">25.
+                                            Konsep pre-defined class dengan pemograman java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-pengertian-fungsi-aritmatika-pada-javanetbeans2-sebutkan-cara-kerja-fungsi-aritmatika-pada-javanetbeans">26.
+                                            1. sebutkan pengertian fungsi aritmatika pada java/netbeans
+2. sebutkan cara kerja fungsi aritmatika pada java/netbeans</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-sejarah-fungsi-dan-cara-penginstalan-java-untuk-pembelajaran-oop-oriented-object-programming-kelas-xi-rpl">27.
+                                            Pengertian ,Sejarah ,Fungsi ,dan cara penginstalan Java untuk pembelajaran OOP (Oriented Object Programming) kelas XI RPL.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-class-method-dan-objek-pada-sebuah-program-java-atau-c">28.
+                                            Buatlah contoh class method dan objek pada sebuah program java atau c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#konsep-pre-defined-class-dengan-pemograman-java">29.
+                                            konsep Pre-defined class dengan pemograman java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-sebuah-class-adalah-termasuk-tipe-data-di-java-jelaskan-alasan-anda%e2%80%8b">30.
+                                            apakah sebuah class adalah termasuk tipe data di Java? jelaskan alasan anda​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penggunaan-nama-class-dalam-sebuah-program-java-yang-berbeda-dengan-nama-file-akan-mengakibatkan%e2%80%8b">31.
+                                            penggunaan nama class dalam sebuah program java yang berbeda dengan nama file akan mengakibatkan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apabila-kita-ingin-membuat-kelas-baru-java-dengan-nama-mahasiswa-java-dimana-merupakan-kelas-turunan-dari-kelas-java-manusia-java-maka-harus-ditulis-keyword%e2%80%a6-a-public-class-mahasiswa-impleme">32.
+                                            Apabila kita ingin membuat kelas baru java dengan nama Mahasiswa.java dimana merupakan kelas turunan dari kelas java Manusia.java, maka harus ditulis keyword… A. Public class Mahasiswa implement Manusia B. public class Mahasiswa implements Manusia C. public class Mahasiswa extend Manusia D. public class Mahasiswa extends Manusia</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-sederhana-java-netbeans-menggunakan-class-dan-method-kodingannya-saja">33.
+                                            Program sederhana java netbeans menggunakan class dan method, kodingannya saja</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-program-java-yang-mengandung-classobjekatributmethod">34.
+                                            contoh program java yang mengandung class,objek,atribut,method</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-java-string-dalam-java%e2%80%8b">35.
+                                            Jelaskan fungsi Java string dalam Java?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kode-program-class-dalam-java-utk-menampilkan-output-string">36.
+                                            contoh kode program class dalam java utk menampilkan output string</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kegunaan-dari-setiap-baris-program-dari-program-berikut-1-fig-2-1-welcome1-java-2-text-printing-program-3-4-public-class-welcome1-5-6-main-method-begins-execution-of-java-applic">37.
+                                            Tuliskan kegunaan dari setiap baris program dari program berikut 1 // Fig. 2.1: Welcome1.Java 2 // Text-printing program. 3 4 public class Welcome1 5 { 6 // main method begins execution of Java application 7 public static void main( String[] args ) 8 { 9 System.Out.Println( "Welcome to Java Programming!" ); 10 } // end method main 11 } // end class Welcome1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-pembuatan-program-sebelumnya-sudah-ada-fungsi-yang-digunakan-yaitu-fungsi-main-fungsi-main-inilah-yang-digunakan-untuk-memanggil-fungsi-lainnya-main-disebut-juga-sebagai-%e2%80%8b">38.
+                                            Pada pembuatan program sebelumnya sudah ada fungsi yang digunakan yaitu fungsi main (). Fungsi main inilah yang digunakan untuk memanggil fungsi lainnya. Main () disebut juga sebagai ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-jelaskan-urutan-prioritas-pengoperasian-operator-aritmatika-dalam-java-dan-buatlah-contoh-kode-progam-nyab-tuliskan-dan-jelaskan-cara-membuat-method-static-dan-cara-memanggil-nya-dalam-class">39.
+                                            A. )  jelaskan urutan prioritas pengoperasian Operator aritmatika dalam Java dan buatlah contoh kode progam nyaB.) tuliskan dan jelaskan cara membuat method static dan cara memanggil nya dalam class ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-sebuah-program-java-dengan-class-rice-cooker-yang-dapat-mendeteksi-kematangan-nasi">40.
+                                            Buatlah sebuah program java dengan class rice cooker yang dapat mendeteksi kematangan nasi</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-fungsi-void-main-dengan-class-dalam-java">
+                            1. jelaskan perbedaan fungsi void main dengan class dalam java</h2><br />
+                        <p>Perbedaan fungsi void main dengan class dalam java adalah, void main adalah main function atau fungsi main, di mana program pertama kali dieksekusi. Sedangkan class adalah kerangka  dari setiap object individual yang akan dibuat. Program dalam class hanya akan dieksekusi ketika objek dari class itu diakses melalui program dalam main function.</p>Pembahasan<p>Fungsi void main adalah sebuah fungsi utama dalam program java yang akan dijalankan oleh program ketika dieksekusi. Fungsi main ini berisi alur program yang dibuat, yang isinya akan memanggil fungsi fungsi lainnya.</p><p>class adalah kerangka  dari setiap object individual yang akan dibuat. Berikut adalah contoh  implementasi class dalam pemrograman Java:
+</p><p>class Bicycle
+</p><p>{
+</p><p>int cadence = 0;
+</p><p>int speed = 0;
+</p><p>int gear = 1;
+</p><p>}
+</p><p>Pada contoh di atas variabel cadence, speed, gear merupakan state atau
+</p><p>keadaan dari object yang akan dibuat. Class juga memiliki method yang
+</p><p>berfungsi sebagai alat interaksi class dengan dunia di luar class.</p><p><strong>Contoh membuat objek dari class dalam fungsi main</strong></p><p>public static void main(String[] args)
+</p><p>{
+</p><p>     // Membuat dua object sepeda yang berbeda
+</p><p>     Bicycle bike1 = new Bicycle();
+</p><p>     Bicycle bike2 = new Bicycle();
+</p><p>}</p><p>Class bisa memiliki fungsi yang disebut method.Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan oleh suatu object. Method yang didefinisikan pada class bisa dipanggil melalui object.</p><p>Method memiliki 4 (empat) bagian dasar :
+</p>
+Nama metode
+Kembalian yang dikembalikan setelah memanggil method.
+Input parameter.
+Badan atau isi method, berupa instruksi untuk melakukan sesuatu hal.<br />Pelajari lebih lanjut
+<p>class handphone dan objek objeknya https://brainly.co.id/tugas/18517447</p><p>
+</p>Detil Jawaban
+<p><strong>Kelas </strong>: 10  
+</p><p>
+<strong>Bab </strong>: Mengenal Pemrograman Komputer  
+</p><p><strong>
+Kata Kunci </strong>: pemrograman berbasis objek</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-public-class-pada-java">
+                            2. apa fungsi public class pada java</h2><br />
+                        sebagai isi dari folder package yg nantinya dapat diisi dengan beberapa argumen sehingga dapat lebih memudahkan kita saat mencari data <br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-apa-yang-dimaksud-dengan-pemongramanjava2-apa-fungsi-class-pada-java%e2%80%8b">
+                            3. 1. Jelaskan apa yang dimaksud dengan PemongramanJava2. Apa Fungsi class pada Java​</h2><br />
+                        <p><strong>Jawaban:1.Java adalah sebuah bahasa pemrograman dasar dalam sebuah pembuatan aplikasi. Java juga merupakan bahasa pemrograman yang dapat di jalankan di berbagai komputer ataupun berbagai telepon genggam. Kemudian, bahasa pemrograman java ini sendiri bisa digunakan untuk membuat sebuah game ataupun aplikasi untuk perangkat lunak maupun komputer sekalipun.</strong></p><p>2. Class merupakan suatu “Blueprint” atau “Cetakan” untuk menciptakan suatu instant dari object. Class juga merupakan grup suatu object dengan kemiripan attributes/properties, behavior dan relasi ke object lain. Contoh :Class Person, Vehicle, Tree, Fruit dan lainnya.</p><p><strong>Penjelasan:semoga Membantu :)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="python-memiliki-mekanisme-penciptaan-class-yang-mirip-dengan-java-ataupun-c-yang-bukan-merupakan-perbedaan-yang-signifikan-antara-class-pada-python-dengan-c-atau-java-adalah-a-semua-anggota-ke">
+                            4. Python memiliki mekanisme penciptaan class yang mirip dengan java ataupun C++. yang bukan merupakan perbedaan yang signifikan antara class pada python dengan C++ atau java adalah : a. Semua anggota kelas bersifat publik b. Atribut instance tidak perlu dideklarasikan C. Anggota kelas dapat dijadikan sebagai private d. Semua metode adalah metode instansi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong> C. Anggota kelas dapat dijadikan sebagai private</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-alasan-utama-kita-menambahkan-getter-setter-dan-functional-method-pada-sebuah-class-java">
+                            5. Apa alasan utama kita menambahkan getter, setter dan functional method pada sebuah class java</h2><br />
+                        <p><strong>Jawaban &amp; Penjelasan:</strong></p><p>Alasan utama kita menambahkan Getter dan setter pada class java adalah untuk digunakan untuk melindungi data anda, terutama saat membuat kelas. Untuk setiap variabel instance, metode getter mengembalikan nilainya sementara metode setter menetapkan atau memperbarui nilainya. Dengan demikian, getter dan setter juga dikenal sebagai accessor dan mutator.</p><p>Alasan utama kita menambahkan functional method di Java 8, Function merupakan antarmuka fungsional; ini dibutuhkan argumen (objek bertipe T) dan mengembalikan objek (objek bertipe R). Argumen dan output dapat berupa tipe yang berbeda. T - Jenis input ke fungsi. R - Tipe hasil dari fungsi.</p><br />
+                                            <h2 class="ez-toc-section" id="penamaan-class-pada-java-yang-diperbolehkan">
+                            6. Penamaan class pada java yang diperbolehkan .....</h2><br />
+                        Tidak menggunakan simbol khusus pada kelas kecuali underscore (_)Menggunakan penamaan dengan pascalcase seperti NamaKelasNama kelas harus memiliki nama yang sama dengan nama file<p></p><p>Semoga jawaban ini membantu</p><br />
+                                            <h2 class="ez-toc-section" id="else-without-if-netbean-java-class-error-kira%c2%b2-apa-yang-salah">
+                            7. "else" without "if" netbean java class, error kira² apa yang salah? </h2><br />
+                        Itu kata if nya dihilangkan aja<br />
+                                            <h2 class="ez-toc-section" id="pada-penggunaan-sleep-perlu-sebuah-pemanggilan-file-header-yaitu-a-include-b-using-namespace-std-c-prototipe-fungsi-d-deklarasi-kelas-e-int-main-void-%e2%80%8b">
+                            8. Pada penggunaan sleep perlu sebuah pemanggilan file header yaitu .... a. #include b. using namespace std; c. // prototipe fungsi d. // deklarasi kelas () e. int main (void) {​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. include</p><p><strong>Penjelasan:</strong></p><p>#include &lt;nama&gt; berfungsi untuk memuat deklarasi fungsi atau makro yang akan digunakan didalam program</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-aturan-penting-dalam-penulisan-class-pada-java%e2%80%8b">
+                            9. Tuliskan aturan penting dalam penulisan class pada Java​</h2><br />
+                        <p>Adapun aturan penting dalam penulisan class pada Java, antara lain:</p><p></p><p>1. Nama class dimulai dengan huruf kapital dan ditulis dalam gaya "UpperCamelCase". </p><p>Contoh: MyClass, StudentData, OrderManagement</p><p></p><p>2. Class harus memiliki method utama (main method) dengan tipe data "public static void main(String[] args)". </p><p>Metode ini berguna untuk menjalankan program Java.</p><p></p><p>3. Class harus memiliki konstruktor default jika tidak ada konstruktor yang didefinisikan.</p><p></p><p>4. Setiap variabel harus dideklarasikan dengan tipe data tertentu sebelum penggunaannya dan diatur dengan hak akses (access modifier) yang tepat (private/public/protected).</p><p></p><p>5. Class harus memiliki metode getter (accessor) dan setter (mutator) untuk memperbolehkan akses ke variabel privat yang dideklarasikan.</p><p></p><p>6. Method harus ditulis dalam gaya "lowerCamelCase" dan harus diawali dengan kata kerja (verb). Contoh: getData(), calculateAverage()</p><p></p><p>7. Perlu memperhatikan kelengkapan tanda kurung, kurung kurawal, titik dua, titik koma, tanda titik dan koma.</p><p></p><p>8. Hindari menggunakan huruf besar untuk nama variabel dan method. Hal ini menyulitkan membaca kode pada saat pengembangan program.</p><p></p><p>9. Gunakan indentasi dengan benar pada setiap level blok program untuk memudahkan pembacaan kode.</p><p></p><p>10. Selalu periksa sintaks pada saat membuat class. Kompilator Java hanya mengenali kode yang ditulis dengan benar.</p><br />
+                                            <h2 class="ez-toc-section" id="dapatkan-sebuah-class-dalam-java-membungkus-class-yang-lain">
+                            10. dapatkan sebuah class dalam java membungkus class yang lain?</h2><br />
+                        <p>Ya, sebuah class dapat dimasukkan ke dalam class lain. Class tersebut disebut dengan Inner Class dimana ada class dalam class. Namun untuk mengakses Inner Class, kamu harus membuat object dari class luar untuk mengakses class yang di dalam class tersebut. Berikut contoh Inner Class:</p><p></p><p>public class Main
+</p><p>{
+</p><p>    public class InnerClass
+</p><p>    {
+</p><p>        public void printKelasDalam()
+</p><p>        {
+</p><p>            System.out.println("Ini kelas dalam kelas");
+</p><p>        }
+</p><p>    }
+</p><p>    private void tampilkanKelasDalam()
+</p><p>    {
+</p><p>        InnerClass kelasDalam = new InnerClass();
+</p><p>        kelasDalam.printKelasDalam();
+</p><p>    }
+</p><p>    public static void main(String[] args) {
+</p><p>        Main kelasLuar = new Main();
+</p><p>        kelasLuar.tampilkanKelasDalam();
+</p><p>    }
+</p><p>
+</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="mengimplementasikan-class-diagram-ke-dalam-java">
+                            11. mengimplementasikan class diagram ke dalam java</h2><br />
+                        &lt;modifier&gt; class &lt;nama class&gt; {<br /><br />&lt;inisialisasi atribute&gt;<br /><br />&lt;inisialisasi konstruktor&gt;<br /><br />&lt;inisialisasi method&gt;<br /><br />}<br /><br />contoh pembuatan class<br /><br />public class segiEmpat { //class<br /><br />int panjang; // atribut<br />int lebar;<br />     public segiEmpat(){ // konstruktor<br /><br />     }<br />     public function segiEmpat() { //method<br /><br />     }<br />}<br /><br />semoga membantu...<br /><br />
+                                            <h2 class="ez-toc-section" id="syarat-untuk-membuat-class-pada-java">
+                            12. syarat untuk membuat class pada java</h2><br />
+                        <p>Syarat untuk membuat class pada java :</p><p>-. Memiliki Variabel dan object</p><p>-. Dapat dipanggil di kelas lain</p><br />
+                                            <h2 class="ez-toc-section" id="1-java-dikenal-sebagai-bahasa-pemrograman-dengan-semboyan-%e2%80%9cbuild-oncedeploy-everywhere%e2%80%9d-jelaskan-apa-arti-semboyan-tersebut-jelaskan-pula-kenapa-java-bisa-menerapkan-semboyan-ters">
+                            13. 1. Java dikenal sebagai bahasa pemrograman dengan semboyan “build once,
+deploy everywhere”. Jelaskan apa arti semboyan tersebut? Jelaskan pula kenapa Java bisa menerapkan semboyan tersebut?
+2. Java mengenal konsep yang disebut Wrapper Class. Mengapa konsep
+ini diperlukan di Java? Berikan contoh mengenai penggunaan konsep Wrapper Class ini di dalam Java.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Hasil untuk Java dikenal sebagai bahasa pemrograman dengan semboyan “build once, deploy everywhere”. Jelaskan apa arti semboyan tersebut? Jelaskan pula kenapa Java bisa menerapkan semboyan tersebut? 2. Java mengenal konsep yang disebut Wrapper Class. Mengapa konsep ini diperlukan di Java? Berikan contoh mengenai penggunaan konsep Wrapper Class ini di dalam Java. tidak ditemukan.</p><p><strong>Jawaban:</strong></p><p>semboyan  “build once,
+</p><p>deploy everywhere”</p><p><strong>Penjelasan:</strong></p><p>SLSC: i see you boy</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-class-dan-obyek-handphone-dalam-java">
+                            14. Buatlah Class dan obyek handphone dalam java</h2><br />
+                        <p>Class dan obyek handphone dalam java</p><p>Class Handphone</p><p>{</p><p>       public String tipe, layar, processor;</p><p>       public int internal, ram, baterai;</p><p>       void nyalakan()</p><p>       {</p><p>              system.out.println("handphone menyala"); </p><p>       }</p><p>       void matikan()</p><p>       {</p><p>              system.out.println("handphone mati"); </p><p>       }</p><p>}</p><br /><p>Handphone Samsung = new Handphone();</p><p>Samsung.tipe = "galaxy note";</p><p>Samsung.processor = "exynos";</p><p>Samsung.layar = "Super Amoled, 5,5 inch";</p><p>Samsung.internal = 32;</p><p>Samsung.ram = 2;</p><p>Samsung.baterai = 3200;</p><br /><p>Handphone Xiaomi= new Handphone();</p><p>Xiaomi.tipe = "redmi note";</p><p>Xiaomi.processor = "snapdragon";</p><p>Xiaomi.layar = "IPS, 5,5 inch";</p><p>Xiaomi.internal = 16;</p><p>Xiaomi.ram = 2;</p><p>Xiaomi.baterai = 3000;</p><br />Pembahasan<p>Di dalam dunia nyata, kita akan menemukan banyak object yang sifatnya</p><p>individual atau unik dalam suatu jenis yang sama. Di sekitar kita terdapat</p><p>berbagai macam hal, misalnya tiap handphone dibuat dengan jenis bagian-bagian yang sama, misalnya layar, processor, ram, baterai, dan lainnya.</p><p>Dalam konsep pemrograman berorientasi object, kita menyebut handphone yang  kita miliki sebagai object dari class handphone. Jadi class adalah kerangka  dari setiap object individual yang akan dibuat. Di dalam suatu class, terdapat attribut atau variabel dan method. Attribut atau variabel contohnya seperti layar, processor, dan lainnya.</p><p>Sedangkan method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan oleh suatu object. Method yang didefinisikan pada class bisa dipanggil melalui object.</p><p>Method memiliki 4 (empat) bagian dasar :</p>Nama metodeKembalian yang dikembalikan setelah memanggil method.Input parameter.Badan atau isi method, berupa instruksi untuk melakukan sesuatu hal.<br />Pelajari lebih lanjut<p>soal membuat class dan object serupa https://brainly.co.id/tugas/18517447</p><br />Detil Jawaban<p><strong>Kelas </strong>: 10  </p><p><strong>Bab </strong>: Mengenal Pemrograman Komputer  </p><p><strong>Kata Kunci</strong> : pemrograman berbasis objek</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-sebuah-class-dengan-nama-class-mobil-yang-memiliki-method-constructor-dalam-syntax-java%e2%80%8bpliss-bantu-kak">
+                            15. buatlah sebuah class dengan nama class mobil yang memiliki method constructor dalam syntax java!​pliss bantu kak</h2><br />
+                        <p>Contoh sederhana:</p><p></p><p>public class Mobil {</p><p> </p><p>  public void kecepatanPenuh() {</p><p>    System.out.println("Mobil melaju dengan kecepatan penuh");</p><p>  }</p><p></p><p>  public void kecepatan(int kecepatanMaximum) {</p><p>    System.out.println("Kecepatan Maximum adalah: " + kecepatanMaximum);</p><p>  }</p><p>  </p><p>  public static void main(String[] args) {</p><p>    Mobil avanza = new Mobil();     </p><p>    avanza.kecepatanPenuh();     </p><p>    avanza.kecepatan(180);         </p><p>  }</p><p>}</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-sebenarnya-penjelasan-mengenai-class-pada-java">
+                            16. Bagaimana sebenarnya penjelasan mengenai Class pada Java?</h2><br />
+                        class adalah sebuah bagian dari program yang memiliki atribut-atribut seperti halnya yang dimilliki program biasa tapi class tidak bersifat MAIN atau utama sehingga class tidak akan bisa di rundieksekusi tanpa menggunakan main class<br /><br />contoh class:<br /><br />page demo;<br />public class student_record {<br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-package-dengan-class-dalam-bahasa-pemrograman-java%e2%80%8b">
+                            17. Apa perbedaan antara package dengan class dalam bahasa pemrograman Java​</h2><br />
+                        <strong>Jawaban:</strong><p>Perbedaan antara <strong>package</strong> dengan<strong> class</strong> dalam bahasa pemrograman java adalah </p><strong>package </strong>merupakan suatu cara untuk mengatur <strong>class</strong> yang telah dibuat. <strong>Package</strong> itu bermanfaat apabila terdapat banyak sekali <strong>class</strong> maka penting untuk dikelompokkan berdasarkan kategori tertentu. <strong>class</strong> merupakan sebuah cetakan dalam membuat objek<strong>Penjelasan:</strong><p>Package dalam pemrograman java biasanya berisikan sebuah beberapa class class yang mempunyai suatu fungsi tertentu. Biasanya satu package memiliki satu fungsi tertentu dalam penggunaanya. Kemudian class adalah sebuah metode dalam pemgrogarman berorientasi objek dimana class menjadi sebuah blueprint atau cetakan yang nantinya digunakan dalam menghasilkan suatu objek</p><p></p><p>Pelajari lebih lanjut tentang struktur pemrograman java: https://brainly.co.id/tugas/18648588</p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="kami-memanggil-mereka-ke-kelas">
+                            18. kami memanggil mereka ke kelas</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>we called them to class</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu </p><p><strong>Jawaban:</strong></p><p></p><p>we called them to class</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="java-buatlah-program-java-untuk-mensimulasikan-penggunaan-semua-constructor-method-yang-ada-di-class-java-util-linkedlist-%e2%80%8b">
+                            19. (Java) Buatlah program java untuk mensimulasikan penggunaan semua constructor method yang ada di class java.util.LinkedList.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Ini hanya contoh yaa:</p><p>import java.util.LinkedList;</p><p></p><p>public class LinkedListConstructorExample {</p><p>    public static void main(String[] args) {</p><p>        // Constructor 1: LinkedList()</p><p>        LinkedList&lt;String&gt; linkedList1 = new LinkedList&lt;String&gt;();</p><p>        linkedList1.add("Apple");</p><p>        linkedList1.add("Banana");</p><p>        linkedList1.add("Cherry");</p><p>        System.out.println("LinkedList 1: " + linkedList1);</p><p></p><p>        // Constructor 2: LinkedList(Collection&lt;? extends E&gt; c)</p><p>        LinkedList&lt;String&gt; linkedList2 = new LinkedList&lt;String&gt;(linkedList1);</p><p>        System.out.println("LinkedList 2: " + linkedList2);</p><p></p><p>        // Constructor 3: LinkedList(E[] array)</p><p>        String[] array = {"Grape", "Orange", "Pear"};</p><p>        LinkedList&lt;String&gt; linkedList3 = new LinkedList&lt;String&gt;(array);</p><p>        System.out.println("LinkedList 3: " + linkedList3);</p><p></p><p>        // Constructor 4: LinkedList(int initialCapacity)</p><p>        LinkedList&lt;String&gt; linkedList4 = new LinkedList&lt;String&gt;();</p><p>        linkedList4.add("Lemon");</p><p>        linkedList4.add("Mango");</p><p>        linkedList4.add("Pineapple");</p><p>        LinkedList&lt;String&gt; linkedList5 = new LinkedList&lt;String&gt;(10);</p><p>        linkedList5.addAll(linkedList4);</p><p>        System.out.println("LinkedList 5: " + linkedList5);</p><p>    }</p><p>}</p><p></p><p>Output: </p><p>LinkedList 1: [Apple, Banana, Cherry]</p><p>LinkedList 2: [Apple, Banana, Cherry]</p><p>LinkedList 3: [Grape, Orange, Pear]</p><p>LinkedList 5: [Lemon, Mango, Pineapple]</p><p></p><p><strong>Penjelasan:</strong></p>Constructor 1: LinkedList() digunakan untuk membuat linked list kosong.Constructor 2: LinkedList(Collection&lt;? extends E&gt; c) digunakan untuk membuat linked list yang berisi elemen-elemen dari koleksi yang diberikan.Constructor 3: LinkedList(E[] array) digunakan untuk membuat linked list yang berisi elemen-elemen dari array yang diberikan.Constructor 4: LinkedList(int initialCapacity) digunakan untuk membuat linked list dengan kapasitas awal yang diberikan.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-5-cara-memanggil-teman-untuk-bermain-bersama">
+                            20. sebutkan 5 cara memanggil teman untuk bermain bersama</h2><br />
+                        Hey,bolehkah aku bermain denganmu! <br />1.  ayo kita bermain bersama<br />2. ayo cepat kesini kita akan bermain<br />3. ayo kita kelapangan bermain bola<br />4. mari kita bermain dihalaman sekolah<br />5. cepat nanti kita terlamat ikut bermain<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-class-java-dan-class-karangan">
+                            21. Apa yang dimaksud dengan class java dan class karangan</h2><br />
+                        Kelas merupakan cetakan atau blueprint atau prototype, hasil dari cetakan itu disebut objek. Contoh pesawat Boeing 737 dibuat dengan rancangan yang sama, rancangan pesawat ini disebut kelas. Hasil rancangan itu menjadi pesawat Boeing 737 yang disebut objek. Pesawat-pesawat hasil rancangan tadi bisa memiliki warna, nama yang berbeda-beda tergantung perusahaan penerbangannya. Disini jelas bahwa objek memiliki sifat independen. Objek adalah instance dari kelas, satu kelas bisa memiliki beberapa objek.<br /><br />Contoh penulisan Class :<br /><br />Click to toggle codeblock<br /><br />Apa itu Method ?<br /><br />Method atau fungsi atau operasi atau behaviour merupakan perintah-perintah prosedural yang ditempatkan pada kelas untuk mendapat hasil dari perintah-perintah tersebut. Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan oleh suatu object. Method didefinisikan pada class akan tetapi dipanggil melalui object.<br /><br />Contoh : pada object mangga : terdapat method ambilRasa , kupasKulit dan lain-lain.<br /><br />Contoh penulisan Method :<br /><br />Click to toggle codeblock<br /><br />Maaf Kalau Salah Dan Semoga Membantu<br />Semoga artikel ini bermanfaat bagi pembaca. Sekian dulu yah, semoga makin tertarik dengan java !<br />
+                                            <h2 class="ez-toc-section" id="pemrograman-berorientasi-objek-java-soal-dapatkah-kita-membuat-class-di-dalam-sebuah-class-jelaskan-cara-membuatnya-jika-hal-tersebut-dapat-dilakukan%e2%80%8b">
+                            22. pemrograman berorientasi objek Java soal: dapatkah kita membuat class di dalam sebuah class? jelaskan cara membuatnya jika hal tersebut dapat dilakukan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Ya, dalam pemrograman berorientasi objek Java, kita dapat membuat class di dalam class lainnya. Konsep ini dikenal sebagai "nested class" atau "inner class". Inner class adalah class yang dideklarasikan di dalam class lainnya.</p><p></p><p>Untuk membuat inner class di Java, kita perlu mengikuti sintaksis berikut:</p><p></p><p>```java</p><p>class OuterClass {</p><p>    // Anggap ini adalah class utama</p><p></p><p>    // Deklarasikan inner class di dalam class utama</p><p>    class InnerClass {</p><p>        // Isi dari inner class</p><p>    }</p><p>}</p><p>```</p><p></p><p>Perhatikan bahwa deklarasi inner class berada di dalam kurung kurawal class utama. Inner class dapat mengakses semua anggota (atribut dan metode) dari class utama, termasuk anggota yang bersifat pribadi (private).</p><p></p><p>Ketika ingin menggunakan inner class, kita perlu membuat instance dari inner class dengan menggunakan instance dari class utama. Contoh penggunaan inner class seperti di bawah ini:</p><p></p><p>```java</p><p>class OuterClass {</p><p>    private int outerData;</p><p></p><p>    class InnerClass {</p><p>        private int innerData;</p><p></p><p>        public void display() {</p><p>            System.out.println("Outer data: " + outerData);</p><p>            System.out.println("Inner data: " + innerData);</p><p>        }</p><p>    }</p><p>}</p><p></p><p>public class Main {</p><p>    public static void main(String[] args) {</p><p>        OuterClass outerObj = new OuterClass();</p><p>        OuterClass.InnerClass innerObj = outerObj.new InnerClass();</p><p>        innerObj.display();</p><p>    }</p><p>}</p><p>```</p><p></p><p>Dalam contoh di atas, kita membuat instance `outerObj` dari class `OuterClass`, kemudian menggunakan instance tersebut untuk membuat instance `innerObj` dari inner class `InnerClass`. Setelah itu, kita dapat memanggil metode `display()` dari inner class untuk mengakses data dari class utama dan inner class.</p><p></p><p>Ini adalah cara dasar untuk membuat dan menggunakan inner class di Java. Inner class sering digunakan untuk mengorganisir kode yang saling terkait secara logis dan membatasi akses ke class tertentu.</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-membuat-sebuah-class-dalam-java">
+                            23. Bagaimana membuat sebuah class dalam java</h2><br />
+                        pembuatan class sepeda<br />public class Sepeda<br /> {     int gigi;  <br />   String merk;     <br />     //konstruktor     public Sepeda()<br />{      this.gigi=0;         this.merk="Federal";     }    <br /> public Sepeda(int g, String m){         this.gigi = g;         this.merk = m;     }    <br />     public void setGigi(int g){         this.gigi=g;     }   <br />  public void setMerk(String m){         this.merk = m;             }  <br />   public int getGigi(){         return this.gigi;     }   <br />  public String getMerk(){         return this.merk;     }      <br />   public void berjalan(){         System.out.println("Sepeda Berjalan");             }   <br />  public void belokKiri(){         System.out.println("Sepeda Belok Kiri");             }     public void belokKanan(){         System.out.println("Sepeda Belok Kanan");      <br />       }<br /> }<br />
+                                            <h2 class="ez-toc-section" id="beberapa-class-buitin-di-dalam-pemrograman-java-sebut-dan-jelaskan">
+                            24. Beberapa class buit'in di dalam pemrograman java sebut dan jelaskan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Saya ambil kelas yang umum2 saja :</p><p></p><p>1. java.util.Scanner</p><p>2. java.time.LocalDate</p><p>3. java.lang.NullPointerException</p><p></p><p><strong>Penjelasan:</strong></p><p>1. Merupakan kelas yang menyediakan basic simple input read string dari inputan, Misal ( System.in dan dari keyboard) untuk dimasukkan menjadi variabel ataupun tipe data</p><p></p><p>2. Kelas yang menyediakan utilitas mengenai Waktu dan Tanggal sesuai dengan mesin</p><p></p><p>3. Merupakan kelas instance yang otomatis terpanggil, jika sebuah objek merujuk ke NULL atau tidak ada</p><p></p><p>sumber referensi : https://docs.oracle.com/javase/8/docs/api/allclasses-noframe.html</p><br />
+                                            <h2 class="ez-toc-section" id="konsep-pre-defined-class-dengan-pemograman-java">
+                            25. Konsep pre-defined class dengan pemograman java</h2><br />
+                        <strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informasi<br /></strong><strong>Kata kunci: Java, Pemrogaman<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>Konsep pre-defined class dengan pemograman java<br /><br /><strong>Java class library (Java API) memiliki banyak sekali kelas (Java predefined classes) yang diletakkan di paket (package) untuk dapat dipergunakan kembali di program. Paket tersebut digunakan untuk mengelompokkan kelas-kelas yang mempunyai kemiripan fungsi (related class). Kelas-kelas Java yang akan digunakan di dalam program, terlebih dahulu harus diimpor beserta dengan nama paket di mana kelas tersebut berada, kecuali untuk kelas Java yang berada di paket java.lang seperti kelas JOptionPane yang berada di paket javax.swing dan kelas DecimalFormat yang berada di paket java.text. </strong><strong> </strong><br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-pengertian-fungsi-aritmatika-pada-javanetbeans2-sebutkan-cara-kerja-fungsi-aritmatika-pada-javanetbeans">
+                            26. 1. sebutkan pengertian fungsi aritmatika pada java/netbeans
+2. sebutkan cara kerja fungsi aritmatika pada java/netbeans</h2><br />
+                        <p>1.Operator berfungsi untuk mengoperasikan (memanipulasi, mengolah) satu atau lebih variabel. Variabel yang dioperasikan disebut operand. Operator adalah simbol yang digunakan dalam program untuk merubah suatu nilai. Dalam program, operator digunakan untuk :</p>mengalikan nilai dua variabel, menginisialisasi  nilai pada variabel, membandingkan nilai dalam dua variable,dan sebagainya.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="pengertian-sejarah-fungsi-dan-cara-penginstalan-java-untuk-pembelajaran-oop-oriented-object-programming-kelas-xi-rpl">
+                            27. Pengertian ,Sejarah ,Fungsi ,dan cara penginstalan Java untuk pembelajaran OOP (Oriented Object Programming) kelas XI RPL.</h2><br />
+                        OOP itu media belajar kak?? bleh hapus jawaban ini<br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-class-method-dan-objek-pada-sebuah-program-java-atau-c">
+                            28. Buatlah contoh class method dan objek pada sebuah program java atau c++</h2><br />
+                        <p><strong>Bismillah (Semua Ilmu Hanya Milik Allah)</strong></p><p><strong></strong></p><p><strong>Jawaban:</strong></p><p></p>Cara membuat class di JAVA.<p>public class cat{</p><p>   String breed;</p><p>   int age;</p><p>   String color;</p><p></p><p>   void miaow(){</p><p>   }</p><p>   </p><p>   void hungry(){</p><p>   }</p><p>   </p><p>   void sleeping(){</p><p>   }</p><p>}</p>Membuat Objek di JAVA<p>public class Kitten{</p><p></p><p>	public Kitten(String name){</p><p>  // konstruktor ini memiliki satu parameter, name </p><p>  System.out.println("my kitten is:" + name);</p><p>  }</p><p>	public static void main (String []args){</p><p>  //ikuti statement ini untuk membuat objek mykitten</p><p>  Kitten mykitten = new Kitten ("teo");</p><p>	}</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="konsep-pre-defined-class-dengan-pemograman-java">
+                            29. konsep Pre-defined class dengan pemograman java</h2><br />
+                        <strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informasi<br /></strong><strong>Kata kunci: Java, Pemrogaman<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>Konsep pre-defined class dengan pemograman java<br /><br /><strong>Java class library (Java API) memiliki banyak sekali kelas (Java predefined classes) yang diletakkan di paket (package) untuk dapat dipergunakan kembali di program. Paket tersebut digunakan untuk mengelompokkan kelas-kelas yang mempunyai kemiripan fungsi (related class). Kelas-kelas Java yang akan digunakan di dalam program, terlebih dahulu harus diimpor beserta dengan nama paket di mana kelas tersebut berada, kecuali untuk kelas Java yang berada di paket java.lang seperti kelas JOptionPane yang berada di paket javax.swing dan kelas DecimalFormat yang berada di paket java.text. </strong><strong> </strong><br />
+                                            <h2 class="ez-toc-section" id="apakah-sebuah-class-adalah-termasuk-tipe-data-di-java-jelaskan-alasan-anda%e2%80%8b">
+                            30. apakah sebuah class adalah termasuk tipe data di Java? jelaskan alasan anda​</h2><br />
+                        <p>Tidak, sebuah class bukanlah tipe data di Java. Sebuah class adalah sebuah blueprint atau cetakan untuk membuat objek, dan itu mendefinisikan struktur dan perilaku objek. Tipe data di Java mengacu pada jenis data yang dapat digunakan untuk mendeklarasikan variabel, seperti int, double, char, boolean, dan sebagainya.</p><br />
+                                            <h2 class="ez-toc-section" id="penggunaan-nama-class-dalam-sebuah-program-java-yang-berbeda-dengan-nama-file-akan-mengakibatkan%e2%80%8b">
+                            31. penggunaan nama class dalam sebuah program java yang berbeda dengan nama file akan mengakibatkan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>error</p><p><strong>Penjelasan:</strong></p><p>karena dalam java, tidak diperbolehkan ada nama class yg sama, </p><br />
+                                            <h2 class="ez-toc-section" id="apabila-kita-ingin-membuat-kelas-baru-java-dengan-nama-mahasiswa-java-dimana-merupakan-kelas-turunan-dari-kelas-java-manusia-java-maka-harus-ditulis-keyword%e2%80%a6-a-public-class-mahasiswa-impleme">
+                            32. Apabila kita ingin membuat kelas baru java dengan nama Mahasiswa.java dimana merupakan kelas turunan dari kelas java Manusia.java, maka harus ditulis keyword… A. Public class Mahasiswa implement Manusia B. public class Mahasiswa implements Manusia C. public class Mahasiswa extend Manusia D. public class Mahasiswa extends Manusia</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D. public class Mahasiswa extends Manusia</p><p><strong>Penjelasan:</strong></p><p>Kata kunci extends digunakan untuk mendeklarasikan kelas turunan (subclass) dari kelas atasnya (superclass). Dengan kata kunci extends, kelas turunan akan mewarisi data field dan metoda yang dimiliki oleh kelas di atasnya.</p><p></p><p>Sebenarnya tidak semua data field dan metoda diwariskan kepada kelas turunnannya. Data field dan metoda yang dideklarasikan dengan modifier private, tidak diwariskan kepada kelas turunannya. Berikut ini adalah sintaksis untuk mendeklarasikan kelas turunan (subclass) dari superclass:</p><p></p><p>public class nama-subclass extends nama-superclass {</p><p>   // data dan metoda</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="program-sederhana-java-netbeans-menggunakan-class-dan-method-kodingannya-saja">
+                            33. Program sederhana java netbeans menggunakan class dan method, kodingannya saja</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut adalah Contoh program java menggunakan method</p><p>Buat projek baru atau bisa langsung buat Java Main Class di projek yang sudah ada. Lalu beri nama contohMethod, atau Anda bisa menggunakan nama yang berbeda.</p><p></p><p></p><p></p><p>/**</p><p> *</p><p> * @author irfan</p><p> */</p><p>class dataMhs{</p><p>    int nim;</p><p>    String nama, jurusan, fakultas;    </p><p>    </p><p>    // method output</p><p>    void input(){</p><p>        nim = JOptionPane.showInputDialog("NIM : ");</p><p>        nama = JOptionPane.showInputDialog("Nama : ");</p><p>        jurusan = JOptionPane.showInputDialog("Jurusan : ");</p><p>        fakultas = JOptionPane.showInputDialog("Fakultas : ");</p><p>    }</p><p>    </p><p>    // Method output</p><p>    void output(){</p><p>        System.out.println("NIM       : "+nim);</p><p>        System.out.println("Nama      : "+nama);</p><p>        System.out.println("Jurusan   : "+jurusan);</p><p>        System.out.println("Fakultas  : "+fakultas);</p><p>    }</p><p>}</p><p>public class contohMethod {</p><p>    public static void main(String[] args) {</p><p>        //membuat objek baru</p><p>        dataMhs objek1 = new dataMhs();</p><p>        </p><p>        // mengakses dan menjalankan method input</p><p>        objek1.input();</p><p>        </p><p>        // mengakses dan menjalankan method output</p><p>        objek1.output();</p><p></p><p></p><p>Jika Anda membuat nama file java main class nya dengan nama yang berbeda, silahkan ganti kode program di atas pada bagian contohMethod dan sesuaikan denga nama java main class yang tadi Anda buat agar tidak terjadi error pada program karena nama tidak sesuai.</p><p></p>Keterangan:<p>public class contohMethod: Bagian ini adalah nama class nya yaitu contohMethod</p><p>Void  input dan Void output: Bagian ini adalah nama methodnya.</p><p>Sekarang coba lihat programnya, atau coba jalankan program tersebut. Jika Anda sudah mencobanya pasti akan ada error pada program tersebut.</p><p></p><p><strong>Penjelasan:</strong></p><strong>DiL</strong><strong>i</strong><strong>ke </strong><strong>Ya </strong><strong>Dan </strong><strong>Tandai </strong><strong>Jawaban </strong><strong>Saya </strong><strong>Sebagai </strong><strong>Terbaik </strong><strong>Ya.</strong><br />
+                                            <h2 class="ez-toc-section" id="contoh-program-java-yang-mengandung-classobjekatributmethod">
+                            34. contoh program java yang mengandung class,objek,atribut,method</h2><br />
+                        public class Belajar {<br />    //Main Method<br />    public static void main(String[] args) {<br />        /**<br />         * Menampilkan Text Belajar Coding Java<br />         */<br />        System.out.println("Belajar Coding Java");<br />    }<br />}<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-java-string-dalam-java%e2%80%8b">
+                            35. Jelaskan fungsi Java string dalam Java?​</h2><br />
+                        <p>untuk mengubah nya ke string..</p><p></p><p>be like :</p><p></p><p>String topi = "Saya";</p><p></p><p>public static void main(args[]&lt;String&gt;){</p><p>System.out.prinln(topi);</p><p>}</p><p></p><p>maaf kalau salah codex</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kode-program-class-dalam-java-utk-menampilkan-output-string">
+                            36. contoh kode program class dalam java utk menampilkan output string</h2><br />
+                        Maksud anda?<br /><br />Kalau output doang cuman System.out.println("Hello World"); <br /><br />Kalau maksud anda class, bisa pakai ini<br /><br />public class Hello {<br /><br />    String data;<br /><br />    public Hello(String data) {<br />        this.data = data;<br />    }<br /><br />    public String getData() {<br />        return this.data;<br />    }<br />} <br /><br />Buat object dengan Hello h = new Hello("Hello");<br /><br />lalu Sysout(h.getData());<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kegunaan-dari-setiap-baris-program-dari-program-berikut-1-fig-2-1-welcome1-java-2-text-printing-program-3-4-public-class-welcome1-5-6-main-method-begins-execution-of-java-applic">
+                            37. Tuliskan kegunaan dari setiap baris program dari program berikut 1 // Fig. 2.1: Welcome1.Java 2 // Text-printing program. 3 4 public class Welcome1 5 { 6 // main method begins execution of Java application 7 public static void main( String[] args ) 8 { 9 System.Out.Println( "Welcome to Java Programming!" ); 10 } // end method main 11 } // end class Welcome1</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>1-2: Komentar tentang program</p><p>4 : deklarasi kelas publik bernama Welcome1 (nama kelas publik harus sama dengan nama file)</p><p>5 : Kurung buka kelas publik</p><p>7 : deklarasi method Main/kelas utama yang wajib ada pada setiap program java</p><p>8 : Kurung buka method Main</p><p>9 : Mencetak kalimat "Welcome to Java Programming" dan mencetak baris baru </p><p>10 : Kurung tutup method main</p><p>11 : Kurung tutup method Welcome1</p><br />
+                                            <h2 class="ez-toc-section" id="pada-pembuatan-program-sebelumnya-sudah-ada-fungsi-yang-digunakan-yaitu-fungsi-main-fungsi-main-inilah-yang-digunakan-untuk-memanggil-fungsi-lainnya-main-disebut-juga-sebagai-%e2%80%8b">
+                            38. Pada pembuatan program sebelumnya sudah ada fungsi yang digunakan yaitu fungsi main (). Fungsi main inilah yang digunakan untuk memanggil fungsi lainnya. Main () disebut juga sebagai ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>method/function</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-jelaskan-urutan-prioritas-pengoperasian-operator-aritmatika-dalam-java-dan-buatlah-contoh-kode-progam-nyab-tuliskan-dan-jelaskan-cara-membuat-method-static-dan-cara-memanggil-nya-dalam-class">
+                            39. A. )  jelaskan urutan prioritas pengoperasian Operator aritmatika dalam Java dan buatlah contoh kode progam nyaB.) tuliskan dan jelaskan cara membuat method static dan cara memanggil nya dalam class ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A) Urutan prioritas pengoperasian Operator aritmatika dalam Java adalah sebagai berikut:</p><p></p><p>1. Tanda kurung `()`</p><p>2. Operator eksponen/pangkat `^`</p><p>3. Operator perkalian `*`, operator pembagian `/`, dan operator modulo `%` (dalam urutan dari kiri ke kanan)</p><p>4. Operator penjumlahan `+` dan operator pengurangan `-` (dalam urutan dari kiri ke kanan)</p><p></p><p>Contoh kode program untuk mengilustrasikan urutan prioritas operator aritmatika:</p><p></p><p>```java</p><p>public class ArithmeticOperatorExample {</p><p>    public static void main(String[] args) {</p><p>        int result = 5 + 10 * 2 - 4 / 2;</p><p>        System.out.println("Result: " + result);</p><p>    }</p><p>}</p><p>```</p><p></p><p>Output:</p><p>```</p><p>Result: 20</p><p>```</p><p></p><p>Penjelasan:</p><p>Dalam contoh di atas, ekspresi `5 + 10 * 2 - 4 / 2` dievaluasi sesuai dengan urutan prioritas operator aritmatika. Karena perkalian `*` memiliki prioritas lebih tinggi daripada penjumlahan `+` dan pengurangan `-`, operasi perkalian dilakukan terlebih dahulu. Kemudian, operasi pembagian `/` dievaluasi. Setelah itu, dilakukan penjumlahan `+` dan pengurangan `-` sesuai dengan urutan dari kiri ke kanan. Hasil akhirnya adalah 20.</p><p></p><p>B) Untuk membuat method static dalam Java, kita perlu menambahkan kata kunci `static` sebelum deklarasi method. Berikut adalah contoh cara membuat dan memanggil method static dalam sebuah class:</p><p></p><p>```java</p><p>public class StaticMethodExample {</p><p>    public static void main(String[] args) {</p><p>        sayHello(); // Memanggil method static langsung tanpa membuat objek</p><p>    }</p><p>    </p><p>    public static void sayHello() {</p><p>        System.out.println("Hello, World!");</p><p>    }</p><p>}</p><p>```</p><p></p><p>Output:</p><p>```</p><p>Hello, World!</p><p>```</p><p></p><p>Penjelasan:</p><p>Dalam contoh di atas, kita membuat method `sayHello()` sebagai static dengan menambahkan kata kunci `static` sebelum deklarasi method. Method tersebut tidak memerlukan objek dari class yang sama untuk dipanggil. Dalam method `main()`, kita memanggil method `sayHello()` langsung tanpa membuat objek dengan menggunakan nama class dan nama method yang bersangkutan. Outputnya adalah "Hello, World!" yang dicetak ke konsol.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-sebuah-program-java-dengan-class-rice-cooker-yang-dapat-mendeteksi-kematangan-nasi">
+                            40. Buatlah sebuah program java dengan class rice cooker yang dapat mendeteksi kematangan nasi</h2><br />
+                        <p>Untuk membuat sebuah <strong>program Java </strong>dengan <strong>class RiceCooker </strong>yang dapat mendeteksi kematangan nasi, berikut ini adalah contoh kode yang dapat digunakan sebagai acuan:</p><p></p><p>public class RiceCooker {</p><p>    private boolean isCooked;</p><p></p><p>    public void cookRice() {</p><p>        // logika untuk merekomendasikan waktu dan suhu pemasakan nasi</p><p>    }</p><p></p><p>    public void checkCooked() {</p><p>        // logika untuk mendeteksi apakah nasi sudah matang atau belum</p><p>        if (/* nasi sudah matang */) {</p><p>            isCooked = true;</p><p>        } else {</p><p>            isCooked = false;</p><p>        }</p><p>    }</p><p></p><p>    public boolean isCooked() {</p><p>        return isCooked;</p><p>    }</p><p>}</p>Pembahasan<p>Pada kode di atas, 'cookRice()' akan mengandung <strong>logika </strong>untuk merekomendasikan waktu dan suhu pemasakan nasi, 'checkCooked()' akan mengandung logika untuk mendeteksi apakah <strong>nasi </strong>sudah matang atau belum, dan 'isCooked()' akan mengembalikan nilai boolean yang menunjukkan apakah nasi sudah matang atau belum.</p><p><strong>Java </strong>adalah bahasa <strong>pemrograman </strong>yang dikembangkan oleh James Gosling dan tim di Sun Microsystems (sekarang diakuisisi oleh Oracle) pada tahun 1990-an. Java didesain untuk dapat dijalankan di berbagai platform tanpa perlu dikompilasi ulang. Hal ini dicapai dengan menggunakan Java Virtual Machine (JVM) yang dapat diinstall di berbagai sistem operasi seperti Windows, MacOS, dan Linux.</p><p>Program Java ditulis dalam bahasa Java, kemudian dikompilasi menjadi bytecode yang dapat dijalankan di JVM. Bytecode ini dapat difungsikan di berbagai platform yang telah terinstall JVM dengan cara yang sama.</p>Pelajari Lebih LanjutMateri tentang apa yang dimaksud dengan web programmer https://brainly.co.id/tugas/459334Materi tentang bekerja di perusahaan teknologi https://brainly.co.id/tugas/38724752Materi tentang ciri-ciri atau karakteristik masing-masing periode perkembangan sistem operasi menurut Tanebaum https://brainly.co.id/tugas/759374<p>• • • • • • • • • • • • • • • • • • • • • • • • • • •</p><p><strong>Detail Jawaban</strong></p><p><strong>Kelas      : SMA</strong></p><p><strong>Mapel    : Ujian Nasional</strong></p><p><strong>Bab        : TI</strong></p><p><strong>Kode      : -</strong></p><p></p><p><strong>#AyoBelajar</strong></p><p><strong>#SPJ2</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/XqTg2buXS5o?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/tentukan-invers-dari-fungsi.html">Tentukan Invers Dari Fungsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-firman-tuhan-yang-di-ulang2.html">Fungsi Dari Firman Tuhan Yang Di Ulang2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-afg.html">Fungsi Dari Afg</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-mitokondria-pada-sel-hewan.html">Fungsi Dari Mitokondria Pada Sel Hewan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/belajar-tes-toefl.html">Belajar Tes Toefl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-age-defense-essential-emulsion.html">Fungsi Dari Age Defense Essential Emulsion</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/harga-tombol-on-off.html">Harga Tombol On Off</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/download-contoh-soal-tpa-pdf.html">Download Contoh Soal Tpa Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-cermin-cembung-beserta-jawabannya.html">Contoh Soal Cermin Cembung Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-uas-mtk-kelas-11-semester-1.html">Contoh Soal Uas Mtk Kelas 11 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-proposal-tugas-akhir-untuk-membuat-sistem-informasi.html">Contoh Proposal Tugas Akhir Untuk Membuat Sistem Informasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-ulangan-agama-islam-kelas-11-semester-2.html">Contoh Soal Ulangan Agama Islam Kelas 11 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/accesor-auditor-dari-badan-sertifikasi-dan-fungsinya.html">Accesor Auditor Dari Badan Sertifikasi Dan Fungsinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/jelaskan-fungsi-dari-media-output.html">Jelaskan Fungsi Dari Media Output</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/contoh-soal-spltv-kelas-10-dan-pembahasannya.html">Contoh Soal Spltv Kelas 10 Dan Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/dibawah-ini-yang-bukan-fungsi-dari-microsoft-excel-adalah.html">Dibawah Ini Yang Bukan Fungsi Dari Microsoft Excel Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/salah-satu-fungsi-dari-sumsum-spinal-yaitu.html">Salah Satu Fungsi Dari Sumsum Spinal Yaitu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-mikroskop-stereo.html">Fungsi Dari Mikroskop Stereo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-rangka-tubuh.html">Fungsi Rangka Tubuh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://kumpulansoal.github.io/fungsi-dari-maltodekstrin-adalah.html">Fungsi Dari Maltodekstrin Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://kumpulansoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://kumpulansoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://kumpulansoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
